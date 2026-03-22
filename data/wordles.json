@@ -1,0 +1,1512 @@
+[
+  {
+    "date": "2026-02-15",
+    "wordle_number": 1306,
+    "answer": "BRAVE",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "CRAZE",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "GRAVE",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "BRAVE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "A slate of gray, no colors breaking through,\nthe morning stretched like questions without clue.\n\nA craze took hold, a flicker in the dark,\nsomething familiar left its tender mark.\n\nI stood beside a grave of buried tries,\nyet felt the truth begin to crystallize.\n\nThen brave arrived \u2014 a word I'd always known,\nthe answer blooming, finally my own.",
+    "green_count": 4,
+    "yellow_count": 1
+  },
+  {
+    "date": "2026-02-16",
+    "wordle_number": 1307,
+    "answer": "SWIFT",
+    "guesses": [
+      {
+        "word": "TRAIN",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "STICK",
+        "result": [
+          "correct",
+          "present",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SHIFT",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "SWIFT",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I boarded a train of wandering thought,\nchasing connections that couldn't be caught.\n\nA stick in the mud, but something clicked,\nthe pieces arranging where chance had picked.\n\nI felt the shift before I understood,\nthe fog was lifting as I knew it would.\n\nThen swift as wind, the answer came to stay,\nand all the searching melted clean away.",
+    "green_count": 4,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-02-17",
+    "wordle_number": 1308,
+    "answer": "PLANT",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "REALM",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SLANT",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "PLANT",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The audio hummed with static and haze,\na signal searching through the maze.\n\nNo realm of logic offered any guide,\njust fragments drifting on the tide.\n\nA slant of light across the floor,\nilluminating what I was looking for.\n\nI watched it plant its roots and grow,\nthe answer rising from below.",
+    "green_count": 3,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-02-18",
+    "wordle_number": 1309,
+    "answer": "RIDGE",
+    "guesses": [
+      {
+        "word": "STERN",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "DECOR",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "RIDER",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "RIDGE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The stern commander in my mind fell still,\nno orders came, no strength of will.\n\nThe decor shifted, patterns rearranged,\nsomething essential quietly changed.\n\nA rider appeared on the horizon line,\ncarrying pieces that started to align.\n\nI reached the ridge and saw it all unfold,\nthe hidden story finally told.",
+    "green_count": 2,
+    "yellow_count": 3
+  },
+  {
+    "date": "2026-02-19",
+    "wordle_number": 1310,
+    "answer": "MAPLE",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "BLAME",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "MAPLE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I heard a crane call somewhere far away,\na lonely note to start the searching day.\n\nNo one to blame for paths that twist and wind,\njust patience needed, and an open mind.\n\nBeneath the maple, answers finally fell,\nlike autumn leaves with stories left to tell.",
+    "green_count": 2,
+    "yellow_count": 1
+  },
+  {
+    "date": "2026-02-20",
+    "wordle_number": 1311,
+    "answer": "GHOST",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "STORM",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SHOTS",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "GHOST",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "A slate of nothing, silence everywhere,\njust echoes drifting through the empty air.\n\nThe storm rolled in with thunder and with doubt,\nI searched for shelter, trying to figure out.\n\nI took my shots at shadows passing by,\neach one dissolving underneath the sky.\n\nAnd then the ghost materialized at last,\na presence found by reckoning the past.",
+    "green_count": 1,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-02-21",
+    "wordle_number": 1312,
+    "answer": "LEMON",
+    "guesses": [
+      {
+        "word": "ARISE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "PHONE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "MELON",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "LEMON",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I tried to arise but the ground wouldn't hold,\nthe path uncertain, the morning cold.\n\nI picked up the phone to call for a sign,\nsome distant voice to help realign.\n\nSweet as a melon, the taste of almost there,\nso close to knowing, suspended in air.\n\nThen lemon sharp, the answer cut right through,\nthe tang of truth in bright and yellow hue.",
+    "green_count": 4,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-02-22",
+    "wordle_number": 1313,
+    "answer": "FLARE",
+    "guesses": [
+      {
+        "word": "TRAIN",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "GRACE",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "FLARE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I missed the train that everyone else caught,\nleft on the platform with tangled thought.\n\nI searched for grace in every passing face,\nthe almost-answer hovering in place.\n\nThen came the flare \u2014 a brilliant burning light,\nthe darkness scattered, everything made right.",
+    "green_count": 3,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-02-23",
+    "wordle_number": 1314,
+    "answer": "BUNCH",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROCKY",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "PINCH",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "MUNCH",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "BUNCH",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The slate was blank, no letters finding home,\na wilderness of silence, vast to roam.\n\nThe rocky path gave nothing but a hint,\na tiny spark, the smallest little glint.\n\nI felt the pinch of time begin to press,\nbut something clicked within the wilderness.\n\nI tried to munch through options one by one,\nthe finish line appearing through the sun.\n\nAt last the bunch of answers came to bloom,\nfive petals opening across the room.",
+    "green_count": 3,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-02-24",
+    "wordle_number": 1315,
+    "answer": "CHARM",
+    "guesses": [
+      {
+        "word": "REACH",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "MARCH",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "CHARM",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I tried to reach across the morning blur,\ngrasping at meanings I was not sure.\n\nThe march of hours brought the pieces near,\npatterns emerging, suddenly clear.\n\nAnd there it was \u2014 a charm against the night,\nthe word unlocked, the ending burning bright.",
+    "green_count": 2,
+    "yellow_count": 5
+  },
+  {
+    "date": "2026-02-25",
+    "wordle_number": 1316,
+    "answer": "STOMP",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BUILT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "GHOST",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "STORM",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "STOMP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "No crane appeared to lift me from the ground,\njust empty silence, not a single sound.\n\nI built a theory, fragile, incomplete,\nstumbling forward on uncertain feet.\n\nA ghost of meaning flickered into view,\nthe shape of something gradually grew.\n\nThe storm was breaking, patterns finally formed,\nthe chaos settling as the answer warmed.\n\nI heard the stomp of certainty arrive,\nthe thunderous knowing, coming alive.",
+    "green_count": 3,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-02-26",
+    "wordle_number": 1317,
+    "answer": "VIVID",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROUND",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "TIMID",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "LIVID",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "VIVID",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The slate revealed no secrets, flat and gray,\na monochrome beginning to the day.\n\nI wandered round in circles, getting lost,\neach attempt another penny tossed.\n\nNo need to feel timid, though the way was dark,\na stubborn hope, a quiet inner spark.\n\nI might have been livid at the twisting maze,\nbut patience held me steady through the haze.\n\nThen vivid burst in colors bright and true,\nthe world transforming into every hue.",
+    "green_count": 3,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-02-27",
+    "wordle_number": 1318,
+    "answer": "BREAD",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "CREAM",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "DREAD",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "BREAD",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I stopped to stare at all the scattered parts,\na puzzle waiting for the willing heart.\n\nThe cream rose up, the pieces soft and light,\nthe contours of the answer coming right.\n\nI felt no dread, just certainty at last,\nthe present moment swallowing the past.\n\nLike daily bread, the simple answer came,\nnourishment found in playing this small game.",
+    "green_count": 4,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-02-28",
+    "wordle_number": 1319,
+    "answer": "SHINY",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOUNT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "WHINY",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "SHINY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "No crane appeared to show me where to start,\njust intuition whispering to my heart.\n\nI tried to mount a strategy from air,\nbuilding on nothing, grasping everywhere.\n\nI could be whiny about the stubborn game,\nbut something shifted, nothing stayed the same.\n\nAnd there \u2014 so shiny, gleaming in the light,\nthe answer polished, radiant and bright.",
+    "green_count": 4,
+    "yellow_count": 1
+  },
+  {
+    "date": "2026-03-01",
+    "wordle_number": 1320,
+    "answer": "WALTZ",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MALTY",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "SALTY",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "WALTZ",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The slate was shuffled, letters out of place,\na dance beginning I would have to trace.\n\nSomething malty, warm and half-remembered,\na comfort found in days soft and September.\n\nThe taste was salty \u2014 tears or maybe sea,\nthe answer swimming somewhere close to me.\n\nAnd then the waltz, that elegant refrain,\nthe perfect partner ending the campaign.",
+    "green_count": 3,
+    "yellow_count": 3
+  },
+  {
+    "date": "2026-03-02",
+    "wordle_number": 1321,
+    "answer": "FLAME",
+    "guesses": [
+      {
+        "word": "STEAL",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "BLAME",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "FLAME",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I tried to steal an answer from the air,\nbut nothing solid waited for me there.\n\nThere was no one to blame but wandering thought,\nyet closer now to what I always sought.\n\nAnd then the flame \u2014 igniting pure and bright,\na single spark that set the world alight.",
+    "green_count": 4,
+    "yellow_count": 3
+  },
+  {
+    "date": "2026-03-03",
+    "wordle_number": 1322,
+    "answer": "SPEAR",
+    "guesses": [
+      {
+        "word": "ARISE",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "SPARE",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "SPEAR",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I watched arise a glimmer in the dark,\nscattered letters waiting for their mark.\n\nNo moment spare from searching high and low,\nthe pieces rearranging, starting to glow.\n\nAnd then the spear flew straight into the heart,\nthe target struck, a perfect work of art.",
+    "green_count": 2,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-03-04",
+    "wordle_number": 1323,
+    "answer": "CLOTH",
+    "guesses": [
+      {
+        "word": "TRACE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "STOCK",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "NOTCH",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "TORCH",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "CLOTH",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "A trace of something lingered in the room,\na thread of meaning weaving through the gloom.\n\nI checked my stock of everything I knew,\nrearranging patterns old and new.\n\nI found the notch where pieces fit together,\na shelter forming in uncertain weather.\n\nI carried torch through corridors unknown,\nilluminating pathways overgrown.\n\nAt last the cloth unfurled across my sight,\na fabric woven from the fading light.",
+    "green_count": 2,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-03-05",
+    "wordle_number": 1324,
+    "answer": "PEARL",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "REGAL",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "LEARN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "PEARL",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The slate was drawn but something wasn't right,\njust scattered hints against the morning light.\n\nI felt almost regal in the chase,\npieces assembling, finding their place.\n\nI was ready to learn what had been hidden,\nfollowing paths both chosen and unbidden.\n\nAnd then the pearl emerged from depths below,\na treasure found in patience, soft and slow.",
+    "green_count": 3,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-03-06",
+    "wordle_number": 1325,
+    "answer": "YOUTH",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STUMP",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "OUTER",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "TOUGH",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "YOUTH",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "No crane descended with an easy clue,\njust empty sky in pale and endless blue.\n\nI hit a stump and couldn't find my way,\nthe forest thickening throughout the day.\n\nI ventured outer, far beyond the known,\ninto the places I had never flown.\n\nThe going tough, but I refused to yield,\nsome inner knowing slowly being revealed.\n\nAnd there was youth \u2014 that bright and eager flame,\nthe answer found, and nothing was the same.",
+    "green_count": 0,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-03-07",
+    "wordle_number": 1326,
+    "answer": "KNELT",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "BLUNT",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "DELTA",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "KNELT",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I tried to stare the answer into form,\na shape emerging from the mental storm.\n\nMy efforts blunt against the stubborn wall,\nbut still I listened for the distant call.\n\nLike river delta spreading to the sea,\nthe possibilities kept finding me.\n\nAt last I knelt before what I had found,\nthe word revealed on consecrated ground.",
+    "green_count": 1,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-03-08",
+    "wordle_number": 1327,
+    "answer": "DWARF",
+    "guesses": [
+      {
+        "word": "TRACE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "DRAMA",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "DWARF",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I searched for trace of meaning in the void,\nevery expectation null and void.\n\nThe drama built with each uncertain guess,\nthe tension rising, more becoming less.\n\nAnd then the dwarf star shone with quiet might,\na small but brilliant ending to the night.",
+    "green_count": 2,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-03-09",
+    "wordle_number": 1328,
+    "answer": "QUIRK",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "PRONG",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BRICK",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "TRICK",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "QUIRK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The slate was bare, no letters fell in place,\na blank beginning, searching empty space.\n\nI tried each prong of possibility,\nstabbing at the dark futility.\n\nSomething in the brick of structure held,\na foundation where my hope had dwelled.\n\nI thought I knew the trick but I was wrong,\nthe answer playing its elusive song.\n\nAt last the quirk of fate made itself known,\nthe oddest path led all the way back home.",
+    "green_count": 3,
+    "yellow_count": 1
+  },
+  {
+    "date": "2026-03-10",
+    "wordle_number": 1329,
+    "answer": "LIGHT",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "LIGHT",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "A slate wiped clean, the day was just beginning,\nno shape yet formed, no sense of losing, winning.\n\nThen light broke through \u2014 immediate and bright,\nthe answer found in one pure flash of sight.",
+    "green_count": 0,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-03-11",
+    "wordle_number": 1330,
+    "answer": "GRILL",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "PRISM",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "DRINK",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "FRILL",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "GRILL",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "No crane arrived to lift me from the doubt,\njust empty sky and paths to figure out.\n\nI saw through prism all the colors bend,\nthe scattered spectrum waiting to mend.\n\nI tried to drink from wells that ran too deep,\nthe answers hiding, promises to keep.\n\nNo need for frill \u2014 just substance, plain and true,\nthe final shape was finally breaking through.\n\nAnd then the grill marks seared the truth in place,\nthe finish line arrived with steady grace.",
+    "green_count": 3,
+    "yellow_count": 1
+  },
+  {
+    "date": "2026-03-12",
+    "wordle_number": 1331,
+    "answer": "QUERY",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SUPER",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "RULER",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "OUTER",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "BUYER",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "QUERY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The audio was static, nothing clear,\njust noise and fog and a whisper of fear.\n\nI felt super lost, grasping at air,\nfragments of meaning scattered everywhere.\n\nA ruler's edge \u2014 something to measure by,\na faint geometry beneath the sky.\n\nThe outer walls were closing, pressing tight,\nbut cracks appeared, admitting threads of light.\n\nI was no buyer of easy escape,\nstill searching for the word to give things shape.\n\nAt last the query landed, understood \u2014\nthe question answered, exactly as it should.",
+    "green_count": 3,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-03-13",
+    "wordle_number": 1332,
+    "answer": "OCEAN",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "GLEAM",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "PECAN",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "OCEAN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I tried to stare through fog to find the shore,\nbut nothing answered, nothing anymore.\n\nNo gleam of recognition broke the night,\njust scattered guesses falling out of sight.\n\nI thought of pecan, warm and autumn-sweet,\nthe pieces finally starting to meet.\n\nAnd then the ocean stretched before my eyes,\nvast and knowing, ancient and wise.",
+    "green_count": 3,
+    "yellow_count": 2
+  },
+  {
+    "date": "2026-03-14",
+    "wordle_number": 1333,
+    "answer": "FROST",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "STORM",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SPORT",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "FROST",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The slate showed hints of what might come to pass,\nfaint etchings forming underneath the glass.\n\nA storm was gathering, electric and bright,\nthe letters swirling through the fading light.\n\nI played the sport of patience and of care,\nfeeling the answer crystallize in air.\n\nAnd then the frost descended, sharp and clear,\nthe cold truth beautiful, the ending here.",
+    "green_count": 2,
+    "yellow_count": 4
+  },
+  {
+    "date": "2026-03-15",
+    "wordle_number": 1334,
+    "answer": "HAVEN",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "PLANE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "WEAVE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "correct",
+          "present"
+        ]
+      },
+      {
+        "word": "HAVEN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "No crane would come to carry me away,\njust letters scattered at the break of day.\n\nI searched each plane of possibility,\nthe shapes dissolving into mystery.\n\nI tried to weave the threads into a whole,\nthe pattern forming deep within my soul.\n\nAt last I found the haven I had sought,\na resting place for every wandering thought.",
+    "green_count": 1,
+    "yellow_count": 3
+  },
+  {
+    "date": "2026-03-16",
+    "wordle_number": 1335,
+    "answer": "JOLLY",
+    "guesses": [
+      {
+        "word": "TRACE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SOLID",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "LOWLY",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "JOLLY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "No trace appeared to guide the wandering mind,\njust empty squares with nothing left to find.\n\nI needed something solid, firm and real,\na foundation for the truth I'd come to feel.\n\nI started lowly, humble in my quest,\nbut rising slowly, doing my best.\n\nAnd jolly came \u2014 a burst of sudden cheer,\nthe happy ending finally drawing near.",
+    "green_count": 2,
+    "yellow_count": 2
+  }
+]

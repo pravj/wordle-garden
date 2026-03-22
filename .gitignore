@@ -1,0 +1,18 @@
+# Local development
+style-sampler.html
+
+# Scripts (local tooling only)
+scripts/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.env

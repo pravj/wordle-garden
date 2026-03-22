@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle Garden</title>
+  <meta name="description" content="A poem grown from a Wordle game.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wordle Garden">
+  <meta property="og:description" content="A poem grown from a Wordle game.">
+  <meta property="og:type" content="article">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="poem-page">
+    <a href="index.html" class="back-link">&larr; Back to garden</a>
+
+    <header class="poem-header">
+      <h1 class="poem-date">Loading...</h1>
+      <p class="wordle-number"></p>
+    </header>
+
+    <div class="poem-flower">
+      <!-- Flower SVG will be rendered here -->
+    </div>
+
+    <div class="wordle-grid">
+      <!-- Wordle grid will be rendered here -->
+    </div>
+
+    <section class="poem-content">
+      <div class="poem-text">
+        <!-- Poem will be rendered here -->
+      </div>
+    </section>
+
+    <section class="share-section">
+      <!-- Share link will be rendered here -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Each flower blooms from the journey of finding a word.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/flowers.js"></script>
+  <script src="js/poem.js"></script>
+  <script src="js/wanderer.js"></script>
+
+</body>
+</html>
