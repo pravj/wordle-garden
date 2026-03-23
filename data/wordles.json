@@ -1508,5 +1508,20 @@
     "poem": "No trace appeared to guide the wandering mind,\njust empty squares with nothing left to find.\n\nI needed something solid, firm and real,\na foundation for the truth I'd come to feel.\n\nI started lowly, humble in my quest,\nbut rising slowly, doing my best.\n\nAnd jolly came \u2014 a burst of sudden cheer,\nthe happy ending finally drawing near.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-03-23",
+    "wordle_number": 1739,
+    "answer": "SERIF",
+    "guesses": [
+      { "word": "STOCK", "result": ["correct", "absent", "absent", "absent", "absent"] },
+      { "word": "RALLY", "result": ["present", "absent", "absent", "absent", "absent"] },
+      { "word": "GUIDE", "result": ["absent", "absent", "present", "absent", "present"] },
+      { "word": "SIREN", "result": ["correct", "present", "correct", "present", "absent"] },
+      { "word": "SERIF", "result": ["correct", "correct", "correct", "correct", "correct"] }
+    ],
+    "poem": "I stood stock-still inside the dark and cold,\nno thread to follow, no story yet to hold.\n\nI tried to rally every shred of will,\nbut the road ahead was shapeless, wandering still.\n\nSomething quiet began to guide my feet,\na half-remembered warmth, almost complete.\n\nThe siren song of truth rang close and clear,\nI could nearly taste the answer, drawing near.\n\nAt last the serif lines of self came into view,\nI found the word I was — and knew it true.",
+    "green_count": 2,
+    "yellow_count": 3
   }
 ]
