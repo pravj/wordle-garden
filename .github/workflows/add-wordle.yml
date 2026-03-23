@@ -20,28 +20,28 @@ jobs:
 
       - name: Validate and append entry
         id: validate
-        env:
-          ENTRY_JSON: ${{ toJSON(inputs.entry_json) }}
         run: |
           python3 << 'PYEOF'
           import json, os, sys, re
           from datetime import datetime
 
-          # --- Read input from environment variable (safe from shell injection) ---
-          # toJSON() wraps the input as a JSON string (with outer quotes and escaped
-          # inner quotes) to prevent GitHub Actions from mangling the JSON content.
-          raw = os.environ.get("ENTRY_JSON", "").strip()
+          # --- Read input from GitHub event payload file (bypasses all shell/env escaping) ---
+          event_path = os.environ.get("GITHUB_EVENT_PATH", "")
+          if not event_path:
+              print("::error::GITHUB_EVENT_PATH not set.")
+              sys.exit(1)
+
+          with open(event_path, "r", encoding="utf-8") as f:
+              event = json.load(f)
+
+          raw = event.get("inputs", {}).get("entry_json", "").strip()
           if not raw:
               print("::error::No JSON provided.")
               sys.exit(1)
 
-          # --- Unwrap toJSON encoding, then parse the actual entry ---
+          # --- Parse JSON ---
           try:
-              unwrapped = json.loads(raw)  # Unwrap the toJSON string encoding
-              if isinstance(unwrapped, str):
-                  entry = json.loads(unwrapped)  # Parse the actual JSON object
-              else:
-                  entry = unwrapped  # Already parsed as object (fallback)
+              entry = json.loads(raw)
           except json.JSONDecodeError as e:
               print(f"::error::Invalid JSON: {e}")
               sys.exit(1)
