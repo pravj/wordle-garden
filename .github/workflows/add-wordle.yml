@@ -1,0 +1,157 @@
+name: Add Wordle Entry
+
+on:
+  workflow_dispatch:
+    inputs:
+      entry_json:
+        description: 'Full JSON object for the new Wordle entry'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  add-wordle-entry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate and append entry
+        id: validate
+        env:
+          ENTRY_JSON: ${{ inputs.entry_json }}
+        run: |
+          python3 << 'PYEOF'
+          import json, os, sys, re
+          from datetime import datetime
+
+          # --- Read input from environment variable (safe from shell injection) ---
+          raw = os.environ.get("ENTRY_JSON", "").strip()
+          if not raw:
+              print("::error::No JSON provided.")
+              sys.exit(1)
+
+          # --- Parse JSON ---
+          try:
+              entry = json.loads(raw)
+          except json.JSONDecodeError as e:
+              print(f"::error::Invalid JSON: {e}")
+              sys.exit(1)
+
+          # --- Required fields ---
+          REQUIRED = {"date", "wordle_number", "answer", "guesses", "poem", "green_count", "yellow_count"}
+          missing = REQUIRED - set(entry.keys())
+          if missing:
+              print(f"::error::Missing fields: {', '.join(sorted(missing))}")
+              sys.exit(1)
+
+          extra = set(entry.keys()) - REQUIRED
+          if extra:
+              print(f"::error::Unexpected fields: {', '.join(sorted(extra))}")
+              sys.exit(1)
+
+          # --- Validate date ---
+          if not isinstance(entry["date"], str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", entry["date"]):
+              print("::error::date must be a string in YYYY-MM-DD format.")
+              sys.exit(1)
+          try:
+              datetime.strptime(entry["date"], "%Y-%m-%d")
+          except ValueError:
+              print(f"::error::Invalid date: {entry['date']}")
+              sys.exit(1)
+
+          # --- Validate wordle_number ---
+          if not isinstance(entry["wordle_number"], int) or entry["wordle_number"] <= 0:
+              print("::error::wordle_number must be a positive integer.")
+              sys.exit(1)
+
+          # --- Validate answer ---
+          if not isinstance(entry["answer"], str) or not re.match(r"^[A-Z]{5}$", entry["answer"]):
+              print("::error::answer must be exactly 5 uppercase letters.")
+              sys.exit(1)
+
+          # --- Validate guesses ---
+          guesses = entry["guesses"]
+          if not isinstance(guesses, list) or not (2 <= len(guesses) <= 6):
+              print("::error::guesses must be an array of 2-6 objects.")
+              sys.exit(1)
+
+          VALID_RESULTS = {"correct", "present", "absent"}
+          for i, g in enumerate(guesses):
+              if not isinstance(g, dict) or set(g.keys()) != {"word", "result"}:
+                  print(f"::error::Guess {i+1} must have exactly 'word' and 'result' keys.")
+                  sys.exit(1)
+              if not isinstance(g["word"], str) or not re.match(r"^[A-Z]{5}$", g["word"]):
+                  print(f"::error::Guess {i+1} word must be 5 uppercase letters.")
+                  sys.exit(1)
+              if not isinstance(g["result"], list) or len(g["result"]) != 5:
+                  print(f"::error::Guess {i+1} result must be an array of 5 values.")
+                  sys.exit(1)
+              for r in g["result"]:
+                  if r not in VALID_RESULTS:
+                      print(f"::error::Guess {i+1} has invalid result value: '{r}'")
+                      sys.exit(1)
+
+          # Final guess must be the winning answer
+          last = guesses[-1]
+          if last["word"] != entry["answer"]:
+              print(f"::error::Last guess '{last['word']}' does not match answer '{entry['answer']}'.")
+              sys.exit(1)
+          if not all(r == "correct" for r in last["result"]):
+              print("::error::Last guess must have all 'correct' results.")
+              sys.exit(1)
+
+          # --- Validate poem ---
+          if not isinstance(entry["poem"], str) or not entry["poem"].strip():
+              print("::error::poem must be a non-empty string.")
+              sys.exit(1)
+
+          # --- Validate counts ---
+          if not isinstance(entry["green_count"], int) or entry["green_count"] < 0:
+              print("::error::green_count must be a non-negative integer.")
+              sys.exit(1)
+          if not isinstance(entry["yellow_count"], int) or entry["yellow_count"] < 0:
+              print("::error::yellow_count must be a non-negative integer.")
+              sys.exit(1)
+
+          # --- Load existing data and check for duplicates ---
+          data_path = "data/wordles.json"
+          with open(data_path, "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          existing_dates = {d["date"] for d in data}
+          if entry["date"] in existing_dates:
+              print(f"::error::An entry for date {entry['date']} already exists.")
+              sys.exit(1)
+
+          existing_numbers = {d["wordle_number"] for d in data}
+          if entry["wordle_number"] in existing_numbers:
+              print(f"::error::An entry for Wordle #{entry['wordle_number']} already exists.")
+              sys.exit(1)
+
+          # --- Append, sort by date, and write ---
+          data.append(entry)
+          data.sort(key=lambda x: x["date"])
+
+          with open(data_path, "w", encoding="utf-8") as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+              f.write("\n")
+
+          print(f"Successfully added entry for {entry['date']} (Wordle #{entry['wordle_number']}: {entry['answer']})")
+
+          # Set output for commit message
+          with open(os.environ["GITHUB_OUTPUT"], "a") as gh:
+              gh.write(f"entry_date={entry['date']}\n")
+              gh.write(f"wordle_number={entry['wordle_number']}\n")
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/wordles.json
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Add Wordle entry for ${{ steps.validate.outputs.entry_date }} (#${{ steps.validate.outputs.wordle_number }})"
+          git push
