@@ -105,8 +105,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Initial render
     renderGarden();
 
+    // Hide loader
+    if (window.Loader) Loader.hide();
+
   } catch (error) {
     console.error('Error loading wordle data:', error);
     gardenContainer.innerHTML = '<p>Error loading garden data.</p>';
+    if (window.Loader) Loader.hide();
   }
 });

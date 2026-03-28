@@ -18,4 +18,6 @@ __pycache__/
 .env
 *-sampler.html
 .claude/
+
 CLAUDE.md
+docs/

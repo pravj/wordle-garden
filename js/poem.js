@@ -83,12 +83,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       `;
     }
 
+    // Hide loader
+    if (window.Loader) Loader.hide();
+
   } catch (error) {
     console.error('Error loading wordle data:', error);
     document.querySelector('.poem-page').innerHTML = `
       <a href="garden.html" class="back-link">&larr; Back to garden</a>
       <p>Error loading poem data.</p>
     `;
+    if (window.Loader) Loader.hide();
   }
 });
 

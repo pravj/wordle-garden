@@ -3,6 +3,7 @@
 (function() {
   // Randomly choose bee or butterfly for this session
   const isBee = Math.random() > 0.5;
+  window.wandererIsBee = isBee;
 
   // Japanese mon-style SVG icons
   const beeSvg = `
@@ -67,9 +68,9 @@
 
   if (perchEl) {
     perchRect = perchEl.getBoundingClientRect();
-    // Sit on top-right of the element
+    // Sit just above the right side of the element
     startX = perchRect.right - 5;
-    startY = perchRect.top - 8;
+    startY = perchRect.bottom + 4;
   }
 
   // Position tracking
@@ -79,11 +80,13 @@
   let currentY = startY;
   let wobbleOffset = 0;
   let perching = true;
-  const perchDuration = 4500; // ms
+  let hasMouseMoved = false;
+  const perchDuration = 3000; // ms
   const perchStart = performance.now();
 
   // Track mouse movement — only follow after perch time
   document.addEventListener('mousemove', (e) => {
+    hasMouseMoved = true;
     if (!perching) {
       targetX = e.clientX;
       targetY = e.clientY;
@@ -103,7 +106,7 @@
       // Re-read position in case of scroll/layout shift
       const rect = perchEl.getBoundingClientRect();
       targetX = rect.right - 5;
-      targetY = rect.top - 8;
+      targetY = rect.bottom + 4;
 
       // Faster easing to land on target
       currentX += (targetX - currentX) * 0.06;
@@ -118,6 +121,12 @@
       wanderer.style.top = (currentY + wobbleY - 18) + 'px';
       wanderer.style.transform = 'rotate(0deg)';
     } else {
+      // If no mouse movement, drift toward center of viewport
+      if (!hasMouseMoved) {
+        targetX = window.innerWidth / 2;
+        targetY = window.innerHeight / 2;
+      }
+
       // Free roaming — lazy follow with easing
       currentX += (targetX - currentX) * 0.008;
       currentY += (targetY - currentY) * 0.008;
