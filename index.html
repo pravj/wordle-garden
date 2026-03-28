@@ -223,6 +223,7 @@
       }
     }
   </style>
+  <script src="js/loader.js"></script>
 </head>
 <body>
 
@@ -250,6 +251,7 @@
   </main>
 
   <script src="js/flowers.js"></script>
+  <script src="js/sound.js"></script>
   <script>
     // Scatter flowers across the page
     (function() {
@@ -386,14 +388,11 @@
 
         container.appendChild(div);
       });
+
+      // Hide loader once flowers are rendered
+      if (window.Loader) Loader.hide();
     })();
 
-    // Sound toggle (placeholder for now)
-    const soundToggle = document.getElementById('sound-toggle');
-    soundToggle.addEventListener('click', () => {
-      soundToggle.classList.toggle('muted');
-      // Sound logic will go here later
-    });
 
     // Flag logic (off by default - always show landing)
     const SKIP_LANDING_FLAG = false;
