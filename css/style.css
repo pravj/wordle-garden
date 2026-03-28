@@ -639,10 +639,20 @@ body {
   color: var(--text-muted);
 }
 
-.gym-coming-soon {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 4px;
+.gym-poem {
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', Georgia, serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.gym-poem .stanza {
+  margin-bottom: 1em;
+}
+
+.gym-poem .stanza:last-child {
+  margin-bottom: 0;
 }
 
 /* Wild Meadow Grass */

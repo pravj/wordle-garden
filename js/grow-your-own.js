@@ -238,14 +238,24 @@
       return '<div class="wordle-row">' + cells + '</div>';
     }).join('');
 
+    var poemHtml = '';
+    if (data.poem) {
+      var stanzas = data.poem.split('\n\n');
+      poemHtml = '<div class="gym-poem">' +
+        stanzas.map(function (s) {
+          return '<div class="stanza">' + s.replace(/\n/g, '<br>') + '</div>';
+        }).join('') +
+      '</div>';
+    }
+
     return (
       '<div class="gym-game-result">' +
         '<div class="gym-grid">' + gridHtml + '</div>' +
+        poemHtml +
         '<div class="gym-meta">' +
           '<span class="gym-answer">' + data.answer + '</span>' +
           '<span class="gym-counts">' + data.green_count + ' green, ' + data.yellow_count + ' yellow</span>' +
         '</div>' +
-        '<p class="gym-coming-soon">poem generation coming soon</p>' +
       '</div>'
     );
   }
