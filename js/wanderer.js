@@ -47,38 +47,92 @@
   `;
   document.body.appendChild(wanderer);
 
-  // Position tracking
-  let targetX = 100;
-  let targetY = 100;
-  let currentX = 100;
-  let currentY = 100;
-  let wobbleOffset = 0;
+  // Find initial perch target based on page
+  function findPerchTarget() {
+    // Garden page: land on the strikethrough "puzzles" word
+    const strikeEl = document.querySelector('.header s') ||
+                     document.querySelector('.tagline s');
+    if (strikeEl) return strikeEl;
 
-  // Track mouse movement
+    // Poem page: land on the back-link sign
+    const backLink = document.querySelector('.back-link');
+    if (backLink) return backLink;
+
+    return null;
+  }
+
+  const perchEl = findPerchTarget();
+  let perchRect = null;
+  let startX = 100, startY = 100;
+
+  if (perchEl) {
+    perchRect = perchEl.getBoundingClientRect();
+    // Sit on top-right of the element
+    startX = perchRect.right - 5;
+    startY = perchRect.top - 8;
+  }
+
+  // Position tracking
+  let targetX = startX;
+  let targetY = startY;
+  let currentX = startX;
+  let currentY = startY;
+  let wobbleOffset = 0;
+  let perching = true;
+  const perchDuration = 4500; // ms
+  const perchStart = performance.now();
+
+  // Track mouse movement — only follow after perch time
   document.addEventListener('mousemove', (e) => {
-    targetX = e.clientX;
-    targetY = e.clientY;
+    if (!perching) {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    }
   });
 
   // Animation loop
   function animate() {
-    // Lazy follow with easing (very slow/dreamy)
-    currentX += (targetX - currentX) * 0.008;
-    currentY += (targetY - currentY) * 0.008;
+    const now = performance.now();
 
-    // Add wobble for floating effect
-    wobbleOffset += 0.04;
-    const wobbleX = Math.sin(wobbleOffset) * 6;
-    const wobbleY = Math.cos(wobbleOffset * 0.7) * 4;
+    // Check if perch time is over
+    if (perching && now - perchStart > perchDuration) {
+      perching = false;
+    }
 
-    // Calculate rotation based on movement direction
-    const dx = targetX - currentX;
-    const rotation = Math.max(-15, Math.min(15, dx * 0.2));
+    if (perching && perchEl) {
+      // Re-read position in case of scroll/layout shift
+      const rect = perchEl.getBoundingClientRect();
+      targetX = rect.right - 5;
+      targetY = rect.top - 8;
 
-    // Apply position using top/left
-    wanderer.style.left = (currentX + wobbleX - 18) + 'px';
-    wanderer.style.top = (currentY + wobbleY - 18) + 'px';
-    wanderer.style.transform = `rotate(${rotation}deg)`;
+      // Faster easing to land on target
+      currentX += (targetX - currentX) * 0.06;
+      currentY += (targetY - currentY) * 0.06;
+
+      // Gentle idle wobble while perched
+      wobbleOffset += 0.03;
+      const wobbleX = Math.sin(wobbleOffset) * 1.5;
+      const wobbleY = Math.cos(wobbleOffset * 0.7) * 1;
+
+      wanderer.style.left = (currentX + wobbleX - 18) + 'px';
+      wanderer.style.top = (currentY + wobbleY - 18) + 'px';
+      wanderer.style.transform = 'rotate(0deg)';
+    } else {
+      // Free roaming — lazy follow with easing
+      currentX += (targetX - currentX) * 0.008;
+      currentY += (targetY - currentY) * 0.008;
+
+      wobbleOffset += 0.04;
+      const wobbleX = Math.sin(wobbleOffset) * 6;
+      const wobbleY = Math.cos(wobbleOffset * 0.7) * 4;
+
+      const dx = targetX - currentX;
+      const rotation = Math.max(-15, Math.min(15, dx * 0.2));
+
+      wanderer.style.left = (currentX + wobbleX - 18) + 'px';
+      wanderer.style.top = (currentY + wobbleY - 18) + 'px';
+      wanderer.style.transform = `rotate(${rotation}deg)`;
+    }
 
     requestAnimationFrame(animate);
   }

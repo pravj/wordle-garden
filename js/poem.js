@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const date = urlParams.get('date');
 
   if (!date) {
-    window.location.href = 'index.html';
+    window.location.href = 'garden.html';
     return;
   }
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (!wordle) {
       document.querySelector('.poem-page').innerHTML = `
-        <a href="index.html" class="back-link">&larr; Back to garden</a>
+        <a href="garden.html" class="back-link">&larr; Back to garden</a>
         <p>Wordle not found for this date.</p>
       `;
       return;
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         wordle.green_count,
         wordle.yellow_count,
         seed,
-        150
+        120
       );
     }
 
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Render poem
     const poemContainer = document.querySelector('.poem-text');
     if (poemContainer) {
-      poemContainer.innerHTML = renderPoem(wordle.poem);
+      poemContainer.innerHTML = renderPoem(wordle.poem, wordle.guesses);
     }
 
     // Update share section
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   } catch (error) {
     console.error('Error loading wordle data:', error);
     document.querySelector('.poem-page').innerHTML = `
-      <a href="index.html" class="back-link">&larr; Back to garden</a>
+      <a href="garden.html" class="back-link">&larr; Back to garden</a>
       <p>Error loading poem data.</p>
     `;
   }
@@ -156,12 +156,31 @@ function renderWordleGrid(guesses) {
   }).join('');
 }
 
-// Render poem with stanza breaks
-function renderPoem(poemText) {
-  // Split by double newlines (stanza breaks)
+// Render poem with stanza breaks and highlighted guess words
+function renderPoem(poemText, guesses) {
   const stanzas = poemText.split('\n\n');
 
-  return stanzas.map(stanza => {
-    return `<div class="stanza">${stanza.replace(/\n/g, '<br>')}</div>`;
+  return stanzas.map((stanza, i) => {
+    let html = stanza.replace(/\n/g, '<br>');
+
+    // Highlight the guess word for this stanza
+    if (guesses && guesses[i]) {
+      const guess = guesses[i];
+      const word = guess.word.toLowerCase();
+
+      // Build per-letter tile spans
+      const tileHtml = guess.word.split('').map((letter, j) => {
+        const cls = guess.result[j] === 'correct' ? 'tile-green'
+                  : guess.result[j] === 'present' ? 'tile-yellow'
+                  : 'tile-gray';
+        return `<span class="${cls}">${letter.toLowerCase()}</span>`;
+      }).join('');
+
+      // Replace first case-insensitive match of the word in the stanza
+      const regex = new RegExp(`\\b(${word})\\b`, 'i');
+      html = html.replace(regex, `<span class="guess-word">${tileHtml}</span>`);
+    }
+
+    return `<div class="stanza">${html}</div>`;
   }).join('');
 }

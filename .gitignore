@@ -16,3 +16,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 .env
+*-sampler.html
+.claude/
+CLAUDE.md

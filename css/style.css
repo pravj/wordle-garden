@@ -22,11 +22,50 @@
 }
 
 body {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Serif Display', Georgia, serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   min-height: 100vh;
   line-height: 1.6;
+}
+
+/* Particle Toggles */
+.particle-toggles {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 50;
+  display: flex;
+  gap: 4px;
+  background: rgba(248,246,241,0.9);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 3px;
+  backdrop-filter: blur(4px);
+}
+
+.ptoggle {
+  background: none;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.ptoggle:hover {
+  color: var(--text-color);
+}
+
+.ptoggle.active {
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 
 /* Header */
@@ -37,13 +76,17 @@ body {
 }
 
 .header h1 {
+  font-family: 'Fraunces', Georgia, serif;
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 600;
+  font-style: italic;
   letter-spacing: 0.05em;
   margin-bottom: 8px;
 }
 
 .header p {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 200;
   font-style: italic;
   color: var(--text-muted);
   font-size: 1.1rem;
@@ -51,13 +94,36 @@ body {
 
 /* Garden Grid */
 .garden {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 24px;
-  padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Month sections */
+.month-section {
+  padding: 0 40px 20px;
+}
+
+.month-header {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  padding: 24px 0 10px;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg-color);
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 24px;
+  padding-top: 20px;
+}
+
 
 .flower-container {
   display: flex;
@@ -98,15 +164,32 @@ body {
   opacity: 1;
 }
 
-/* Only flower cluster sways on hover */
-.flower-container:hover .flower-cluster {
-  animation: sway 0.8s ease-in-out infinite;
+/* Subtle sway on individual flowers - always on */
+.flower-cluster .flower {
+  animation: flower-sway 2.5s ease-in-out infinite;
 }
 
-@keyframes sway {
+.flower-cluster .flower[data-index="1"] { animation-delay: -0.4s; }
+.flower-cluster .flower[data-index="2"] { animation-delay: -0.8s; }
+.flower-cluster .flower[data-index="3"] { animation-delay: -1.2s; }
+.flower-cluster .flower[data-index="4"] { animation-delay: -1.6s; }
+.flower-cluster .flower[data-index="5"] { animation-delay: -2.0s; }
+
+@keyframes flower-sway {
   0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(3deg); }
-  75% { transform: rotate(-3deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+/* Bush top sways gently - half of flower sway */
+.flower-cluster .bush-top {
+  animation: bush-sway 3s ease-in-out infinite;
+}
+
+@keyframes bush-sway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
 }
 
 .flower-cluster {
@@ -160,17 +243,50 @@ body {
   padding: 40px 20px;
 }
 
+.poem-top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.back-link-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .back-link {
   display: inline-block;
-  color: var(--text-muted);
+  background: #efe8d8;
+  color: var(--text-color);
+  padding: 6px 16px;
+  font-family: 'Sorts Mill Goudy', Georgia, serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  font-size: 0.9rem;
-  margin-bottom: 30px;
-  transition: color 0.2s ease;
+  border: 1px solid #d4c9b3;
+  border-bottom: none;
+  border-radius: 2px 2px 0 0;
+  transition: transform 0.2s;
 }
 
 .back-link:hover {
-  color: var(--text-color);
+  transform: translateY(-2px);
+}
+
+.back-link-stick {
+  width: 3px;
+  height: 12px;
+  background: linear-gradient(180deg, #d4c9b3, #b8a890);
+  border-radius: 0 0 1px 1px;
 }
 
 .poem-header {
@@ -179,15 +295,17 @@ body {
 }
 
 .poem-date {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 8px;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 6px;
 }
 
 .wordle-number {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
-  font-style: italic;
+  letter-spacing: 0.1em;
 }
 
 /* Wordle Grid */
@@ -237,6 +355,8 @@ body {
 }
 
 .poem-text {
+  font-family: 'Sorts Mill Goudy', Georgia, serif;
+  font-style: italic;
   font-size: 1.25rem;
   line-height: 2;
   white-space: pre-line;
@@ -249,6 +369,23 @@ body {
 .stanza:last-child {
   margin-bottom: 0;
 }
+
+/* Guess word highlight tiles */
+.guess-word span {
+  display: inline-block;
+  padding: 1px 3px;
+  margin: 0 1px;
+  border-radius: 2px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.tile-green { background: var(--green); }
+.tile-yellow { background: var(--yellow); }
+.tile-gray { background: #787c7e; }
 
 /* Flower Display on Poem Page */
 .poem-flower {
@@ -275,6 +412,38 @@ body {
   font-style: italic;
 }
 
+/* Wild Meadow Grass */
+.grass-meadow {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.grass-meadow svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+@keyframes grass-sway {
+  0%, 100% { transform: skewX(0deg); }
+  50% { transform: skewX(3deg); }
+}
+
+@keyframes grass-sway-r {
+  0%, 100% { transform: skewX(0deg); }
+  50% { transform: skewX(-3deg); }
+}
+
+@keyframes grass-sway-slow {
+  0%, 100% { transform: skewX(0deg); }
+  50% { transform: skewX(2deg); }
+}
+
+.grass-meadow .sway { animation: grass-sway 3s ease-in-out infinite; transform-origin: bottom center; }
+.grass-meadow .sway-r { animation: grass-sway-r 3.5s ease-in-out infinite; transform-origin: bottom center; }
+.grass-meadow .sway-slow { animation: grass-sway-slow 4s ease-in-out infinite; transform-origin: bottom center; }
+
 /* Footer */
 .footer {
   text-align: center;
@@ -290,10 +459,18 @@ body {
     font-size: 1.8rem;
   }
 
-  .garden {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  .month-section {
+    padding: 0 16px 16px;
+  }
+
+  .month-header {
+    padding: 16px 0 8px;
+    font-size: 1.1rem;
+  }
+
+  .month-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 16px;
-    padding: 20px;
   }
 
   .flower-cluster {

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grit Garden</title>
+  <meta name="description" content="A garden of poems grown from daily struggles. Each flower tells the story of persistence.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Grit Garden">
+  <meta property="og:description" content="A garden of poems grown from daily struggles.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,600;1,200;1,600&family=DM+Serif+Display&family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Grit Garden</h1>
+    <p>poems grown from daily <s>puzzles</s> struggles</p>
+  </header>
+
+
+  <main class="garden">
+    <!-- Flowers will be rendered here by JavaScript -->
+  </main>
+
+  <section class="submit-section">
+    <p>Want to add your Wordle to the garden?</p>
+    <a href="mailto:hackpravj@gmail.com?subject=Wordle%20Garden%20Submission" class="submit-link">Share Your Wordle</a>
+  </section>
+
+  <footer class="footer">
+    <p>Each flower blooms from the journey of finding a word.</p>
+  </footer>
+
+  <div class="grass-meadow" id="grass-meadow"></div>
+
+  <!-- Scripts -->
+  <script src="js/greenery.js"></script>
+  <script src="js/flowers.js"></script>
+  <script src="js/garden.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/wanderer.js"></script>
+  <script>
+    // Start both particle systems
+    (function() {
+      const scenes = window.ParticleToggles;
+      if (!scenes) return;
+      scenes.gardenMix.start();
+      scenes.dandelion.start();
+    })();
+  </script>
+  <script src="js/grass.js"></script>
+  <script>GrassGenerator.generate('grass-meadow');</script>
+
+</body>
+</html>
