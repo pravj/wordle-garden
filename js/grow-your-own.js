@@ -1,7 +1,9 @@
 // Grow Your Own Poem — lazy-loaded module
-// Handles modal, upload, and Wordle screenshot validation
+// Handles modal, upload, Wordle screenshot validation, and analysis via wordle-gardener API
 
 (function () {
+  var API_URL = 'https://wordle-gardener-9001wmg6c-pravjs-projects.vercel.app/api/analyze';
+
   // --- Modal creation ---
   function createModal() {
     const overlay = document.createElement('div');
@@ -109,24 +111,11 @@
     previewImg.onload = () => {
       validateWordleScreenshot(previewImg).then((detection) => {
         if (detection.isWordle) {
-          result.className = 'gym-result gym-success';
-          result.innerHTML = `
-            <span class="gym-result-icon">&#10003;</span>
-            <span>wordle detected — poem generation coming soon</span>
-          `;
+          result.className = 'gym-result gym-scanning';
+          result.innerHTML = '<span>wordle detected — reading your game...</span>';
+          analyzeScreenshot(file, result, dropzone, preview, modal);
         } else {
-          result.className = 'gym-result gym-failure';
-          result.innerHTML = `
-            <span class="gym-result-icon">&times;</span>
-            <span>that doesn't look like a Wordle screenshot</span>
-            <button class="gym-retry">try another</button>
-          `;
-          result.querySelector('.gym-retry').addEventListener('click', () => {
-            preview.hidden = true;
-            dropzone.hidden = false;
-            result.hidden = true;
-            modal.querySelector('#gym-file').value = '';
-          });
+          showRetry(result, dropzone, preview, modal, "that doesn't look like a Wordle screenshot");
         }
       });
     };
@@ -199,6 +188,66 @@
     }
 
     return [h * 360, s * 100, l * 100];
+  }
+
+  // --- API call ---
+  function analyzeScreenshot(file, result, dropzone, preview, modal) {
+    var formData = new FormData();
+    formData.append('image', file);
+
+    fetch(API_URL, { method: 'POST', body: formData })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Server error (' + res.status + ')');
+        return res.json();
+      })
+      .then(function (data) {
+        if (data.error) {
+          showRetry(result, dropzone, preview, modal, data.error);
+          return;
+        }
+        result.className = 'gym-result gym-success';
+        result.innerHTML = renderGameData(data);
+      })
+      .catch(function (err) {
+        showRetry(result, dropzone, preview, modal, 'something went wrong — ' + err.message);
+      });
+  }
+
+  function showRetry(result, dropzone, preview, modal, message) {
+    result.className = 'gym-result gym-failure';
+    result.innerHTML =
+      '<span class="gym-result-icon">&times;</span>' +
+      '<span>' + message + '</span>' +
+      '<button class="gym-retry">try another</button>';
+    result.querySelector('.gym-retry').addEventListener('click', function () {
+      preview.hidden = true;
+      dropzone.hidden = false;
+      result.hidden = true;
+      modal.querySelector('#gym-file').value = '';
+    });
+  }
+
+  function renderGameData(data) {
+    var gridHtml = data.guesses.map(function (g) {
+      var cells = g.word.split('').map(function (letter, i) {
+        var cls = g.result[i] === 'correct' ? 'correct'
+                : g.result[i] === 'present' ? 'present'
+                : 'absent';
+        return '<div class="wordle-cell ' + cls + '">' + letter + '</div>';
+      }).join('');
+      return '<div class="wordle-row">' + cells + '</div>';
+    }).join('');
+
+    return (
+      '<div class="gym-game-result">' +
+        '<div class="gym-grid">' + gridHtml + '</div>' +
+        '<div class="gym-meta">' +
+          '<span class="gym-answer">' + data.answer + '</span>' +
+          '<span class="gym-counts">' + data.green_count + ' green, ' + data.yellow_count + ' yellow</span>' +
+        '</div>' +
+        '<p class="gym-coming-soon">poem generation coming soon</p>' +
+      '</div>'
+    );
   }
 
   // --- Public API ---

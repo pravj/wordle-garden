@@ -595,6 +595,56 @@ body {
   color: var(--bg-color);
 }
 
+/* Grow Your Own — Game Result */
+.gym-game-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.gym-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gym-grid .wordle-row {
+  gap: 4px;
+}
+
+.gym-grid .wordle-cell {
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+}
+
+.gym-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.gym-answer {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+}
+
+.gym-counts {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.gym-coming-soon {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
 /* Wild Meadow Grass */
 .grass-meadow {
   width: 100%;
