@@ -1,4 +1,4 @@
-# Wordle Garden
+# Grit Garden
 
 A personal art project that transforms daily Wordle attempts into poetry. Each game becomes a flower in a growing garden.
 
@@ -18,32 +18,44 @@ The home page is a garden of flowers viewed from above. Each flower cluster repr
 ## Visual Style
 
 **Botanical Illustration**
-- 6-petal flowers viewed from above
+- 6-petal ellipse-based flowers viewed from above, generated as SVG
 - Detailed petal structure with subtle stroke outlines
 - Green petals: `#6aaa64` (correct letters)
 - Yellow petals: `#c9b458` (misplaced letters)
 - Flower centers: `#f5e6b3` with `#c9a83a` accents
 - Background: warm off-white `#f8f6f1`
-- Typography: serif for poems (Playfair Display or similar)
+- Greenery behind flower clusters (JSON-based composition system in `greenery.js`)
+- Animated wandering bee/butterfly that follows the cursor (`wanderer.js`)
+- Typography: Cormorant Garamond (landing page), Playfair Display (garden/poem pages)
 
 ## Site Structure
 
 ```
-/                     → Garden grid (home)
-/poem/[date]          → Individual artwork page
+/                     → Landing page (animated intro)
+/garden.html          → Garden grid (flower clusters)
+/poem.html?date=X     → Individual artwork page
 ```
 
-### Home Page (`/`)
+### Landing Page (`/`)
+- Animated scattered flowers across the page
+- Title and tagline with "Enter Garden" button
+- Uses Cormorant Garamond font (distinct from inner pages)
+- Sound toggle placeholder (non-functional)
+- Skip-landing flag with localStorage (off by default)
+
+### Garden Page (`/garden.html`)
 - Grid of flower clusters, responsive layout
-- Each cluster = one Wordle game
+- Each cluster = one Wordle game with greenery backdrop
 - Flowers sized/colored based on green/yellow cell counts
-- **Hover**: Show date (e.g., "March 15, 2026")
-- **Click**: Navigate to `/poem/[date]`
+- Deterministic rendering per date (seeded randomness)
+- **Click**: Navigate to `/poem.html?date=YYYY-MM-DD`
 - **Submit button**: Opens email link for contributions
 
-### Artwork Page (`/poem/[date]`)
+### Artwork Page (`/poem.html?date=YYYY-MM-DD`)
 - Wordle grid recreation (the guesses as colored tiles)
-- Poem displayed below
+- Poem displayed below with stanza breaks
+- Flower rendered at 150px
+- Swipe (mobile) and arrow key (desktop) navigation between entries
 - Shareable URL with OG image preview for social sharing
 
 ## Data Format
@@ -113,10 +125,19 @@ Result values: `"correct"` (green), `"present"` (yellow), `"absent"` (gray)
 
 Poems are generated using Claude Code. See `/scripts/generate-poem.md` for full instructions.
 
-**Quick workflow:**
+**Quick workflow (manual):**
 1. Save Wordle screenshot to `/scripts/screenshots/YYYY-MM-DD.png`
 2. Ask Claude Code: "Generate a poem for scripts/screenshots/2026-03-15.png"
 3. Append the JSON output to `/data/wordles.json`
+
+**Quick workflow (automated):**
+1. Run `python scripts/generate.py` with a screenshot
+2. Uses Claude Sonnet 4 API to analyze the screenshot and generate poem + JSON
+3. Saves to `scripts/games/YYYY-MM-DD/` and optionally appends to `data/wordles.json`
+
+**GitHub Actions submission:**
+- `.github/workflows/add-wordle.yml` allows submitting entries via `workflow_dispatch`
+- Validates JSON structure, checks for duplicates, auto-commits
 
 **System prompt used:**
 
@@ -151,6 +172,10 @@ Each flower cluster represents a Wordle game:
 - Count total yellow cells across all guesses → number of yellow flowers
 - Larger flowers for higher counts, scattered arrangement
 - Flowers overlap naturally like a real bouquet viewed from above
+- Deterministic rendering using date-based seeded randomness (`dateToSeed()`)
+- Two greenery systems:
+  - **Procedural** (in `flowers.js`): tropical, eucalyptus, meadow, bush generators
+  - **JSON-based** (in `greenery.js`): `GreeneryGenerator.generate()` with layer depth management
 
 ## Submissions
 
@@ -158,9 +183,34 @@ Users can submit their own Wordle screenshots via email:
 - **Email**: hackpravj@gmail.com
 - Simple mailto link on home page: "Share your Wordle"
 
+## Implemented Features
+
+- **Font system**: Fraunces (titles/taglines), DM Serif Display (body), Sorts Mill Goudy (poems)
+- **Landing page**: Hanging wooden signpost CTA, scattered flowers with clear center band, side flower lines on mobile
+- **Garden page**: Month section headers (sticky), wild meadow grass footer with brown leaves
+- **Poem page**: Plant marker back nav ("← way to garden"), per-letter Wordle color tiles on guess words
+- **Nature particles**: Falling petals, leaves (with veins/gradients), pollen, dandelion wisps on garden page
+- **Wanderer**: Bee/butterfly perches on key elements for 3s, then follows cursor or drifts to center
+- **Flower loader**: Spinning 6-petal flower overlay with random garden activity text, shown on all page loads
+- **Procedural grass**: Wild meadow with brown leaf accents at page bottoms (garden + poem)
+
 ## Future Ideas
 
-Art styles beyond poems (not implemented yet, but designed to be extensible):
+### Design & Experience
+- **Design details page**: A dedicated page explaining the peak detailing — every design choice, color meaning, flower logic, poem structure. A love letter to the craft.
+- **Day/night design**: Background, flower colors, and overall tint shift based on time of day. Morning = warm golden, evening = cool blue. The garden feels alive and time-aware.
+- **Sound on poem page**: Ambient sound toggle on the poem page too, not just landing. Different ambient per poem or season.
+- **Sound loading bar**: First click on "enable sound" should show a small loading bar (flower loader) while audio assets load, then transition smoothly into playback.
+- **Grow-on-scroll**: Flowers scale up from 0 as they enter viewport on garden page, like sprouting.
+- **Garden path between months**: Replace flat month dividers with a winding dotted/stone path SVG.
+- **Organic scatter layout**: Break the rigid grid, randomize flower positions slightly.
+- **Parallax depth**: Background elements move slower than foreground on scroll.
+
+### User Features
+- **Make your own poem**: Let visitors paste their Wordle result and generate a poem on the spot (would need client-side or API-based generation).
+- **Better submission flow**: Beyond mailto — a form, or a way to submit directly from the site with preview before sending.
+
+### Art Styles (extensible)
 - Haiku chains (one haiku per guess)
 - Color palettes (gradient based on emotional journey)
 - Micro-fiction (2-3 sentence stories using each guess word)
@@ -171,21 +221,35 @@ Art styles beyond poems (not implemented yet, but designed to be extensible):
 
 ```
 wordle-garden/
-├── index.html
-├── poem.html              # Template for /poem/[date]
+├── index.html               # Landing page (animated intro)
+├── garden.html              # Garden grid page
+├── poem.html                # Individual poem page
 ├── css/
 │   └── style.css
 ├── js/
-│   ├── garden.js          # Home page flower grid
-│   ├── poem.js            # Individual poem page
-│   └── flowers.js         # SVG flower generation
+│   ├── garden.js            # Garden page: loads data, renders flower grid
+│   ├── poem.js              # Poem page: grid, poem, swipe/keyboard nav
+│   ├── flowers.js           # SVG flower generation (procedural greenery)
+│   ├── greenery.js          # JSON-based greenery composition system
+│   ├── wanderer.js          # Animated bee/butterfly cursor follower
+│   ├── particles.js         # Nature particles (petals, leaves, dandelion, pollen)
+│   ├── grass.js             # Wild meadow grass generator
+│   └── loader.js            # Spinning flower loader overlay
 ├── data/
 │   └── wordles.json
+├── assets/                  # Image assets (bush PNGs, design refs)
 ├── scripts/
-│   ├── generate-poem.md   # Instructions for poem generation
-│   └── screenshots/       # Wordle screenshots to process
+│   ├── generate-poem.md     # Manual poem generation instructions
+│   ├── generate.py          # Automated poem gen via Claude API
+│   ├── screenshots/         # Wordle screenshots to process
+│   └── games/               # Generated game data per date
+├── docs/
+│   └── claude-project-instructions.md  # System prompt for Claude projects
+├── .github/
+│   └── workflows/
+│       └── add-wordle.yml   # GitHub Action for mobile submissions
 ├── CLAUDE.md
-└── style-sampler.html     # Visual style reference (dev only)
+└── style-sampler.html       # Visual style reference (dev only)
 ```
 
 ## Development

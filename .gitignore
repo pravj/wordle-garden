@@ -3,6 +3,7 @@ style-sampler.html
 
 # Scripts (local tooling only)
 scripts/
+!scripts/generate-sitemap.py
 
 # OS files
 .DS_Store
@@ -21,3 +22,4 @@ __pycache__/
 
 CLAUDE.md
 docs/
+index-v1.html
