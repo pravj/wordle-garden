@@ -787,8 +787,9 @@ body {
     padding: 0 4px;
   }
 
+  .gym-drawer .poem-text,
   .gym-drawer-scroll .poem-text {
-    font-size: 0.85rem;
-    line-height: 1.7;
+    font-size: 0.85rem !important;
+    line-height: 1.7 !important;
   }
 }
