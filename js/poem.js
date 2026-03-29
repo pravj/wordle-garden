@@ -35,8 +35,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     const nextDate = currentIndex > 0 ? wordles[currentIndex - 1].date : null;
     setupSwipeNavigation(prevDate, nextDate);
 
-    // Update page title
-    document.title = `${formatDate(wordle.date)} — Wordle Garden`;
+    // Update page title and meta tags
+    document.title = `${formatDate(wordle.date)} — Grit Garden`;
+    const poemUrl = `https://grit.garden/poem.html?date=${wordle.date}`;
+    const firstLine = wordle.poem.split('\n')[0];
+    const metaDesc = firstLine.length > 120 ? firstLine.slice(0, 117) + '...' : firstLine;
+    updateMeta('og:title', `${formatDate(wordle.date)} — Grit Garden`);
+    updateMeta('og:description', metaDesc);
+    updateMeta('og:url', poemUrl);
+    updateMeta('twitter:title', `${formatDate(wordle.date)} — Grit Garden`);
+    updateMeta('twitter:description', metaDesc);
+    updateMeta('description', metaDesc);
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.href = poemUrl;
 
     // Render date header
     const dateHeader = document.querySelector('.poem-date');
@@ -136,6 +147,13 @@ function setupSwipeNavigation(prevDate, nextDate) {
       window.location.href = `poem.html?date=${nextDate}`;
     }
   });
+}
+
+// Update meta tag content
+function updateMeta(nameOrProperty, content) {
+  const el = document.querySelector(`meta[property="${nameOrProperty}"]`)
+          || document.querySelector(`meta[name="${nameOrProperty}"]`);
+  if (el) el.setAttribute('content', content);
 }
 
 // Format date for display
