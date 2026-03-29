@@ -438,77 +438,85 @@ body {
   color: var(--bg-color);
 }
 
-/* Grow Your Own Modal */
+/* Grow Your Own — Drawer */
 .gym-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(44, 62, 45, 0.4);
-  backdrop-filter: blur(4px);
+  background: rgba(44, 62, 45, 0.25);
   z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.3s ease;
-  padding: 20px;
 }
 
 .gym-overlay.gym-visible {
   opacity: 1;
+  pointer-events: all;
 }
 
-.gym-modal {
+.gym-drawer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: var(--bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  max-width: 400px;
-  width: 100%;
-  padding: 36px 28px;
-  position: relative;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.08);
+  z-index: 101;
+  transform: translateY(100%);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  max-height: 0;
+  overflow: hidden;
 }
 
-.gym-close {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--text-muted);
+.gym-drawer-half {
+  transform: translateY(0);
+  max-height: 45vh;
+}
+
+.gym-drawer-tall {
+  transform: translateY(0);
+  max-height: 70vh;
+}
+
+.gym-drawer-full {
+  transform: translateY(0);
+  max-height: 92vh;
+}
+
+.gym-drawer-scroll {
+  height: 100%;
+  max-height: inherit;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 24px 32px;
+}
+
+.gym-handle {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 8px;
   cursor: pointer;
-  line-height: 1;
-  transition: color 0.2s;
+  position: sticky;
+  top: 0;
+  background: var(--bg-color);
+  border-radius: 16px 16px 0 0;
+  z-index: 1;
 }
 
-.gym-close:hover {
-  color: var(--text-color);
+.gym-handle-bar {
+  width: 36px;
+  height: 4px;
+  background: var(--border-color);
+  border-radius: 2px;
 }
 
-.gym-content {
-  text-align: center;
-}
-
-.gym-title {
-  font-family: 'Fraunces', Georgia, serif;
-  font-weight: 200;
-  font-style: italic;
-  font-size: 1.4rem;
-  margin-bottom: 6px;
-}
-
-.gym-subtitle {
-  font-family: 'Sorts Mill Goudy', Georgia, serif;
-  font-style: italic;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 24px;
-}
-
+/* Upload area */
 .gym-dropzone {
   border: 1.5px dashed var(--border-color);
   border-radius: 6px;
-  padding: 36px 20px;
+  padding: 32px 20px;
   cursor: pointer;
   transition: border-color 0.2s, background 0.2s;
 }
@@ -523,7 +531,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: var(--text-muted);
   font-family: 'Sorts Mill Goudy', Georgia, serif;
   font-style: italic;
@@ -531,50 +539,32 @@ body {
 }
 
 .gym-dropzone-inner svg {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
-.gym-preview {
-  margin-top: 16px;
-}
-
-.gym-preview img {
-  max-width: 100%;
-  max-height: 220px;
-  border-radius: 4px;
-  border: 1px solid var(--border-color);
-}
-
-.gym-result {
-  margin-top: 20px;
-  padding: 14px 16px;
-  border-radius: 6px;
+/* Status text */
+.gym-status {
+  display: none;
+  text-align: center;
   font-family: 'Sorts Mill Goudy', Georgia, serif;
   font-style: italic;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 24px 0;
+}
+
+/* Error */
+.gym-error {
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Sorts Mill Goudy', Georgia, serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-}
-
-.gym-scanning {
-  color: var(--text-muted);
-}
-
-.gym-success {
-  background: rgba(106, 170, 100, 0.1);
-  color: var(--green-dark);
-}
-
-.gym-failure {
-  background: rgba(120, 124, 126, 0.1);
-  color: var(--gray);
-}
-
-.gym-result-icon {
-  font-size: 1.5rem;
-  line-height: 1;
+  gap: 12px;
 }
 
 .gym-retry {
@@ -588,7 +578,6 @@ body {
   cursor: pointer;
   border-radius: 3px;
   transition: all 0.2s;
-  margin-top: 4px;
 }
 
 .gym-retry:hover {
@@ -596,64 +585,37 @@ body {
   color: var(--bg-color);
 }
 
-/* Grow Your Own — Game Result */
-.gym-game-result {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+/* Result sections */
+.gym-section {
+  padding: 20px 0;
 }
 
-.gym-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.gym-grid .wordle-row {
-  gap: 4px;
-}
-
-.gym-grid .wordle-cell {
-  width: 38px;
-  height: 38px;
-  font-size: 1.1rem;
-}
-
-.gym-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.gym-answer {
+.gym-section-label {
+  text-align: center;
   font-family: 'Fraunces', Georgia, serif;
-  font-weight: 600;
+  font-weight: 200;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
   letter-spacing: 0.08em;
+  margin-bottom: 20px;
 }
 
-.gym-counts {
+.gym-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--border-color);
+  margin: 0 auto;
+}
+
+.gym-your-meta {
+  text-align: center;
   font-size: 0.8rem;
   color: var(--text-muted);
-}
-
-.gym-poem {
-  text-align: center;
-  font-family: 'Sorts Mill Goudy', Georgia, serif;
   font-style: italic;
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.gym-poem .stanza {
-  margin-bottom: 1em;
-}
-
-.gym-poem .stanza:last-child {
-  margin-bottom: 0;
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid var(--border-color);
 }
 
 /* Wild Meadow Grass */
