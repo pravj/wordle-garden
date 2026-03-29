@@ -23,3 +23,5 @@ __pycache__/
 CLAUDE.md
 docs/
 index-v1.html
+
+wordle_analyzer.py

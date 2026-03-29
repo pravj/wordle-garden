@@ -42,11 +42,11 @@
     ambienceB.volume = 0;
 
     beeA = new Audio(beeFiles[0]);
-    beeA.loop = true;
+    beeA.loop = false;
     beeA.volume = 0;
 
     beeB = new Audio(beeFiles[1]);
-    beeB.loop = true;
+    beeB.loop = false;
     beeB.volume = 0;
 
     return new Promise((resolve) => {
@@ -122,15 +122,18 @@
     function visit() {
       if (!playing) return;
 
-      // Pick a random bee track
+      // Pick a random bee track, pause the other
       const bee = Math.random() > 0.5 ? beeA : beeB;
+      const otherBee = bee === beeA ? beeB : beeA;
       if (!bee) return;
+      if (otherBee) { otherBee.pause(); otherBee.volume = 0; }
 
       // Random volume: close (0.10-0.14) or distant (0.03-0.06)
       const isClose = Math.random() > 0.4;
       const vol = isClose ? rand(0.10, 0.14) : rand(0.03, 0.06);
 
       // Fade in
+      bee.currentTime = 0;
       bee.volume = 0;
       bee.play().catch(() => {});
       volumeTo(bee, vol, rand(800, 1500));
@@ -281,20 +284,6 @@
       });
     });
   });
-
-  // Debug: audio status indicator
-  const debugEl = document.createElement('div');
-  debugEl.style.cssText = 'position:fixed;top:4px;left:4px;z-index:99999;font-size:11px;font-family:monospace;color:#5d6b5e;opacity:0.6;pointer-events:none;';
-  document.documentElement.appendChild(debugEl);
-
-  setInterval(() => {
-    if (!loaded) { debugEl.textContent = 'audio: not loaded'; return; }
-    const aA = ambienceA && !ambienceA.paused ? `A:${ambienceA.volume.toFixed(2)}` : 'A:off';
-    const aB = ambienceB && !ambienceB.paused ? `B:${ambienceB.volume.toFixed(2)}` : 'B:off';
-    const bA = beeA && !beeA.paused ? `bA:${beeA.volume.toFixed(2)}` : 'bA:off';
-    const bB = beeB && !beeB.paused ? `bB:${beeB.volume.toFixed(2)}` : 'bB:off';
-    debugEl.textContent = `amb[${aA} ${aB}] bee[${bA} ${bB}]`;
-  }, 300);
 
   window.GardenSound = { toggle, isEnabled: () => enabled };
 })();
