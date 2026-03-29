@@ -184,12 +184,6 @@
   function renderResult(data) {
     var resultArea = drawer.querySelector('#gym-result-area');
 
-    // Clone the original poem content from the page
-    var originalGrid = document.querySelector('.poem-page .wordle-grid');
-    var originalPoem = document.querySelector('.poem-page .poem-text');
-    var originalDate = document.querySelector('.poem-page .poem-date');
-    var originalNumber = document.querySelector('.poem-page .wordle-number');
-
     // Build "your" grid
     var yourGridHtml = data.guesses.map(function (g) {
       var cells = g.word.split('').map(function (letter, i) {
@@ -223,19 +217,6 @@
     }
 
     resultArea.innerHTML =
-      // Original poem (cloned from page)
-      '<div class="gym-section">' +
-        '<div class="gym-section-label">the garden\'s poem</div>' +
-        '<div class="wordle-grid">' + (originalGrid ? originalGrid.innerHTML : '') + '</div>' +
-        '<div class="poem-content"><div class="poem-text">' +
-          (originalPoem ? originalPoem.innerHTML : '') +
-        '</div></div>' +
-      '</div>' +
-
-      // Divider
-      '<div class="gym-divider"></div>' +
-
-      // Your poem
       '<div class="gym-section">' +
         '<div class="gym-section-label">your poem</div>' +
         '<div class="wordle-grid">' + yourGridHtml + '</div>' +
