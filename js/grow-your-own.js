@@ -112,50 +112,83 @@
     var uploadArea = drawer.querySelector('#gym-upload-area');
     uploadArea.style.display = 'none';
 
-    setStatus('scanning...');
+    setStatus('loading');
 
     // Validate via canvas
     var img = new Image();
     img.onload = function () {
       validateWordleScreenshot(img).then(function (detection) {
         if (detection.isWordle) {
-          setStatus('growing your poem...');
           sendToAPI(file);
         } else {
           setStatus('');
-          showError();
+          showError('notWordle');
         }
       });
     };
     img.src = URL.createObjectURL(file);
   }
 
+  var LOADING_WORDS = ['WAAIT', 'HMMMM', 'HOLDD'];
+
   function setStatus(text) {
-    drawerStatus.textContent = text;
-    drawerStatus.style.display = text ? 'block' : 'none';
+    if (!text) {
+      drawerStatus.innerHTML = '';
+      drawerStatus.style.display = 'none';
+      return;
+    }
+
+    if (text === 'loading') {
+      var word = LOADING_WORDS[Math.floor(Math.random() * LOADING_WORDS.length)];
+      var tiles = word.split('').map(function (ch, i) {
+        return '<div class="wordle-cell gym-loading-tile" style="animation-delay:' + (i * 0.4) + 's">' + ch + '</div>';
+      }).join('');
+      drawerStatus.innerHTML = '<div class="wordle-row gym-loading-row">' + tiles + '</div>';
+      drawerStatus.style.display = 'flex';
+    } else {
+      drawerStatus.textContent = text;
+      drawerStatus.style.display = 'block';
+    }
   }
 
-  function showError(message) {
+  var ERROR_STATES = {
+    notWordle: {
+      word: 'NAAAH',
+      messages: [
+        "that doesn't look like a Wordle",
+        "couldn't find a Wordle in that image",
+        "that's not a Wordle screenshot"
+      ]
+    },
+    timeout: {
+      word: 'SIGHH',
+      messages: ["the soil is dry today, try again"]
+    },
+    rateLimit: {
+      word: 'LATER',
+      messages: ["the gardener is sleeping, try again later"]
+    },
+    serverError: {
+      word: 'UGHHH',
+      messages: [
+        "the seeds didn't take, try again",
+        "the roots couldn't hold, try again"
+      ]
+    }
+  };
+
+  function showError(type) {
+    var state = ERROR_STATES[type] || ERROR_STATES.serverError;
+    var msg = state.messages[Math.floor(Math.random() * state.messages.length)];
+    var tiles = state.word.split('').map(function (ch) {
+      return '<div class="wordle-cell absent">' + ch + '</div>';
+    }).join('');
+
     var resultArea = drawer.querySelector('#gym-result-area');
-
-    // Pick a random message if none provided
-    var messages = [
-      "that doesn't look like a Wordle",
-      "couldn't find a Wordle in that image",
-      "that's not a Wordle screenshot"
-    ];
-    var msg = message || messages[Math.floor(Math.random() * messages.length)];
-
     resultArea.innerHTML =
       '<div class="gym-error">' +
-        '<div class="gym-naaah">' +
-          '<div class="wordle-row gym-shake">' +
-            '<div class="wordle-cell absent">N</div>' +
-            '<div class="wordle-cell absent">A</div>' +
-            '<div class="wordle-cell absent">A</div>' +
-            '<div class="wordle-cell absent">A</div>' +
-            '<div class="wordle-cell absent">H</div>' +
-          '</div>' +
+        '<div class="gym-error-tiles">' +
+          '<div class="wordle-row gym-shake">' + tiles + '</div>' +
         '</div>' +
         '<span>' + msg + '</span>' +
         '<button class="gym-retry">try another</button>' +
@@ -179,22 +212,33 @@
     var formData = new FormData();
     formData.append('image', file);
 
-    pendingRequest = fetch(API_URL, { method: 'POST', body: formData })
+    var controller = new AbortController();
+    var timeoutId = setTimeout(function () { controller.abort(); }, 30000);
+
+    pendingRequest = fetch(API_URL, { method: 'POST', body: formData, signal: controller.signal })
       .then(function (res) {
-        if (!res.ok) throw new Error('Server error (' + res.status + ')');
+        clearTimeout(timeoutId);
+        if (res.status === 429) { setStatus(''); showError('rateLimit'); return; }
+        if (!res.ok) { setStatus(''); showError('serverError'); return; }
         return res.json();
       })
       .then(function (data) {
-        if (data.error) { setStatus(''); showError(data.error); return; }
+        if (!data) return;
+        if (data.error) {
+          setStatus('');
+          showError(data.error.indexOf('quota') !== -1 || data.error.indexOf('rate') !== -1
+            ? 'rateLimit' : 'serverError');
+          return;
+        }
 
-        // Grid arrived — grow to tall
         setStatus('');
         showDrawer('full');
         renderResult(data);
       })
       .catch(function (err) {
+        clearTimeout(timeoutId);
         setStatus('');
-        showError('something went wrong — ' + err.message);
+        showError(err.name === 'AbortError' ? 'timeout' : 'serverError');
       });
   }
 
