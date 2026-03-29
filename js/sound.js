@@ -128,9 +128,10 @@
       if (!bee) return;
       if (otherBee) { otherBee.pause(); otherBee.volume = 0; }
 
-      // Random volume: close (0.10-0.14) or distant (0.03-0.06)
+      // Random volume: always below ambience (0.08)
+      // Close (0.04-0.06) or distant (0.01-0.03)
       const isClose = Math.random() > 0.4;
-      const vol = isClose ? rand(0.10, 0.14) : rand(0.03, 0.06);
+      const vol = isClose ? rand(0.04, 0.06) : rand(0.01, 0.03);
 
       // Fade in
       bee.currentTime = 0;
