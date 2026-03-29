@@ -357,7 +357,7 @@ body {
 
 .poem-text {
   font-family: 'Sorts Mill Goudy', Georgia, serif;
-  font-style: italic;
+  font-style: normal;
   font-size: 1.25rem;
   line-height: 2;
   white-space: pre-line;
@@ -407,10 +407,23 @@ body {
   border-top: 1px solid var(--border-color);
 }
 
-.share-section p {
-  font-size: 0.9rem;
+.share-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: none;
+  border: 1px solid var(--border-color);
   color: var(--text-muted);
+  font-family: 'Sorts Mill Goudy', Georgia, serif;
   font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  border-color: var(--text-color);
+  color: var(--text-color);
 }
 
 /* Grow Your Own CTA */

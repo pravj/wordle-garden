@@ -88,10 +88,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Update share section
     const shareSection = document.querySelector('.share-section');
     if (shareSection) {
-      const shareUrl = window.location.href;
       shareSection.innerHTML = `
-        <p>Share this poem: <a href="${shareUrl}">${shareUrl}</a></p>
+        <button class="share-btn" id="share-btn">share this poem</button>
       `;
+      document.getElementById('share-btn').addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({ title: document.title, url: window.location.href });
+        } else {
+          navigator.clipboard.writeText(window.location.href).then(() => {
+            document.getElementById('share-btn').textContent = 'link copied';
+            setTimeout(() => {
+              document.getElementById('share-btn').textContent = 'share this poem';
+            }, 2000);
+          });
+        }
+      });
     }
 
     // Hide loader
