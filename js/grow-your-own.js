@@ -119,11 +119,11 @@
     img.onload = function () {
       validateWordleScreenshot(img).then(function (detection) {
         if (detection.isWordle) {
-          setStatus('wordle detected — reading your game...');
+          setStatus('growing your poem...');
           sendToAPI(file);
         } else {
           setStatus('');
-          showError("that doesn't look like a Wordle screenshot");
+          showError();
         }
       });
     };
@@ -137,9 +137,27 @@
 
   function showError(message) {
     var resultArea = drawer.querySelector('#gym-result-area');
+
+    // Pick a random message if none provided
+    var messages = [
+      "that doesn't look like a Wordle",
+      "couldn't find a Wordle in that image",
+      "that's not a Wordle screenshot"
+    ];
+    var msg = message || messages[Math.floor(Math.random() * messages.length)];
+
     resultArea.innerHTML =
       '<div class="gym-error">' +
-        '<span>' + message + '</span>' +
+        '<div class="gym-naaah">' +
+          '<div class="wordle-row gym-shake">' +
+            '<div class="wordle-cell absent">N</div>' +
+            '<div class="wordle-cell absent">A</div>' +
+            '<div class="wordle-cell absent">A</div>' +
+            '<div class="wordle-cell absent">A</div>' +
+            '<div class="wordle-cell absent">H</div>' +
+          '</div>' +
+        '</div>' +
+        '<span>' + msg + '</span>' +
         '<button class="gym-retry">try another</button>' +
       '</div>';
     resultArea.querySelector('.gym-retry').addEventListener('click', function () {

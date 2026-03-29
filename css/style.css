@@ -567,6 +567,30 @@ body {
   gap: 12px;
 }
 
+.gym-naaah {
+  margin-bottom: 4px;
+}
+
+.gym-naaah .wordle-cell {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+}
+
+.gym-shake {
+  animation: gym-shake 0.5s ease;
+}
+
+@keyframes gym-shake {
+  0%, 100% { transform: translateX(0); }
+  10% { transform: translateX(-6px); }
+  25% { transform: translateX(5px); }
+  40% { transform: translateX(-4px); }
+  55% { transform: translateX(3px); }
+  70% { transform: translateX(-2px); }
+  85% { transform: translateX(1px); }
+}
+
 .gym-retry {
   background: none;
   border: 1px solid var(--gray);
