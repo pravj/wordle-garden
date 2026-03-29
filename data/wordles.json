@@ -1575,7 +1575,7 @@
     "answer": "CHUMP",
     "guesses": [
       {
-        "word": "AROSE",
+        "word": "STARE",
         "result": [
           "absent",
           "absent",
@@ -1585,12 +1585,32 @@
         ]
       },
       {
-        "word": "NIGHT",
+        "word": "MOUND",
+        "result": [
+          "present",
+          "absent",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "LUCKY",
         "result": [
           "absent",
-          "absent",
-          "absent",
           "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MUCUS",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
           "absent"
         ]
       },
@@ -1605,8 +1625,8 @@
         ]
       }
     ],
-    "poem": "The morning sun arose behind the hills so stark,\nYet still I wandered lost within the dark.\n\nThrough endless night I searched for signs of hope,\nMy weary heart still learning how to cope.\n\nAt last I found my path, no longer chump,\nThe summit reached beyond that final jump.",
-    "green_count": 0,
-    "yellow_count": 1
+    "poem": "I stare into the void, finding nothing there,\nLost in darkness, grasping empty air.\n\nThe mound of earth reveals a hidden clue,\nA single truth breaks through the morning dew.\n\nLucky stars align but still I wander,\nTwo bright sparks make my heartbeat fonder.\n\nMucus trails lead closer to the prize,\nThree warm lights dance before my eyes.\n\nAt last I've found my chump, my faithful friend,\nThe journey's sweet completion at its end.",
+    "green_count": 1,
+    "yellow_count": 3
   }
 ]
