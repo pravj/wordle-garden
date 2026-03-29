@@ -1,0 +1,52 @@
+name: Daily Wordle Pipeline
+
+on:
+  schedule:
+    # 06:00 UTC = 1:00 AM ET (after NYT midnight publish)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Game date (YYYY-MM-DD). Leave empty for today.'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  daily-wordle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Run daily pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            python scripts/daily-pipeline.py "${{ inputs.date }}"
+          else
+            python scripts/daily-pipeline.py
+          fi
+
+      - name: Regenerate sitemap
+        run: python scripts/generate-sitemap.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/wordles.json sitemap.xml
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Add daily Wordle entry for $(date +%Y-%m-%d)"
+          git push

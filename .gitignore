@@ -1,9 +1,11 @@
 # Local development
 style-sampler.html
 
-# Scripts (local tooling only)
-scripts/
+# Scripts (local tooling only — ignore contents, then un-ignore what we need)
+scripts/*
 !scripts/generate-sitemap.py
+!scripts/daily-pipeline.py
+!scripts/wordle-words.txt
 
 # OS files
 .DS_Store
