@@ -1,435 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grit Garden</title>
-  <meta name="description" content="A garden of poems grown from daily struggles. Each flower tells the story of persistence.">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Grit Garden">
-  <meta property="og:description" content="A garden of poems grown from daily struggles.">
-  <meta property="og:type" content="website">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,600;1,200;1,600&family=DM+Serif+Display&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --bg-color: #f8f6f1;
-      --text-color: #2c3e2d;
-      --text-muted: #5d6b5e;
-      --green: #6aaa64;
-      --green-dark: #3d6b3d;
-      --yellow: #c9b458;
-    }
-
-    body {
-      font-family: 'DM Serif Display', Georgia, serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Subtle sand texture */
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      opacity: 0.25;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.4' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
-    }
-
-    /* Scattered flowers container */
-    .scattered-flowers {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .scattered-flower {
-      position: absolute;
-      opacity: 0.85;
-      animation: gentle-float 8s ease-in-out infinite;
-    }
-
-    .scattered-flower:nth-child(odd) {
-      animation-direction: reverse;
-    }
-
-    .scattered-flower.side-only {
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-      .scattered-flower.side-only {
-        display: block;
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grit Garden | The Blooming Meaning</title>
+<!-- Google Fonts: Fraunces for headlines, Sorts Mill Goudy for body, DM Serif Display for labels -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&amp;family=Sorts+Mill+Goudy:ital@0;1&amp;family=DM+Serif+Display&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#6aaa64",
+              "on-surface-variant": "#5d6b5e",
+              "secondary": "#c9b458",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#8cc084",
+              "surface-container-highest": "#e8e6e1",
+              "surface-container-low": "#f0ede6",
+              "outline": "#c5d4c0",
+              "secondary-fixed": "#f5e6b3",
+              "surface-container": "#f0eee9",
+              "primary-fixed": "#d3e8d0",
+              "tertiary": "#3d6b3d",
+              "primary": "#2c3e2d",
+              "on-secondary-container": "#8a7a40",
+              "inverse-surface": "#2c3e2d",
+              "tertiary-container": "#6aaa64",
+              "on-primary-container": "#8cc084",
+              "on-background": "#2c3e2d",
+              "on-tertiary": "#ffffff",
+              "surface": "#f8f6f1",
+              "on-primary": "#ffffff",
+              "surface-bright": "#f8f6f1",
+              "primary-container": "#2c3e2d",
+              "surface-container-high": "#eae8e3",
+              "secondary-fixed-dim": "#c9b458",
+              "tertiary-fixed-dim": "#6aaa64",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#f5e6b3",
+              "surface-dim": "#e8e6e1",
+              "on-primary-fixed-variant": "#3d6b3d",
+              "on-primary-fixed": "#2c3e2d",
+              "inverse-primary": "#8cc084",
+              "on-surface": "#2c3e2d",
+              "outline-variant": "#c5d4c0",
+              "background": "#f8f6f1",
+              "surface-variant": "#e8e6e1"
+            },
+            fontFamily: {
+              "headline": ["Fraunces"],
+              "body": ["Sorts Mill Goudy"],
+              "label": ["DM Serif Display"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
       }
-    }
-
-    @keyframes gentle-float {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-8px) rotate(3deg); }
-    }
-
-    /* Main content */
-    .landing-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .title {
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 4.5rem;
-      font-weight: 600;
-      font-style: italic;
-      letter-spacing: 0.02em;
-      margin-bottom: 24px;
-      line-height: 1.1;
-    }
-
-    .tagline {
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 1.3rem;
-      font-weight: 200;
-      font-style: italic;
-      letter-spacing: 0.15em;
-      color: var(--text-muted);
-      margin-bottom: 60px;
-    }
-
-    .tagline s {
-      opacity: 0.5;
-      text-decoration: line-through;
-    }
-
-    .hanging-sign-wrapper {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 24px;
-      animation: sign-sway 4s ease-in-out infinite;
-      transform-origin: top center;
-    }
-
-    @keyframes sign-sway {
-      0%, 100% { transform: rotate(-1.5deg); }
-      50% { transform: rotate(1.5deg); }
-    }
-
-    .hanging-ropes {
-      display: flex;
-      gap: 50px;
-    }
-
-    .hanging-ropes span {
-      width: 1px;
-      height: 14px;
-      background: #9a8b72;
-    }
-
-    .enter-btn {
-      display: inline-block;
-      padding: 14px 36px;
-      background: linear-gradient(135deg, #c4a882 0%, #b89b72 30%, #c9a87a 50%, #b08e65 80%, #a8845e 100%);
-      color: #4a3728;
-      font-family: 'Sorts Mill Goudy', Georgia, serif;
-      font-style: italic;
-      font-size: 1.15rem;
-      letter-spacing: 0.05em;
-      text-decoration: none;
-      cursor: pointer;
-      border: none;
-      border-radius: 4px;
-      box-shadow: 2px 3px 8px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.2);
-      position: relative;
-      transition: box-shadow 0.2s;
-    }
-
-    .enter-btn::before {
-      content: '';
-      position: absolute;
-      inset: 3px;
-      border: 1px solid rgba(74,55,40,0.2);
-      border-radius: 2px;
-    }
-
-    .enter-btn:hover {
-      box-shadow: 2px 4px 12px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
-    }
-
-    /* Sound toggle */
-    .sound-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: var(--text-color);
-      font-family: 'Fraunces', Georgia, serif;
-      font-weight: 400;
-      font-size: 0.85rem;
-      letter-spacing: 0.1em;
-      cursor: pointer;
-      opacity: 0.85;
-      transition: opacity 0.2s ease;
-    }
-
-    .sound-toggle:hover {
-      opacity: 1;
-    }
-
-    .sound-toggle svg {
-      width: 18px;
-      height: 18px;
-    }
-
-    .sound-toggle.muted svg .sound-wave {
-      display: none;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .title {
-        font-size: 2.8rem;
-      }
-
-      .tagline {
-        font-size: 1rem;
-        letter-spacing: 0.1em;
-        max-width: 220px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .landing-content {
-        padding: 30px 20px 50px;
-      }
-
-      .hanging-sign-wrapper {
-        margin-bottom: 20px;
-      }
-
-      .sound-toggle {
-        margin-bottom: 10px;
-      }
-    }
-  </style>
-  <script src="js/loader.js"></script>
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-image: radial-gradient(circle at 50% 50%, rgba(23, 40, 25, 0.02) 0%, transparent 100%);
+        }
+        .cta-wood:hover {
+            transform: rotate(-1deg) translateY(-2px);
+            box-shadow: 2px 4px 12px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
+        }
+        @keyframes bar-pulse {
+            0%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.4); }
+        }
+        .text-ink {
+            background: linear-gradient(135deg, #2c3e2d 0%, #3d6b3d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<script src="js/loader.js"></script>
 </head>
-<body>
+<body class="bg-surface text-on-surface font-body h-screen flex flex-col overflow-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<main class="flex-grow flex flex-col items-center justify-center px-6 relative overflow-hidden">
+<!-- Ambient Background Element (Sun-drenched feel) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary-container/10 blur-[120px] rounded-full -z-10"></div>
+<!-- Central Hero Section -->
+<div class="max-w-4xl w-full text-center py-6">
+<!-- The Asymmetric Botanical Element -->
+<div class="relative mb-6 flex justify-center">
+<div class="relative w-40 h-52 md:w-56 md:h-72">
+<img alt="Stylized flower blooming" class="w-full h-full object-cover rounded-xl" data-alt="Minimalist botanical illustration of a single delicate wild flower blooming with deep gnarled roots visible through semi-transparent soil texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr2KmO_c9Dx3-e5BWB1WBHM45zv4oZGDS9xrjrZ0IY002ohOP0OXtXR7pgaN65qSLA3tuUHJYvhLTtCPZ5nypHhZAjm33-GPrttgLcZv2McHOyyXlct_3T0w-gRjuOh86MVQs3ugP30rlwWYWyqaHvKvNZJ-TRILM1-7Ql6viuRhE4P2xyGgeG135WEyT1fFEalPe7NsspkgP4ka3biSj7rTz6DnkQAOrZEvSplFMopKo9IvvYTvLKQpOevzF4iSgZ2YhKe5l_omWX"/>
+<!-- Overlapping Glass Card -->
+<div class="absolute -bottom-6 -right-10 p-6 backdrop-blur-md bg-surface-container-lowest/60 border border-outline-variant/15 shadow-xl md:block hidden">
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Species No. 04</p>
+<p class="font-headline italic text-primary text-xl">The Resilient Bloom</p>
+</div>
+</div>
+</div>
+<h1 class="font-headline text-5xl md:text-8xl text-ink font-semibold italic tracking-tight mb-4">
+                Grit Garden
+            </h1>
+<p class="font-body italic text-2xl md:text-3xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed mb-6">
+                poems grown from daily struggles
+            </p>
+<div class="flex flex-col items-center gap-6">
+<a href="garden.html" class="cta-wood relative inline-block px-8 py-3 rounded font-headline font-extralight text-base tracking-wide text-[#4a3728] no-underline cursor-pointer" style="background:linear-gradient(135deg,#c4a882 0%,#b89b72 30%,#c9a87a 50%,#b08e65 80%,#a8845e 100%);box-shadow:2px 3px 8px rgba(0,0,0,0.15),inset 0 1px 0 rgba(255,255,255,0.2);transform:rotate(-2deg);">
+  <span class="absolute inset-[3px] border border-[#4a3728]/15 rounded-sm pointer-events-none"></span>
+  way to garden →
+</a>
+<!-- Audio Control -->
+<div class="sound-toggle-v2 flex items-center gap-3 bg-surface-container-highest/40 px-4 py-2 rounded-full border border-outline-variant/20 cursor-pointer hover:bg-surface-container-highest/60 transition-all duration-300" onclick="if(window.GardenSound) GardenSound.toggle()">
+<span class="material-symbols-outlined text-primary text-base" data-icon="volume_off">volume_off</span>
+<div class="sound-bars flex gap-[2px] items-end h-3 opacity-40">
+<div class="w-[3px] bg-primary" style="height:30%"></div>
+<div class="w-[3px] bg-primary" style="height:80%"></div>
+<div class="w-[3px] bg-primary" style="height:80%"></div>
+<div class="w-[3px] bg-primary" style="height:30%"></div>
+</div>
+<span class="font-body italic text-xs text-on-surface-variant">click to hear the garden</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="full-width py-4 mt-auto">
+<div class="text-center">
+<a href="https://x.com/hackpravj" target="_blank" class="font-body italic text-sm text-on-surface-variant/50 hover:text-on-surface-variant transition-colors duration-300">@hackpravj</a>
+</div>
+</footer>
+<script src="js/sound.js"></script>
+<script>
+  // Hide loader once page is ready
+  window.addEventListener('load', () => { if (window.Loader) Loader.hide(); });
+</script>
+<script>
+  // Sync the v2 sound toggle icon with sound state
+  document.addEventListener('DOMContentLoaded', () => {
+    const el = document.querySelector('.sound-toggle-v2');
+    if (!el) return;
 
-  <!-- Scattered flowers -->
-  <div class="scattered-flowers" id="scattered-flowers"></div>
-
-  <!-- Main content -->
-  <main class="landing-content">
-    <h1 class="title">Grit Garden</h1>
-    <p class="tagline">poems grown from daily <s>puzzles</s> struggles</p>
-
-    <div class="hanging-sign-wrapper">
-      <div class="hanging-ropes"><span></span><span></span></div>
-      <a href="garden.html" class="enter-btn">way to garden →</a>
-    </div>
-
-    <div class="sound-toggle muted" id="sound-toggle">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M11 5L6 9H2v6h4l5 4V5z"/>
-        <path class="sound-wave" d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-        <path class="sound-wave" d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-      </svg>
-      <span class="sound-text">Click to hear the garden breathe</span>
-    </div>
-  </main>
-
-  <script src="js/flowers.js"></script>
-  <script src="js/sound.js"></script>
-  <script>
-    // Scatter flowers across the page
-    (function() {
-      const container = document.getElementById('scattered-flowers');
-
-      // On mobile, push bottom zone flowers down to avoid overlapping content
-      const isMobile = window.innerWidth <= 600;
-      const bottomShift = isMobile ? 8 : 0;
-      const topShrink = isMobile ? -3 : 0;
-
-      // Flower positions (percentage-based for responsiveness)
-      // Clear band at y 28-68 so text/button/sound stay readable
-      const positions = [
-        // === TOP ZONE (y 0-27) ===
-        // Corners
-        { x: 5, y: 4, size: 42 },
-        { x: 92, y: 3, size: 38 },
-        // Row 1
-        { x: 15, y: 2, size: 26 },
-        { x: 38, y: 3, size: 28 },
-        { x: 55, y: 5, size: 24 },
-        { x: 70, y: 4, size: 34 },
-        { x: 82, y: 2, size: 30 },
-        // Row 2
-        { x: 8, y: 10, size: 30 },
-        { x: 25, y: 9, size: 26 },
-        { x: 45, y: 12, size: 22 },
-        { x: 65, y: 10, size: 28 },
-        { x: 88, y: 11, size: 32 },
-        // Row 3
-        { x: 3, y: 17, size: 34 },
-        { x: 18, y: 16, size: 24 },
-        { x: 35, y: 18, size: 20 },
-        { x: 52, y: 19, size: 22 },
-        { x: 72, y: 17, size: 26 },
-        { x: 93, y: 18, size: 28 },
-        // Row 4 (transition edge)
-        { x: 6, y: 24, size: 28 },
-        { x: 22, y: 23, size: 22 },
-        { x: 42, y: 25, size: 18 },
-        { x: 60, y: 24, size: 20 },
-        { x: 78, y: 22, size: 24 },
-        { x: 95, y: 25, size: 30 },
-
-        // === BOTTOM ZONE (y 68-98) ===
-        // Row 1 (transition edge)
-        { x: 5, y: 69, size: 28 },
-        { x: 20, y: 70, size: 22 },
-        { x: 40, y: 68, size: 18 },
-        { x: 58, y: 69, size: 20 },
-        { x: 78, y: 68, size: 24 },
-        { x: 94, y: 70, size: 30 },
-        // Row 2
-        { x: 3, y: 70, size: 34 },
-        { x: 18, y: 72, size: 26 },
-        { x: 35, y: 70, size: 24 },
-        { x: 50, y: 71, size: 22 },
-        { x: 68, y: 69, size: 28 },
-        { x: 85, y: 71, size: 30 },
-        // Row 3
-        { x: 10, y: 77, size: 30 },
-        { x: 28, y: 78, size: 24 },
-        { x: 45, y: 76, size: 20 },
-        { x: 62, y: 78, size: 26 },
-        { x: 78, y: 77, size: 22 },
-        { x: 93, y: 76, size: 32 },
-        // Row 4
-        { x: 4, y: 84, size: 36 },
-        { x: 20, y: 83, size: 28 },
-        { x: 38, y: 85, size: 22 },
-        { x: 55, y: 83, size: 24 },
-        { x: 72, y: 84, size: 26 },
-        { x: 90, y: 83, size: 30 },
-        // Row 5
-        { x: 12, y: 90, size: 32 },
-        { x: 30, y: 91, size: 26 },
-        { x: 48, y: 89, size: 22 },
-        { x: 65, y: 90, size: 28 },
-        { x: 82, y: 91, size: 24 },
-        // Bottom edge
-        { x: 5, y: 96, size: 40 },
-        { x: 22, y: 95, size: 34 },
-        { x: 40, y: 97, size: 26 },
-        { x: 58, y: 95, size: 30 },
-        { x: 75, y: 96, size: 36 },
-        { x: 92, y: 94, size: 38 },
-      ];
-
-      // Side flowers in the center band (vertical lines flanking content)
-      const sidePositions = [
-        // Left side
-        { x: 2, y: 30, size: 28 },
-        { x: 3, y: 36, size: 24 },
-        { x: 2, y: 42, size: 26 },
-        { x: 3, y: 48, size: 24 },
-        { x: 2, y: 54, size: 28 },
-        { x: 3, y: 60, size: 24 },
-        { x: 2, y: 66, size: 26 },
-        // Right side
-        { x: 95, y: 30, size: 28 },
-        { x: 94, y: 36, size: 24 },
-        { x: 95, y: 42, size: 26 },
-        { x: 94, y: 48, size: 24 },
-        { x: 95, y: 54, size: 28 },
-        { x: 94, y: 60, size: 24 },
-        { x: 95, y: 66, size: 26 },
-      ];
-
-      positions.forEach((pos, i) => {
-        const div = document.createElement('div');
-        div.className = 'scattered-flower';
-        // Shift bottom zone down and top zone up on mobile
-        let y = pos.y;
-        if (pos.y >= 68) y = Math.min(98, pos.y + bottomShift);
-        else if (pos.y <= 27) y = Math.max(1, pos.y + topShrink);
-        div.style.left = pos.x + '%';
-        div.style.top = y + '%';
-        div.style.animationDelay = (i * 0.5) + 's';
-
-        const seed = Date.now() + i * 1000;
-        div.innerHTML = FlowerGenerator.generateSingleFlower(
-          Math.random() > 0.5 ? 'green' : 'yellow',
-          pos.size,
-          seed
-        );
-
-        container.appendChild(div);
-      });
-
-      sidePositions.forEach((pos, i) => {
-        const div = document.createElement('div');
-        div.className = 'scattered-flower side-only';
-        div.style.left = pos.x + '%';
-        div.style.top = pos.y + '%';
-        div.style.animationDelay = ((positions.length + i) * 0.5) + 's';
-
-        const seed = Date.now() + (positions.length + i) * 1000;
-        div.innerHTML = FlowerGenerator.generateSingleFlower(
-          Math.random() > 0.5 ? 'green' : 'yellow',
-          pos.size,
-          seed
-        );
-
-        container.appendChild(div);
-      });
-
-      // Hide loader once flowers are rendered
-      if (window.Loader) Loader.hide();
-    })();
-
-
-    // Flag logic (off by default - always show landing)
-    const SKIP_LANDING_FLAG = false;
-
-    if (SKIP_LANDING_FLAG && localStorage.getItem('seenLanding')) {
-      window.location.href = 'garden.html';
+    function updateIcon() {
+      const icon = el.querySelector('.material-symbols-outlined');
+      const label = el.querySelector('.font-body');
+      const bars = el.querySelector('.sound-bars');
+      const barHeights = { on: ['100%','66%','50%','75%'], off: ['30%','80%','80%','30%'] };
+      if (window.GardenSound && GardenSound.isEnabled()) {
+        icon.textContent = 'volume_up';
+        label.textContent = 'the garden is breathing';
+        bars.style.opacity = '1';
+        bars.querySelectorAll('div').forEach((bar, i) => {
+          bar.style.height = barHeights.on[i];
+          bar.style.animation = `bar-pulse 1.2s ease-in-out ${i * 0.15}s infinite`;
+        });
+      } else {
+        icon.textContent = 'volume_off';
+        label.textContent = 'click to hear the garden';
+        bars.style.opacity = '0.3';
+        bars.querySelectorAll('div').forEach((bar, i) => {
+          bar.style.height = barHeights.off[i];
+          bar.style.animation = 'none';
+        });
+      }
     }
 
-    // Mark as seen when entering
-    document.querySelector('.enter-btn').addEventListener('click', () => {
-      localStorage.setItem('seenLanding', 'true');
-    });
-  </script>
-
-</body>
-</html>
+    el.addEventListener('click', () => setTimeout(updateIcon, 100));
+    updateIcon();
+  });
+</script>
+</body></html>
