@@ -733,6 +733,14 @@ body {
   display: none;
 }
 
+.sound-toggle.muted svg .sound-strike {
+  display: block;
+}
+
+.sound-toggle svg .sound-strike {
+  display: none;
+}
+
 /* Garden header row (title + sound toggle) */
 .header-row {
   display: flex;
