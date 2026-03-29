@@ -221,6 +221,18 @@
         font-size: 1rem;
         letter-spacing: 0.1em;
       }
+
+      .landing-content {
+        padding: 30px 20px 50px;
+      }
+
+      .hanging-sign-wrapper {
+        margin-bottom: 20px;
+      }
+
+      .sound-toggle {
+        margin-bottom: 10px;
+      }
     }
   </style>
   <script src="js/loader.js"></script>
@@ -257,8 +269,13 @@
     (function() {
       const container = document.getElementById('scattered-flowers');
 
+      // On mobile, push bottom zone flowers down to avoid overlapping content
+      const isMobile = window.innerWidth <= 600;
+      const bottomShift = isMobile ? 8 : 0;
+      const topShrink = isMobile ? -3 : 0;
+
       // Flower positions (percentage-based for responsiveness)
-      // Clear band at y 28-62 so text/button/sound stay readable
+      // Clear band at y 28-68 so text/button/sound stay readable
       const positions = [
         // === TOP ZONE (y 0-27) ===
         // Corners
@@ -358,8 +375,12 @@
       positions.forEach((pos, i) => {
         const div = document.createElement('div');
         div.className = 'scattered-flower';
+        // Shift bottom zone down and top zone up on mobile
+        let y = pos.y;
+        if (pos.y >= 68) y = Math.min(98, pos.y + bottomShift);
+        else if (pos.y <= 27) y = Math.max(1, pos.y + topShrink);
         div.style.left = pos.x + '%';
-        div.style.top = pos.y + '%';
+        div.style.top = y + '%';
         div.style.animationDelay = (i * 0.5) + 's';
 
         const seed = Date.now() + i * 1000;
