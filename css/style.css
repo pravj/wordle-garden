@@ -362,7 +362,6 @@ body {
   line-height: 1.8;
   white-space: normal;
   word-wrap: break-word;
-  padding: 0 8px;
 }
 
 .stanza {
@@ -783,6 +782,13 @@ body {
   }
 
   .poem-text {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    padding: 0 4px;
+  }
+
+  .gym-drawer-scroll .poem-text {
+    font-size: 0.85rem;
+    line-height: 1.7;
   }
 }
