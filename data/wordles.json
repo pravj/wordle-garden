@@ -3628,5 +3628,45 @@
     "poem": "The crane stands motionless in morning mist,\nWhile I wander through shadows that shouldn't exist.\n\nIn court I plead my case to empty air,\nBut justice hides beyond my desperate prayer.\n\nEach chunk of hope I gather feeds my soul,\nAs fragments start to form a greater whole.\n\nNo chump am I—the path reveals at last,\nMy journey's end makes sense of all I've passed.",
     "green_count": 3,
     "yellow_count": 0
+  },
+  {
+    "date": "2026-03-30",
+    "wordle_number": 1745,
+    "answer": "COMET",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "MOUNT",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "COMET",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I stare into the endless night sky above,\nSearching for signs of what I'm dreaming of.\n\nUpon this mount I stand with hope renewed,\nThe distant light grows bright, my faith pursued.\n\nAt last the comet blazes overhead,\nIts brilliant tail erases every dread.",
+    "green_count": 2,
+    "yellow_count": 3
   }
 ]
