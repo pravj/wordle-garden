@@ -3668,5 +3668,55 @@
     "poem": "I stare into the endless night sky above,\nSearching for signs of what I'm dreaming of.\n\nUpon this mount I stand with hope renewed,\nThe distant light grows bright, my faith pursued.\n\nAt last the comet blazes overhead,\nIts brilliant tail erases every dread.",
     "green_count": 2,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-03-31",
+    "wordle_number": 1746,
+    "answer": "SWAMP",
+    "guesses": [
+      {
+        "word": "AROSE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SNAIL",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STACK",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SWAMP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "When morning arose with its gentle light,\nI wandered lost in shadows of doubt.\n\nThe snail traced silver paths through dew,\nWhile I searched for signs barely true.\n\nAgainst the stack of fading hope,\nI climbed each dream's uncertain slope.\n\nDeep in the swamp, truth finally gleamed—\nThe secret place I'd always dreamed.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
