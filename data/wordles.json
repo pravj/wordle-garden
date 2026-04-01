@@ -3718,5 +3718,75 @@
     "poem": "When morning arose with its gentle light,\nI wandered lost in shadows of doubt.\n\nThe snail traced silver paths through dew,\nWhile I searched for signs barely true.\n\nAgainst the stack of fading hope,\nI climbed each dream's uncertain slope.\n\nDeep in the swamp, truth finally gleamed—\nThe secret place I'd always dreamed.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-01",
+    "wordle_number": 1747,
+    "answer": "FIZZY",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "THINK",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CLAIM",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "WEIRD",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "PIVOT",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "DIZZY",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I wandered through this empty house of dreams,\nWhere silence echoes louder than it seems.\n\nI think of paths that twist beyond my sight,\nEach thought a whisper fading into night.\n\nI claim no wisdom in this restless search,\nJust hope that trembles like leaves on a birch.\n\nThe world grows weird beneath my weary feet,\nAs shadows dance where earth and heaven meet.\n\nAround this pivot point, my spirit turns,\nWhile deep within, a quiet fire burns.\n\nAt last I'm dizzy with the joy I've found,\nMy heart spinning free from solid ground.",
+    "green_count": 3,
+    "yellow_count": 1
   }
 ]
