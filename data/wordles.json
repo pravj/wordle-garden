@@ -3788,5 +3788,75 @@
     "poem": "I wandered through this empty house of dreams,\nWhere silence echoes louder than it seems.\n\nI think of paths that twist beyond my sight,\nEach thought a whisper fading into night.\n\nI claim no wisdom in this restless search,\nJust hope that trembles like leaves on a birch.\n\nThe world grows weird beneath my weary feet,\nAs shadows dance where earth and heaven meet.\n\nAround this pivot point, my spirit turns,\nWhile deep within, a quiet fire burns.\n\nAt last I'm dizzy with the joy I've found,\nMy heart spinning free from solid ground.",
     "green_count": 3,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-04-02",
+    "wordle_number": 1748,
+    "answer": "SOBER",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "STORY",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SPORT",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SWORN",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SHORE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "SOBER",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The audio crackles through static-filled air,\nI wander blind through shadows everywhere.\n\nThis story unfolds with whispered clues,\nHope stirs within, though much I still lose.\n\nThe sport of seeking draws me deeper in,\nEach step forward feels like I might win.\n\nWith oath I'm sworn to see this journey through,\nThe path grows clearer, destination true.\n\nUpon this shore I stand with growing light,\nThe answer dances just beyond my sight.\n\nAt last I'm sober, clarity complete,\nThe truth revealed makes victory so sweet.",
+    "green_count": 1,
+    "yellow_count": 3
   }
 ]
