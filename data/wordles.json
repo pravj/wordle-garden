@@ -3858,5 +3858,75 @@
     "poem": "The audio crackles through static-filled air,\nI wander blind through shadows everywhere.\n\nThis story unfolds with whispered clues,\nHope stirs within, though much I still lose.\n\nThe sport of seeking draws me deeper in,\nEach step forward feels like I might win.\n\nWith oath I'm sworn to see this journey through,\nThe path grows clearer, destination true.\n\nUpon this shore I stand with growing light,\nThe answer dances just beyond my sight.\n\nAt last I'm sober, clarity complete,\nThe truth revealed makes victory so sweet.",
     "green_count": 1,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-04-03",
+    "wordle_number": 1749,
+    "answer": "SINGE",
+    "guesses": [
+      {
+        "word": "TOAST",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SHINE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "SPICE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "SNIDE",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "SWINE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "SPINE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The morning toast grows cold upon the plate,\nWhile shadows whisper of some distant fate.\n\nA gentle shine breaks through the clouded door,\nHope stirs within like waves upon the shore.\n\nThe merchant's spice fills markets with perfume,\nYet still I wander through this fragrant gloom.\n\nWith words grown snide, the bitter truth takes hold,\nThat warmth lies buried deeper than foretold.\n\nThe farmer's swine root deep beneath the earth,\nSeeking the soil that gives their hunger worth.\n\nAlong my spine, a shiver runs at last,\nAs if the answer trembles, unsurpassed.",
+    "green_count": 2,
+    "yellow_count": 3
   }
 ]
