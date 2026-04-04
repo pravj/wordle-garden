@@ -3928,5 +3928,75 @@
     "poem": "The morning toast grows cold upon the plate,\nWhile shadows whisper of some distant fate.\n\nA gentle shine breaks through the clouded door,\nHope stirs within like waves upon the shore.\n\nThe merchant's spice fills markets with perfume,\nYet still I wander through this fragrant gloom.\n\nWith words grown snide, the bitter truth takes hold,\nThat warmth lies buried deeper than foretold.\n\nThe farmer's swine root deep beneath the earth,\nSeeking the soil that gives their hunger worth.\n\nAlong my spine, a shiver runs at last,\nAs if the answer trembles, unsurpassed.",
     "green_count": 2,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-04-04",
+    "wordle_number": 1750,
+    "answer": "SANDY",
+    "guesses": [
+      {
+        "word": "ADIEU",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROADS",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "correct",
+          "present"
+        ]
+      },
+      {
+        "word": "CLASH",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "STAID",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "SADLY",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "SANDY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I bid adieu to certainty's embrace,\nWandering through shadows without a trace.\n\nThe roads I've traveled lead nowhere true,\nEach path dissolving in morning's dew.\n\nIn clash of doubt against my will,\nI search for answers, yearning still.\n\nThough staid and steady seems my quest,\nHope flickers faintly in my chest.\n\nSadly I stumble, yet sense the way,\nLight breaking through the endless gray.\n\nAt last I stand on ground so sandy,\nVictory sweet, triumph so handy.",
+    "green_count": 4,
+    "yellow_count": 3
   }
 ]
