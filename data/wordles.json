@@ -3998,5 +3998,75 @@
     "poem": "I bid adieu to certainty's embrace,\nWandering through shadows without a trace.\n\nThe roads I've traveled lead nowhere true,\nEach path dissolving in morning's dew.\n\nIn clash of doubt against my will,\nI search for answers, yearning still.\n\nThough staid and steady seems my quest,\nHope flickers faintly in my chest.\n\nSadly I stumble, yet sense the way,\nLight breaking through the endless gray.\n\nAt last I stand on ground so sandy,\nVictory sweet, triumph so handy.",
     "green_count": 4,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-04-05",
+    "wordle_number": 1751,
+    "answer": "ENVOY",
+    "guesses": [
+      {
+        "word": "HEART",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SOUND",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MONEY",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "NOSEY",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "HONEY",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "CONEY",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "My heart beats wild in unknown territory,\nSearching for paths through this vast mystery.\n\nThe sound of distant bells rings faintly near,\nA whispered promise that the way grows clear.\n\nMoney can't buy what I'm seeking here,\nBut golden threads begin to appear.\n\nMy nosy wandering brings me closer still,\nTo secrets hidden beyond this hill.\n\nSweet honey drips from branches overhead,\nMarking the trail where angels fear to tread.\n\nAt last I find my faithful envoy waits,\nStanding ready at heaven's gates.",
+    "green_count": 1,
+    "yellow_count": 3
   }
 ]
