@@ -4068,5 +4068,75 @@
     "poem": "My heart beats wild in unknown territory,\nSearching for paths through this vast mystery.\n\nThe sound of distant bells rings faintly near,\nA whispered promise that the way grows clear.\n\nMoney can't buy what I'm seeking here,\nBut golden threads begin to appear.\n\nMy nosy wandering brings me closer still,\nTo secrets hidden beyond this hill.\n\nSweet honey drips from branches overhead,\nMarking the trail where angels fear to tread.\n\nAt last I find my faithful envoy waits,\nStanding ready at heaven's gates.",
     "green_count": 1,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-04-06",
+    "wordle_number": 1752,
+    "answer": "SWORN",
+    "guesses": [
+      {
+        "word": "BREAD",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "COURT",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "SORRY",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "SPORT",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "SWORD",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "SWORN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "I gather crumbs of bread along the empty path,\nEach morsel leads me nowhere, lost in aftermath.\n\nThe court of dreams seems distant, justice out of reach,\nYet whispers in the shadows hint at what they teach.\n\nSorry for my stumbling, yet hope begins to gleam,\nThe fragments start aligning with my searching dream.\n\nIn sport there lies a rhythm, almost within my grasp,\nThe prize feels nearly tangible, held in trembling clasp.\n\nMy sword cuts through the darkness, blade gleaming sharp and true,\nVictory stands before me, waiting to break through.\n\nAt last I stand here sworn to honor what I've found,\nThe oath of perseverance echoes, victory's sweet sound.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
