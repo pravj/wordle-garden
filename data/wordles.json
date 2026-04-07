@@ -4138,5 +4138,75 @@
     "poem": "I gather crumbs of bread along the empty path,\nEach morsel leads me nowhere, lost in aftermath.\n\nThe court of dreams seems distant, justice out of reach,\nYet whispers in the shadows hint at what they teach.\n\nSorry for my stumbling, yet hope begins to gleam,\nThe fragments start aligning with my searching dream.\n\nIn sport there lies a rhythm, almost within my grasp,\nThe prize feels nearly tangible, held in trembling clasp.\n\nMy sword cuts through the darkness, blade gleaming sharp and true,\nVictory stands before me, waiting to break through.\n\nAt last I stand here sworn to honor what I've found,\nThe oath of perseverance echoes, victory's sweet sound.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-07",
+    "wordle_number": 1753,
+    "answer": "DENSE",
+    "guesses": [
+      {
+        "word": "AROSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "CLOSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "MOOSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "LOOSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "GOOSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The morning arose with promises untold,\nYet shadows still lingered where answers should unfold.\n\nThis house feels empty, its rooms incomplete,\nStill wandering halls where truth and mystery meet.\n\nThe door stays close but won't reveal its key,\nI press against barriers I cannot see.\n\nLike a moose in fog, I stumble through the dark,\nMissing the trail, unable to find my mark.\n\nMy grip grows loose on hope I've held too tight,\nThe path ahead dissolves from view and sight.\n\nThe wild goose leads me further from the shore,\nLost in the mist, I can't find what I'm searching for.",
+    "green_count": 2,
+    "yellow_count": 0
   }
 ]
