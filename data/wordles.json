@@ -4208,5 +4208,75 @@
     "poem": "The morning arose with promises untold,\nYet shadows still lingered where answers should unfold.\n\nThis house feels empty, its rooms incomplete,\nStill wandering halls where truth and mystery meet.\n\nThe door stays close but won't reveal its key,\nI press against barriers I cannot see.\n\nLike a moose in fog, I stumble through the dark,\nMissing the trail, unable to find my mark.\n\nMy grip grows loose on hope I've held too tight,\nThe path ahead dissolves from view and sight.\n\nThe wild goose leads me further from the shore,\nLost in the mist, I can't find what I'm searching for.",
     "green_count": 2,
     "yellow_count": 0
+  },
+  {
+    "date": "2026-04-08",
+    "wordle_number": 1754,
+    "answer": "INLET",
+    "guesses": [
+      {
+        "word": "STONE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "ENTER",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "TUNED",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "KNELT",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "INTEL",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "correct",
+          "present"
+        ]
+      },
+      {
+        "word": "INLET",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The stone beneath my feet feels cold and strange,\nAs shadows whisper secrets I can't hear.\n\nI enter through the doorway, hesitant,\nBut something stirs—a warmth I haven't known.\n\nThe melody is tuned to half-forgotten dreams,\nEach note a step closer to what I seek.\n\nI knelt beside the stream where light begins\nTo dance on waters that might hold my truth.\n\nLike intel gathered from a thousand searches,\nThe pieces form a pattern, almost clear.\n\nAt last I find the inlet where all rivers meet—\nThe quiet cove that calls my journey home.",
+    "green_count": 4,
+    "yellow_count": 4
   }
 ]
