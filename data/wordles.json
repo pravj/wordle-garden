@@ -4278,5 +4278,55 @@
     "poem": "The stone beneath my feet feels cold and strange,\nAs shadows whisper secrets I can't hear.\n\nI enter through the doorway, hesitant,\nBut something stirs—a warmth I haven't known.\n\nThe melody is tuned to half-forgotten dreams,\nEach note a step closer to what I seek.\n\nI knelt beside the stream where light begins\nTo dance on waters that might hold my truth.\n\nLike intel gathered from a thousand searches,\nThe pieces form a pattern, almost clear.\n\nAt last I find the inlet where all rivers meet—\nThe quiet cove that calls my journey home.",
     "green_count": 4,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-04-09",
+    "wordle_number": 1755,
+    "answer": "LADEN",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "present",
+          "absent",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "WORDS",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MEDAL",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "LADEN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The audio crackles through static and doubt,\nWhile shadows whisper what this is about.\n\nThese words feel hollow, drifting through air,\nLike smoke that vanishes without a care.\n\nA medal gleams with promise half-revealed,\nAs scattered pieces slowly become real.\n\nThe branches laden with morning's sweet dew—\nAt last, the answer comes shining through.",
+    "green_count": 1,
+    "yellow_count": 4
   }
 ]
