@@ -4398,5 +4398,75 @@
     "poem": "I slice through morning fog with searching eyes,\nWhile shadows dance where certainty still hides.\n\nThe court of dreams feels closer to my grasp,\nHope stirs within like dawn's awakening clasp.\n\nA crown of possibilities takes shape,\nAs whispered truths begin their sweet escape.\n\nThe crops of effort slowly start to grow,\nThough harvest time remains just out of flow.\n\nEach chord I strike rings truer than before,\nThe melody approaches what I'm reaching for.\n\nAt last I croak my victory to the sky,\nThe journey's end was worth the questioning why.",
     "green_count": 1,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-04-11",
+    "wordle_number": 1757,
+    "answer": "PRUDE",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PHONE",
+        "result": [
+          "correct",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PROVE",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PRIME",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PRUNE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PRUDE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "poem": "The slate sky offers no direction home,\nThrough endless paths I wander and I roam.\n\nMy phone stays silent in this searching hour,\nWhile distant voices whisper of some power.\n\nTo prove my worth, I chase what can't be caught,\nThese fleeting glimpses teach what can't be taught.\n\nIn prime of youth I thought the way was clear,\nNow wisdom comes through doubt and humble fear.\n\nLike prune-dark nights that test the strongest will,\nI sense the answer waits beyond this hill.\n\nAt last I shed my prideful, crude facade—\nThe truth was always here, my guiding rod.",
+    "green_count": 4,
+    "yellow_count": 0
   }
 ]
