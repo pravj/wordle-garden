@@ -197,46 +197,121 @@ def play_wordle(answer: str, client: anthropic.Anthropic, valid_words: set) -> l
 # 4. Poem generation
 # ---------------------------------------------------------------------------
 
-POEM_SYSTEM_PROMPT = """You are a poet writing for Grit Garden, an art project that transforms Wordle games into poems.
+STORY_SYSTEM_PROMPT = """You are a writer for Grit Garden, an art project that transforms Wordle games into deadpan observations about life.
+You will be given a list of guess words in order, and whether the game was solved or not.
+Persona: Read the guess words and infer the best-fit persona from this list:
+* Housewife / stay-at-home parent
+* New mother
+* Husband
+* Men
+* Women
+* Elder parents
+* Parents
+* Student during exams
+* Unemployed / job hunting
+* Freelancer waiting on invoice
+* Doctor
+* Teacher
+* Lawyer
+* Therapist
+* Software engineer
+* Newly married
+* Just retired
+* 20-something in first job
+* Someone going through a breakup
+* Gym bro
+* Astrology person
+* Startup founder
+* Desi parent
+* Stock market investor
+If none fit, invent a persona the words naturally suggest. If still nothing, use everyman.
+Style: Deadpan. Flat affect. No exclamation. No metaphor-explaining. State things as plain fact and move on. The humor and pathos live in what is not said.
 
-Write a poem where:
-- Number of stanzas equals the number of guesses
-- Each stanza is exactly 2 lines (a couplet)
-- Each stanza revolves around that guess word, woven naturally into the line
-- The sentiment of each stanza mirrors the progress of that guess:
-  lost/searching for poor guesses, hopeful for partial hits, triumphant for the win
-- Do NOT reference counts, numbers, or quantities of letters found
-- No references to Wordle, grids, tiles, letters, or puzzles
-- The poem should read as a standalone piece about perseverance or discovery
+Structure:
+* One stanza per guess word, exactly 2 lines
+* Each guess word must appear in its stanza, naturally woven in
+* All words must appear in order, none dropped
+* Tone follows the arc: flat and searching early, something tightening underneath as it goes
+* EXACTLY {num_guesses} stanzas. No more, no less.
 
-Return ONLY the poem. No title, no explanation. Separate stanzas with blank lines."""
+Closing line:
+* If the game was solved: end with a single line of quiet grit or understated hope
+* If the game was not solved: end with a single line of quiet despair or acceptance
+
+Constraints:
+* Each line should feel like a statement, not a sentence. Spare.
+* Maximum 12 lines total
+* No references to Wordle, grids, tiles, letters, puzzles, or guessing
+* No line in the poem exceeds 9 words
+* The closing line is the last line from the last word's stanza
+
+You MUST respond in EXACTLY this format, nothing else:
+
+TITLE: <title, max 5 words>
+PERSONA: <1-2 words, singular>
+PERSONA_PLURAL: <1-2 words, plural>
+
+<the piece, stanzas separated by blank lines>"""
 
 
-def generate_poem(guesses: list, answer: str, client: anthropic.Anthropic) -> str:
-    """Generate a poem from the completed game."""
-    # Describe the game for the poet
-    lines = []
-    for i, g in enumerate(guesses, 1):
-        emoji = {"correct": "🟩", "present": "🟨", "absent": "⬜"}
-        squares = " ".join(emoji[r] for r in g["result"])
-        lines.append(f"Guess {i}: {g['word']} → {squares}")
+def get_recent_personas(wordles: list, days: int = 7) -> list:
+    """Get unique personas from the last N entries to avoid repeats."""
+    sorted_entries = sorted(wordles, key=lambda w: w["date"], reverse=True)
+    recent = sorted_entries[:days]
+    personas = []
+    for entry in recent:
+        p = entry.get("persona", "")
+        if p and p.lower() not in [x.lower() for x in personas]:
+            personas.append(p)
+    return personas
 
-    game_text = "\n".join(lines)
 
-    prompt = f"""Here is a completed Wordle game. The answer was {answer}.
+def generate_story(guesses: list, answer: str, recent_personas: list, client: anthropic.Anthropic) -> tuple:
+    """Generate a story from the completed game. Returns (title, persona, persona_plural, story)."""
+    words = [g["word"] for g in guesses]
+    word_list = ", ".join(words)
+    solved = all(r == "correct" for r in guesses[-1]["result"])
+    status = "The game was solved." if solved else "The game was not solved."
+    num_guesses = len(guesses)
 
-{game_text}
+    avoid_note = ""
+    if recent_personas:
+        avoid_note = f"\n\nDo NOT use any of these personas (used in the last 7 days): {', '.join(recent_personas)}. Pick something different."
 
-Write the poem ({len(guesses)} stanzas, 2 lines each)."""
+    prompt = f"""Guess words in order: {word_list}
+{status}
+Number of stanzas required: {num_guesses}{avoid_note}
+
+Write the piece."""
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=1000,
-        system=POEM_SYSTEM_PROMPT,
+        max_tokens=500,
+        system=STORY_SYSTEM_PROMPT.replace("{num_guesses}", str(num_guesses)),
         messages=[{"role": "user", "content": prompt}],
     )
 
-    return response.content[0].text.strip()
+    text = response.content[0].text.strip()
+
+    # Parse structured output
+    title = ""
+    persona = ""
+    persona_plural = ""
+    story_lines = []
+
+    for line in text.split("\n"):
+        stripped = line.strip()
+        if stripped.upper().startswith("TITLE:"):
+            title = stripped[6:].strip()
+        elif stripped.upper().startswith("PERSONA_PLURAL:"):
+            persona_plural = stripped[15:].strip()
+        elif stripped.upper().startswith("PERSONA:"):
+            persona = stripped[8:].strip()
+        else:
+            story_lines.append(line)
+
+    story = "\n".join(story_lines).strip()
+    return title, persona, persona_plural, story
 
 
 # ---------------------------------------------------------------------------
@@ -315,10 +390,15 @@ def main():
     won = all(r == "correct" for r in guesses[-1]["result"])
     print(f"   {'Won' if won else 'Lost'} in {len(guesses)} guesses")
 
-    # Step 3: Generate poem
-    print(f"\n3. Generating poem...")
-    poem = generate_poem(guesses, answer, client)
-    print(f"   {len(poem.split(chr(10) + chr(10)))} stanzas generated")
+    # Step 3: Generate story
+    print(f"\n3. Generating story...")
+    recent_personas = get_recent_personas(wordles)
+    if recent_personas:
+        print(f"   Avoiding personas: {', '.join(recent_personas)}")
+    title, persona, persona_plural, story = generate_story(guesses, answer, recent_personas, client)
+    print(f"   Title: {title}")
+    print(f"   Persona: {persona} / {persona_plural}")
+    print(f"   {len([s for s in story.split(chr(10) + chr(10)) if s.strip()])} stanzas generated")
 
     # Step 4: Calculate flowers
     green_count, yellow_count = calculate_flower_counts(guesses)
@@ -330,7 +410,10 @@ def main():
         "wordle_number": wordle_number,
         "answer": answer,
         "guesses": guesses,
-        "poem": poem,
+        "title": title,
+        "persona": persona,
+        "persona_plural": persona_plural,
+        "poem": story,
         "green_count": green_count,
         "yellow_count": yellow_count,
     }
@@ -344,9 +427,9 @@ def main():
 
     print(f"\n4. Saved to {DATA_FILE}")
     print(f"\n{'=' * 50}")
-    print(f"Poem for {game_date.isoformat()}:")
+    print(f"Story for {game_date.isoformat()}:")
     print(f"{'=' * 50}")
-    print(poem)
+    print(story)
     print(f"{'=' * 50}")
     print("Done!")
 

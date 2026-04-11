@@ -55,6 +55,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       dateHeader.textContent = formatDate(wordle.date);
     }
 
+    // Render title in both positions
+    if (wordle.title) {
+      document.querySelectorAll('.poem-title, .story-title').forEach(el => {
+        el.textContent = wordle.title;
+      });
+    }
+
+    // Render persona
+    const personaEl = document.querySelector('.poem-persona');
+    if (personaEl && (wordle.persona_plural || wordle.persona)) {
+      personaEl.textContent = `for ${wordle.persona_plural || wordle.persona}`;
+    }
+
     // Render wordle number
     const wordleNumber = document.querySelector('.wordle-number');
     if (wordleNumber) {
