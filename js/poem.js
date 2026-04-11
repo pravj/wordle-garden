@@ -62,11 +62,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     }
 
-    // Render persona
-    const personaEl = document.querySelector('.poem-persona');
-    if (personaEl && (wordle.persona_plural || wordle.persona)) {
-      personaEl.textContent = `for ${wordle.persona_plural || wordle.persona}`;
-    }
+    // Render persona in both positions
+    document.querySelectorAll('.poem-persona, .story-persona').forEach(el => {
+      if (wordle.persona_plural || wordle.persona) {
+        el.textContent = `for ${wordle.persona_plural || wordle.persona}`;
+      }
+    });
 
     // Render wordle number
     const wordleNumber = document.querySelector('.wordle-number');
