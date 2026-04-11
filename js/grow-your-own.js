@@ -280,7 +280,7 @@
 
     resultArea.innerHTML =
       '<div class="gym-section">' +
-        '<div class="gym-section-label">your poem</div>' +
+        '<div class="gym-section-label">your story</div>' +
         '<div class="wordle-grid">' + yourGridHtml + '</div>' +
         '<div class="poem-content"><div class="poem-text">' +
           yourPoemHtml +

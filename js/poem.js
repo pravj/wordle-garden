@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const shareSection = document.querySelector('.share-section');
     if (shareSection) {
       shareSection.innerHTML = `
-        <button class="share-btn" id="share-btn">share this poem</button>
+        <button class="share-btn" id="share-btn">share this story</button>
       `;
       document.getElementById('share-btn').addEventListener('click', () => {
         if (navigator.share) {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           navigator.clipboard.writeText(window.location.href).then(() => {
             document.getElementById('share-btn').textContent = 'link copied';
             setTimeout(() => {
-              document.getElementById('share-btn').textContent = 'share this poem';
+              document.getElementById('share-btn').textContent = 'share this story';
             }, 2000);
           });
         }
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.error('Error loading wordle data:', error);
     document.querySelector('.poem-page').innerHTML = `
       <a href="garden.html" class="back-link">&larr; Back to garden</a>
-      <p>Error loading poem data.</p>
+      <p>Error loading story data.</p>
     `;
     if (window.Loader) Loader.hide();
   }
