@@ -4678,5 +4678,58 @@
     "title": "Clean Lines Only",
     "persona": "Architect",
     "persona_plural": "Architects"
+  },
+  {
+    "date": "2026-04-12",
+    "wordle_number": 1758,
+    "answer": "ALLEY",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "ALERT",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "ALIEN",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "ALLEY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Property Lines",
+    "persona": "Urban planner",
+    "persona_plural": "Urban planners",
+    "poem": "The house sits where it always has.\nNothing changes on this block.\n\nAlert notifications pile up on the desk.\nAnother rezoning hearing postponed.\n\nAlien concepts like community input sessions.\nThe same faces object to everything.\n\nThe alley behind Main Street needs repaving.\nFifteen years of proposals gather dust.\n\nTomorrow's meeting might actually happen.",
+    "green_count": 3,
+    "yellow_count": 1
   }
 ]
