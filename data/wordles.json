@@ -4731,5 +4731,78 @@
     "poem": "The house sits where it always has.\nNothing changes on this block.\n\nAlert notifications pile up on the desk.\nAnother rezoning hearing postponed.\n\nAlien concepts like community input sessions.\nThe same faces object to everything.\n\nThe alley behind Main Street needs repaving.\nFifteen years of proposals gather dust.\n\nTomorrow's meeting might actually happen.",
     "green_count": 3,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-04-13",
+    "wordle_number": 1759,
+    "answer": "ELFIN",
+    "guesses": [
+      {
+        "word": "STONE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "LEARN",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "BINGE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "LINED",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "LINEN",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "ALIEN",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "present",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Weight of Things",
+    "persona": "Therapist",
+    "persona_plural": "Therapists",
+    "poem": "The stone sits where you left it.\nHeavy things don't move themselves.\n\nYou learn what people carry in.\nThe weight never gets lighter.\n\nAnother patient calls to binge their grief.\nSame story, different Thursday.\n\nThe tissues lined up on your desk.\nEach box emptier than the last.\n\nFresh linen on the couch again.\nSomeone else's tears dried there.\n\nNothing alien about human pain.\nIt all sounds the same eventually.",
+    "green_count": 2,
+    "yellow_count": 4
   }
 ]
