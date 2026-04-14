@@ -4804,5 +4804,68 @@
     "poem": "The stone sits where you left it.\nHeavy things don't move themselves.\n\nYou learn what people carry in.\nThe weight never gets lighter.\n\nAnother patient calls to binge their grief.\nSame story, different Thursday.\n\nThe tissues lined up on your desk.\nEach box emptier than the last.\n\nFresh linen on the couch again.\nSomeone else's tears dried there.\n\nNothing alien about human pain.\nIt all sounds the same eventually.",
     "green_count": 2,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-04-14",
+    "wordle_number": 1760,
+    "answer": "CYCLE",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PHONE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "CHIME",
+        "result": [
+          "correct",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "CLOSE",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "CYCLE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Daily Round",
+    "persona": "Housewife",
+    "persona_plural": "Housewives",
+    "poem": "I stare at the kitchen counter again.\nSame crumbs from yesterday's toast.\n\nThe phone rings during lunch prep.\nTelemarketer asking about my car warranty.\n\nThe doorbell chime means package delivery.\nAnother thing I ordered and forgot.\n\nI close the dishwasher for the third time.\nThe day folds into itself like laundry.\n\nThis cycle will repeat tomorrow morning.\nSmall victories count as progress here.",
+    "green_count": 2,
+    "yellow_count": 1
   }
 ]
