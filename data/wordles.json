@@ -4867,5 +4867,78 @@
     "poem": "I stare at the kitchen counter again.\nSame crumbs from yesterday's toast.\n\nThe phone rings during lunch prep.\nTelemarketer asking about my car warranty.\n\nThe doorbell chime means package delivery.\nAnother thing I ordered and forgot.\n\nI close the dishwasher for the third time.\nThe day folds into itself like laundry.\n\nThis cycle will repeat tomorrow morning.\nSmall victories count as progress here.",
     "green_count": 2,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-04-15",
+    "wordle_number": 1761,
+    "answer": "BEGUN",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "MOUND",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "UNLIT",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "NEWLY",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "QUEEN",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "VENUE",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "correct",
+          "absent"
+        ]
+      }
+    ],
+    "title": "The Waiting Room",
+    "persona": "Patient",
+    "persona_plural": "Patients",
+    "poem": "I stare at the appointment card again.\nThe receptionist schedules around me.\n\nThey found a small mound last month.\nThe ultrasound tech said nothing helpful.\n\nThe examination room stays unlit until needed.\nI practice what I will ask.\n\nThe newly hired doctor seems confident enough.\nHer handwriting is still legible.\n\nThe queen of diamonds falls from my sleeve.\nI have been here three hours.\n\nThis venue hosts the same conversation daily.\nNobody ever gets the answer they want.",
+    "green_count": 3,
+    "yellow_count": 3
   }
 ]
