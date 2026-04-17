@@ -5013,5 +5013,78 @@
     "poem": "The foreman tells us to stare at blueprints.\nWe know the concrete will crack anyway.\n\nThe basement stays moist through winter months.\nWater finds its way despite our efforts.\n\nThe joints never get tight like they promise.\nEverything settles. Everything gives way.\n\nWe drive each nail to the point of bending.\nThe wood splits when you push too hard.\n\nTwenty years we built houses for other people.\nOur own foundation sits on rented ground.\n\nThe crew talks about unity over coffee.\nWe clock out alone in separate trucks.",
     "green_count": 2,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-04-17",
+    "wordle_number": 1763,
+    "answer": "BELLE",
+    "guesses": [
+      {
+        "word": "PIANO",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "STYLE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "WHOLE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "MAPLE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "RIFLE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "What We Keep Inside",
+    "persona": "Music teacher",
+    "persona_plural": "Music teachers",
+    "poem": "The piano bench holds thirty years of lessons.\nStudents come and go like seasons.\n\nThis house echoes with scales at three.\nEmpty rooms remember better days.\n\nMy teaching style adapted over decades.\nNow I wonder what I actually taught.\n\nThe whole profession feels different somehow.\nParents text instead of calling now.\n\nMaple leaves collect on the front steps.\nNo one rakes them anymore.\n\nThe rifle sits in dad's old closet.\nI never learned to use it.",
+    "green_count": 2,
+    "yellow_count": 0
   }
 ]
