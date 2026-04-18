@@ -5086,5 +5086,78 @@
     "poem": "The piano bench holds thirty years of lessons.\nStudents come and go like seasons.\n\nThis house echoes with scales at three.\nEmpty rooms remember better days.\n\nMy teaching style adapted over decades.\nNow I wonder what I actually taught.\n\nThe whole profession feels different somehow.\nParents text instead of calling now.\n\nMaple leaves collect on the front steps.\nNo one rakes them anymore.\n\nThe rifle sits in dad's old closet.\nI never learned to use it.",
     "green_count": 2,
     "yellow_count": 0
+  },
+  {
+    "date": "2026-04-18",
+    "wordle_number": 1764,
+    "answer": "TOADY",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "OPERA",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "LOATH",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOATS",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "TOADS",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "TOADY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Sound of Things",
+    "persona": "Sound engineer",
+    "persona_plural": "Sound engineers",
+    "poem": "The audio booth hums at three AM.\nAnother session that nobody will hear.\n\nOpera singers warm up in Studio B.\nTheir voices reach notes I cannot afford.\n\nI loath the way silence fills this room.\nBetween takes there is only breathing.\n\nCastle moats once kept invaders out.\nNow we build walls from white noise.\n\nToads croak outside the loading dock.\nEven they have something to say.\n\nThe client wants a toady for yes-man work.\nAt least the levels are finally clean.",
+    "green_count": 4,
+    "yellow_count": 4
   }
 ]
