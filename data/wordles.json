@@ -5159,5 +5159,68 @@
     "poem": "The audio booth hums at three AM.\nAnother session that nobody will hear.\n\nOpera singers warm up in Studio B.\nTheir voices reach notes I cannot afford.\n\nI loath the way silence fills this room.\nBetween takes there is only breathing.\n\nCastle moats once kept invaders out.\nNow we build walls from white noise.\n\nToads croak outside the loading dock.\nEven they have something to say.\n\nThe client wants a toady for yes-man work.\nAt least the levels are finally clean.",
     "green_count": 4,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-04-19",
+    "wordle_number": 1765,
+    "answer": "STAND",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STAMP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STACK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STAIN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "STAND",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Five Ways to Mark Time",
+    "persona": "Postal worker",
+    "persona_plural": "Postal workers",
+    "poem": "I stare at addresses until they blur together.\nThe route never changes but the houses do.\n\nEach stamp tells someone's small urgent story.\nI press them down like prayers onto paper.\n\nLetters stack in perfect postal geometry.\nOrder is the only thing that makes sense.\n\nEvery stain on my uniform maps another day.\nCoffee, rain, the residue of other people's mail.\n\nI stand at the same corner every morning.\nThe mailbox waits like an old friend.\n\nSome things arrive exactly when they should.",
+    "green_count": 3,
+    "yellow_count": 1
   }
 ]
