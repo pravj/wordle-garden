@@ -5222,5 +5222,78 @@
     "poem": "I stare at addresses until they blur together.\nThe route never changes but the houses do.\n\nEach stamp tells someone's small urgent story.\nI press them down like prayers onto paper.\n\nLetters stack in perfect postal geometry.\nOrder is the only thing that makes sense.\n\nEvery stain on my uniform maps another day.\nCoffee, rain, the residue of other people's mail.\n\nI stand at the same corner every morning.\nThe mailbox waits like an old friend.\n\nSome things arrive exactly when they should.",
     "green_count": 3,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-04-20",
+    "wordle_number": 1766,
+    "answer": "WEAVE",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "ALONE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PLACE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "WHALE",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "WAIVE",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "WAFER",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      }
+    ],
+    "title": "The Waiting Room Chronicles",
+    "persona": "Unemployed",
+    "persona_plural": "Unemployed",
+    "poem": "I stare at job postings again.\nSame companies, different Tuesday.\n\nI eat alone most days now.\nSavings account gets thinner.\n\nEvery place requires five years experience.\nEntry level means nothing anymore.\n\nThe whale in my chest grows heavier.\nAnother rejection email arrives.\n\nI waive the application fee sometimes.\nHope costs more than money.\n\nThe wafer crackers taste like cardboard.\nThis is what giving up tastes like.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
