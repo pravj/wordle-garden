@@ -5295,5 +5295,78 @@
     "poem": "I stare at job postings again.\nSame companies, different Tuesday.\n\nI eat alone most days now.\nSavings account gets thinner.\n\nEvery place requires five years experience.\nEntry level means nothing anymore.\n\nThe whale in my chest grows heavier.\nAnother rejection email arrives.\n\nI waive the application fee sometimes.\nHope costs more than money.\n\nThe wafer crackers taste like cardboard.\nThis is what giving up tastes like.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-21",
+    "wordle_number": 1767,
+    "answer": "CLUMP",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BUILT",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MURAL",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "CRUEL",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "CHUNK",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CLUMP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "What Remains Standing",
+    "persona": "Contractor",
+    "persona_plural": "Contractors",
+    "poem": "The house sits where we left it.\nFoundation poured in better times.\n\nEverything built comes down eventually.\nYour hands know this truth.\n\nThe mural on the bedroom wall stays.\nSmall hands painted flowers there.\n\nDivorce papers use cruel language.\nThe law requires such precision.\n\nEach chunk of marriage gets divided.\nAssets split down the middle.\n\nWhat's left clumps together somehow.\nWe learn to call it home.",
+    "green_count": 2,
+    "yellow_count": 3
   }
 ]
