@@ -5368,5 +5368,68 @@
     "poem": "The house sits where we left it.\nFoundation poured in better times.\n\nEverything built comes down eventually.\nYour hands know this truth.\n\nThe mural on the bedroom wall stays.\nSmall hands painted flowers there.\n\nDivorce papers use cruel language.\nThe law requires such precision.\n\nEach chunk of marriage gets divided.\nAssets split down the middle.\n\nWhat's left clumps together somehow.\nWe learn to call it home.",
     "green_count": 2,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-04-22",
+    "wordle_number": 1768,
+    "answer": "SNORE",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "PINES",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "SENSE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "SCENE",
+        "result": [
+          "correct",
+          "absent",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "SNORE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Morning Shift",
+    "persona": "Night nurse",
+    "persona_plural": "Night nurses",
+    "poem": "The crane outside lifts another beam today.\nMy shift ends when the sun starts.\n\nThe pines behind the parking lot stay green.\nWinter doesn't touch everything here.\n\nYou develop a sense for who won't make it.\nTheir breathing changes first.\n\nI've seen this scene too many times before.\nThe family always asks the same questions.\n\nSomeone in room twelve begins to snore.\nAt least that means they're still breathing.\n\nThe work continues whether you sleep or not.",
+    "green_count": 2,
+    "yellow_count": 4
   }
 ]
