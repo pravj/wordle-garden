@@ -5431,5 +5431,78 @@
     "poem": "The crane outside lifts another beam today.\nMy shift ends when the sun starts.\n\nThe pines behind the parking lot stay green.\nWinter doesn't touch everything here.\n\nYou develop a sense for who won't make it.\nTheir breathing changes first.\n\nI've seen this scene too many times before.\nThe family always asks the same questions.\n\nSomeone in room twelve begins to snore.\nAt least that means they're still breathing.\n\nThe work continues whether you sleep or not.",
     "green_count": 2,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-04-23",
+    "wordle_number": 1769,
+    "answer": "TWEET",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "TELLY",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "THEME",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "TEENS",
+        "result": [
+          "correct",
+          "present",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "TEPEE",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "TIRED",
+        "result": [
+          "correct",
+          "absent",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      }
+    ],
+    "title": "Another Evening Down",
+    "persona": "Retiree",
+    "persona_plural": "Retirees",
+    "poem": "I stare at the wall clock.\nFour thirty feels like midnight.\n\nThe telly drones about distant wars.\nI change channels to find silence.\n\nEvery theme song knows my loneliness.\nThe house echoes with familiar jingles.\n\nTeens walk past my window laughing.\nTheir voices fade toward somewhere important.\n\nI remember camping in that old tepee.\nYour hands steady on the tent stakes.\n\nI am tired of counting empty hours.\nThe day surrenders to another day.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
