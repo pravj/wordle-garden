@@ -5504,5 +5504,68 @@
     "poem": "I stare at the wall clock.\nFour thirty feels like midnight.\n\nThe telly drones about distant wars.\nI change channels to find silence.\n\nEvery theme song knows my loneliness.\nThe house echoes with familiar jingles.\n\nTeens walk past my window laughing.\nTheir voices fade toward somewhere important.\n\nI remember camping in that old tepee.\nYour hands steady on the tent stakes.\n\nI am tired of counting empty hours.\nThe day surrenders to another day.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-24",
+    "wordle_number": 1770,
+    "answer": "DRUNK",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROUND",
+        "result": [
+          "present",
+          "absent",
+          "correct",
+          "correct",
+          "present"
+        ]
+      },
+      {
+        "word": "MOUND",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "present"
+        ]
+      },
+      {
+        "word": "FOUND",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "present"
+        ]
+      },
+      {
+        "word": "DRUNK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Long Way Home",
+    "persona": "Bartender",
+    "persona_plural": "Bartenders",
+    "poem": "The regulars stare at their reflections in glasses.\nTuesday feels like any other Tuesday.\n\nThe conversation goes round to familiar complaints.\nSame voices saying the same things.\n\nEvery story becomes a mound of worn details.\nNothing changes except the weather outside.\n\nShe found her keys under yesterday's receipts.\nTime to lock up and count the till.\n\nThe last customer leaves drunk and apologetic.\nAnother shift ends with quiet satisfaction.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
