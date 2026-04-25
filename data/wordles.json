@@ -5567,5 +5567,68 @@
     "poem": "The regulars stare at their reflections in glasses.\nTuesday feels like any other Tuesday.\n\nThe conversation goes round to familiar complaints.\nSame voices saying the same things.\n\nEvery story becomes a mound of worn details.\nNothing changes except the weather outside.\n\nShe found her keys under yesterday's receipts.\nTime to lock up and count the till.\n\nThe last customer leaves drunk and apologetic.\nAnother shift ends with quiet satisfaction.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-25",
+    "wordle_number": 1771,
+    "answer": "WOMEN",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "STORE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "HOTEL",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "MONEY",
+        "result": [
+          "present",
+          "correct",
+          "present",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "WOMEN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "After the Last Call",
+    "persona": "Divorcee",
+    "persona_plural": "Divorcees",
+    "poem": "The audio message plays while I pack.\nHis voice still sounds like home.\n\nEvery store receipt gets divided now.\nTwo of everything, half of nothing.\n\nThe hotel clerk asks for one key.\nI take two anyway, old habits.\n\nMoney talks but says the wrong things.\nIt counts what cannot be measured.\n\nWomen understand the weight of starting over.\nWe carry it like we carry everything else.\n\nTomorrow I buy my own coffee maker.",
+    "green_count": 2,
+    "yellow_count": 4
   }
 ]
