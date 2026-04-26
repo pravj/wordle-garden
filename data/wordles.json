@@ -5630,5 +5630,78 @@
     "poem": "The audio message plays while I pack.\nHis voice still sounds like home.\n\nEvery store receipt gets divided now.\nTwo of everything, half of nothing.\n\nThe hotel clerk asks for one key.\nI take two anyway, old habits.\n\nMoney talks but says the wrong things.\nIt counts what cannot be measured.\n\nWomen understand the weight of starting over.\nWe carry it like we carry everything else.\n\nTomorrow I buy my own coffee maker.",
     "green_count": 2,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-04-26",
+    "wordle_number": 1772,
+    "answer": "GLOSS",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROAST",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOIST",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "POSTS",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "BOSSY",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "COSTS",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      }
+    ],
+    "title": "What Everything Requires",
+    "persona": "Homeowner",
+    "persona_plural": "Homeowners",
+    "poem": "The house needs work again.\nSomething always does.\n\nSunday roast burns while I check estimates.\nThe smoke alarm knows my schedule.\n\nBasement walls stay moist despite the dehumidifier.\nForty-three hundred dollars later.\n\nPosts on neighborhood forums ask the same questions.\nEveryone pretends they have answers.\n\nThe contractor gets bossy about timeline changes.\nI nod and write another check.\n\nEverything costs more than they said it would.\nMoney disappears like heat through old windows.",
+    "green_count": 1,
+    "yellow_count": 2
   }
 ]
