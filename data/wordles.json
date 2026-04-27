@@ -5703,5 +5703,78 @@
     "poem": "The house needs work again.\nSomething always does.\n\nSunday roast burns while I check estimates.\nThe smoke alarm knows my schedule.\n\nBasement walls stay moist despite the dehumidifier.\nForty-three hundred dollars later.\n\nPosts on neighborhood forums ask the same questions.\nEveryone pretends they have answers.\n\nThe contractor gets bossy about timeline changes.\nI nod and write another check.\n\nEverything costs more than they said it would.\nMoney disappears like heat through old windows.",
     "green_count": 1,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-27",
+    "wordle_number": 1773,
+    "answer": "EERIE",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "PHONE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "CRIME",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "URINE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "DIRGE",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "BIRCH",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      }
+    ],
+    "title": "Evidence Locker Tuesday",
+    "persona": "Detective",
+    "persona_plural": "Detectives",
+    "poem": "I stare at the same case files.\nNothing changes between coffee and lunch.\n\nThe phone rings with another dead end.\nSomeone saw nothing again.\n\nEvery crime blends into the next one.\nThe motives all sound familiar now.\n\nThey found urine in the alley.\nDNA results take six weeks.\n\nThe victim's mother hums a dirge.\nI write down what she remembers.\n\nUnder the birch tree they planted memorial flowers.\nThe case goes cold like all the others.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
