@@ -5776,5 +5776,78 @@
     "poem": "I stare at the same case files.\nNothing changes between coffee and lunch.\n\nThe phone rings with another dead end.\nSomeone saw nothing again.\n\nEvery crime blends into the next one.\nThe motives all sound familiar now.\n\nThey found urine in the alley.\nDNA results take six weeks.\n\nThe victim's mother hums a dirge.\nI write down what she remembers.\n\nUnder the birch tree they planted memorial flowers.\nThe case goes cold like all the others.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-28",
+    "wordle_number": 1774,
+    "answer": "QUACK",
+    "guesses": [
+      {
+        "word": "PEACE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "BEACH",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "TRACK",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "CRACK",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "STACK",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "WHACK",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Six Ways to Miss",
+    "persona": "Therapist",
+    "persona_plural": "Therapists",
+    "poem": "The session starts with talk of peace.\nEveryone wants what they cannot name.\n\nA beach vacation might help, they say.\nSand between toes fixes nothing permanent.\n\nWe track the same patterns weekly.\nThe couch holds familiar weight.\n\nSomething will crack if we push harder.\nI nod and write notes carefully.\n\nThey stack their problems like dishes.\nEach one balanced on the last.\n\nEvery breakthrough needs a whack of truth.\nToday we run out of time again.",
+    "green_count": 3,
+    "yellow_count": 0
   }
 ]
