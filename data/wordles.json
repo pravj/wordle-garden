@@ -5849,5 +5849,58 @@
     "poem": "The session starts with talk of peace.\nEveryone wants what they cannot name.\n\nA beach vacation might help, they say.\nSand between toes fixes nothing permanent.\n\nWe track the same patterns weekly.\nThe couch holds familiar weight.\n\nSomething will crack if we push harder.\nI nod and write notes carefully.\n\nThey stack their problems like dishes.\nEach one balanced on the last.\n\nEvery breakthrough needs a whack of truth.\nToday we run out of time again.",
     "green_count": 3,
     "yellow_count": 0
+  },
+  {
+    "date": "2026-04-29",
+    "wordle_number": 1775,
+    "answer": "RURAL",
+    "guesses": [
+      {
+        "word": "PLANT",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "AUDIO",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MURAL",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "RURAL",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "What Grows Here Now",
+    "persona": "Artist",
+    "persona_plural": "Artists",
+    "poem": "I plant seeds in squares of dirt.\nNothing grows the way I planned.\n\nThe audio guide explains each brushstroke.\nI stand alone in the empty gallery.\n\nMy mural covers the condemned wall.\nThe city will tear it down Tuesday.\n\nRural towns need art too they said.\nThe grant money runs out next month.\n\nSomeone will remember what we made here.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
