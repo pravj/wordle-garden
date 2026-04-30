@@ -5902,5 +5902,78 @@
     "poem": "I plant seeds in squares of dirt.\nNothing grows the way I planned.\n\nThe audio guide explains each brushstroke.\nI stand alone in the empty gallery.\n\nMy mural covers the condemned wall.\nThe city will tear it down Tuesday.\n\nRural towns need art too they said.\nThe grant money runs out next month.\n\nSomeone will remember what we made here.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-04-30",
+    "wordle_number": 1776,
+    "answer": "CROCK",
+    "guesses": [
+      {
+        "word": "ABOUT",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STORE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "WORLD",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MORPH",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "FROND",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "GROAN",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      }
+    ],
+    "title": "Everything Changes Nothing Does",
+    "persona": "Philosopher",
+    "persona_plural": "Philosophers",
+    "poem": "I think about everything and nothing.\nAbout seems like the right place to start.\n\nThe store closes at nine tonight.\nI buy milk and wonder why.\n\nThe world keeps spinning without permission.\nNobody asked if I wanted this.\n\nThings morph into other things constantly.\nMy face in the mirror proves this.\n\nA frond falls from the dying plant.\nEven houseplants give up eventually.\n\nI groan at the morning alarm.\nTomorrow will sound exactly the same.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
