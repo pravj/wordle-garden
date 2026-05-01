@@ -5975,5 +5975,78 @@
     "poem": "I think about everything and nothing.\nAbout seems like the right place to start.\n\nThe store closes at nine tonight.\nI buy milk and wonder why.\n\nThe world keeps spinning without permission.\nNobody asked if I wanted this.\n\nThings morph into other things constantly.\nMy face in the mirror proves this.\n\nA frond falls from the dying plant.\nEven houseplants give up eventually.\n\nI groan at the morning alarm.\nTomorrow will sound exactly the same.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-01",
+    "wordle_number": 1777,
+    "answer": "PLUME",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "NURSE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "MUTED",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "QUEUE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "LUMME",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Long Wait",
+    "persona": "Patient",
+    "persona_plural": "Patients",
+    "poem": "The audio crackles through ancient speakers overhead.\nAnother voice calls numbers that are not mine.\n\nHouse calls ended decades before my birth.\nNow we gather in fluorescent waiting rooms.\n\nThe nurse appears with clipboard and tired eyes.\nShe says my name like a question.\n\nEverything feels muted through these glass doors.\nTime moves differently in medical buildings.\n\nThe queue ahead of me never seems shorter.\nInsurance cards grow warm in sweating palms.\n\nLumme, she says, checking her list again.\nStill not here, still waiting to be seen.",
+    "green_count": 3,
+    "yellow_count": 4
   }
 ]
