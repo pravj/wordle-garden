@@ -6048,5 +6048,78 @@
     "poem": "The audio crackles through ancient speakers overhead.\nAnother voice calls numbers that are not mine.\n\nHouse calls ended decades before my birth.\nNow we gather in fluorescent waiting rooms.\n\nThe nurse appears with clipboard and tired eyes.\nShe says my name like a question.\n\nEverything feels muted through these glass doors.\nTime moves differently in medical buildings.\n\nThe queue ahead of me never seems shorter.\nInsurance cards grow warm in sweating palms.\n\nLumme, she says, checking her list again.\nStill not here, still waiting to be seen.",
     "green_count": 3,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-05-02",
+    "wordle_number": 1778,
+    "answer": "BRING",
+    "guesses": [
+      {
+        "word": "TEARS",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROUND",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "PRINT",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "GRIND",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "GRINS",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "BRING",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Morning Press Conference",
+    "persona": "Journalist",
+    "persona_plural": "Journalists",
+    "poem": "The tears dry before the first question.\nDeadline breath fogs the courthouse steps.\n\nRound two of interviews yields nothing new.\nSame answers circling back to silence.\n\nPrint deadlines mock from desk calendars.\nEditor's voice cuts through phone static.\n\nGrind continues past reasonable hours again.\nCoffee burns cold in forgotten cups.\n\nGrins appear when sources finally talk.\nTruth emerges from careful persistence.\n\nBring the story home before sunrise.\nAnother day breaks on delivered words.",
+    "green_count": 3,
+    "yellow_count": 2
   }
 ]
