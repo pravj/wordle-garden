@@ -6121,5 +6121,68 @@
     "poem": "The tears dry before the first question.\nDeadline breath fogs the courthouse steps.\n\nRound two of interviews yields nothing new.\nSame answers circling back to silence.\n\nPrint deadlines mock from desk calendars.\nEditor's voice cuts through phone static.\n\nGrind continues past reasonable hours again.\nCoffee burns cold in forgotten cups.\n\nGrins appear when sources finally talk.\nTruth emerges from careful persistence.\n\nBring the story home before sunrise.\nAnother day breaks on delivered words.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-03",
+    "wordle_number": 1779,
+    "answer": "PUFFY",
+    "guesses": [
+      {
+        "word": "STONE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BOARD",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHUMP",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "GULPY",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "PUFFY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Foundation Work",
+    "persona": "Construction worker",
+    "persona_plural": "Construction workers",
+    "poem": "The stone sits where it always sits.\nFoundation work starts before dawn.\n\nThe board measures what it measures.\nStraight lines matter more than comfort.\n\nEvery job site has its chump.\nSomeone always carries the heavy end.\n\nWater breaks come when you're gulpy.\nSalt tablets dissolve on dry tongues.\n\nHard hats leave your face puffy.\nThe building stands when you're done.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
