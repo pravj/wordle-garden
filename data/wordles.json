@@ -6184,5 +6184,78 @@
     "poem": "The stone sits where it always sits.\nFoundation work starts before dawn.\n\nThe board measures what it measures.\nStraight lines matter more than comfort.\n\nEvery job site has its chump.\nSomeone always carries the heavy end.\n\nWater breaks come when you're gulpy.\nSalt tablets dissolve on dry tongues.\n\nHard hats leave your face puffy.\nThe building stands when you're done.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-04",
+    "wordle_number": 1780,
+    "answer": "RISER",
+    "guesses": [
+      {
+        "word": "BREAD",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SPORT",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "HORSE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "NURSE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "STERN",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "VERSE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      }
+    ],
+    "title": "Daily Rounds",
+    "persona": "Teacher",
+    "persona_plural": "Teachers",
+    "poem": "The cafeteria serves bread that tastes like cardboard.\nStudents ask why we cannot have real food.\n\nThe principal cancels sport again for budget reasons.\nTwenty-seven years and they still expect miracles.\n\nMy voice grows horse by third period.\nThe same lesson plans repeat themselves endlessly.\n\nThe school nurse retired last month.\nNobody applied for her position yet.\n\nI remain stern when Marcus acts out.\nInside I wonder if anyone cares anymore.\n\nEach day follows the same tired verse.\nThe bell rings but nothing ever changes.",
+    "green_count": 0,
+    "yellow_count": 3
   }
 ]
