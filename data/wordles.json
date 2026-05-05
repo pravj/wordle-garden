@@ -6257,5 +6257,78 @@
     "poem": "The cafeteria serves bread that tastes like cardboard.\nStudents ask why we cannot have real food.\n\nThe principal cancels sport again for budget reasons.\nTwenty-seven years and they still expect miracles.\n\nMy voice grows horse by third period.\nThe same lesson plans repeat themselves endlessly.\n\nThe school nurse retired last month.\nNobody applied for her position yet.\n\nI remain stern when Marcus acts out.\nInside I wonder if anyone cares anymore.\n\nEach day follows the same tired verse.\nThe bell rings but nothing ever changes.",
     "green_count": 0,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-05-05",
+    "wordle_number": 1781,
+    "answer": "LATCH",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "TOUGH",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "HATCH",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "MATCH",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "BATCH",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "WATCH",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Morning Shift",
+    "persona": "Nurse",
+    "persona_plural": "Nurses",
+    "poem": "I stare at the monitor's green numbers.\nAnother twelve hours begins like this.\n\nThe night was tough on everyone.\nRoom 302 asked for water again.\n\nNew admissions hatch from emergency downstairs.\nTheir families gather in worried clusters.\n\nEvery face seems to match another.\nThe same fear wearing different bodies.\n\nThis batch of medications needs sorting.\nMy hands know the routine better.\n\nI watch the clock above the station.\nTime moves differently in fluorescent light.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
