@@ -6330,5 +6330,78 @@
     "poem": "I stare at the monitor's green numbers.\nAnother twelve hours begins like this.\n\nThe night was tough on everyone.\nRoom 302 asked for water again.\n\nNew admissions hatch from emergency downstairs.\nTheir families gather in worried clusters.\n\nEvery face seems to match another.\nThe same fear wearing different bodies.\n\nThis batch of medications needs sorting.\nMy hands know the routine better.\n\nI watch the clock above the station.\nTime moves differently in fluorescent light.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-06",
+    "wordle_number": 1782,
+    "answer": "LIKEN",
+    "guesses": [
+      {
+        "word": "PLANT",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "LEMON",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "LUNCH",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "LEARN",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "LEBEN",
+        "result": [
+          "correct",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "LUMEN",
+        "result": [
+          "correct",
+          "absent",
+          "absent",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Things That Need Light",
+    "persona": "Botanist",
+    "persona_plural": "Botanists",
+    "poem": "I water the plant at seven thirty.\nThe leaves are turning yellow again.\n\nThe lemon tree hasn't fruited this year.\nMy grant application sits on the desk.\n\nI eat lunch in the empty greenhouse.\nThe silence feels like waiting for results.\n\nThere is nothing left to learn here.\nThe data shows what it shows.\n\nLeben means life in another language.\nMine feels borrowed from someone else.\n\nThe lumen count drops each winter day.\nSome experiments simply fail to grow.",
+    "green_count": 3,
+    "yellow_count": 3
   }
 ]
