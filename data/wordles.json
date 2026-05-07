@@ -6403,5 +6403,78 @@
     "poem": "I water the plant at seven thirty.\nThe leaves are turning yellow again.\n\nThe lemon tree hasn't fruited this year.\nMy grant application sits on the desk.\n\nI eat lunch in the empty greenhouse.\nThe silence feels like waiting for results.\n\nThere is nothing left to learn here.\nThe data shows what it shows.\n\nLeben means life in another language.\nMine feels borrowed from someone else.\n\nThe lumen count drops each winter day.\nSome experiments simply fail to grow.",
     "green_count": 3,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-05-07",
+    "wordle_number": 1783,
+    "answer": "BUDGE",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "WHOLE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "CHIME",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "FENCE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "JOULE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "BUDGE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Morning Physics Lab Report",
+    "persona": "Physics student",
+    "persona_plural": "Physics students",
+    "poem": "I stare at the whiteboard equations again.\nThe professor's chalk dust settles on my notebook.\n\nThe whole semester compressed into final exams.\nMy coffee grows cold in the fluorescent light.\n\nThe lab timer's chime marks another failed attempt.\nThe oscilloscope trace remains stubbornly flat.\n\nI fence myself in with textbooks and formulas.\nThe library closes but the problems remain unsolved.\n\nConverting calories to joule feels pointless now.\nEnergy cannot be created or destroyed, only transferred.\n\nThe needle on the scale will not budge.\nSometimes understanding arrives exactly when needed.",
+    "green_count": 1,
+    "yellow_count": 1
   }
 ]
