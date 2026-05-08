@@ -6476,5 +6476,78 @@
     "poem": "I stare at the whiteboard equations again.\nThe professor's chalk dust settles on my notebook.\n\nThe whole semester compressed into final exams.\nMy coffee grows cold in the fluorescent light.\n\nThe lab timer's chime marks another failed attempt.\nThe oscilloscope trace remains stubbornly flat.\n\nI fence myself in with textbooks and formulas.\nThe library closes but the problems remain unsolved.\n\nConverting calories to joule feels pointless now.\nEnergy cannot be created or destroyed, only transferred.\n\nThe needle on the scale will not budge.\nSometimes understanding arrives exactly when needed.",
     "green_count": 1,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-05-08",
+    "wordle_number": 1784,
+    "answer": "UMBRA",
+    "guesses": [
+      {
+        "word": "ABOUT",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "BURAN",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "URBAN",
+        "result": [
+          "correct",
+          "present",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "RUGBY",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "BURQA",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "BRUJA",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Words That Don't Fit",
+    "persona": "Immigrant",
+    "persona_plural": "Immigrants",
+    "poem": "They ask me about where I come from.\nI tell them it doesn't matter now.\n\nThe buran winds don't blow here.\nStill I feel them in my sleep.\n\nThis urban landscape speaks different languages.\nNone of them sound like home.\n\nRugby fields where children play games.\nMine learned different rules entirely.\n\nA woman in her burqa walks past.\nWe nod but do not speak.\n\nMy grandmother was called bruja sometimes.\nHere they have no word for what she was.",
+    "green_count": 3,
+    "yellow_count": 4
   }
 ]
