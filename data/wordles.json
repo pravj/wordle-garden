@@ -6549,5 +6549,58 @@
     "poem": "They ask me about where I come from.\nI tell them it doesn't matter now.\n\nThe buran winds don't blow here.\nStill I feel them in my sleep.\n\nThis urban landscape speaks different languages.\nNone of them sound like home.\n\nRugby fields where children play games.\nMine learned different rules entirely.\n\nA woman in her burqa walks past.\nWe nod but do not speak.\n\nMy grandmother was called bruja sometimes.\nHere they have no word for what she was.",
     "green_count": 3,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-05-09",
+    "wordle_number": 1785,
+    "answer": "SATIN",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOIST",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "SAINT",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "SATIN",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Thread Count Matters",
+    "persona": "Seamstress",
+    "persona_plural": "Seamstresses",
+    "poem": "The crane outside moves steel beams slowly.\nHer machine waits for the next order.\n\nMoist fingers press the fabric smooth.\nSteam rises from the pressing iron.\n\nEvery saint had their particular suffering.\nShe pins the hem with practiced hands.\n\nSatin requires different needle tension settings.\nThe wedding dress hangs finished now.",
+    "green_count": 2,
+    "yellow_count": 5
   }
 ]
