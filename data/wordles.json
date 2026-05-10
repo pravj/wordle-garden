@@ -6602,5 +6602,78 @@
     "poem": "The crane outside moves steel beams slowly.\nHer machine waits for the next order.\n\nMoist fingers press the fabric smooth.\nSteam rises from the pressing iron.\n\nEvery saint had their particular suffering.\nShe pins the hem with practiced hands.\n\nSatin requires different needle tension settings.\nThe wedding dress hangs finished now.",
     "green_count": 2,
     "yellow_count": 5
+  },
+  {
+    "date": "2026-05-10",
+    "wordle_number": 1786,
+    "answer": "PARKA",
+    "guesses": [
+      {
+        "word": "SLATE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROUND",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHAIR",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "VAPOR",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "ALARM",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "PRANK",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "absent",
+          "present"
+        ]
+      }
+    ],
+    "title": "Another Tuesday Morning",
+    "persona": "Office worker",
+    "persona_plural": "Office workers",
+    "poem": "The slate gets wiped clean every Monday morning.\nSame desk. Same coffee stain.\n\nEverything goes round in circles here.\nThe meetings about meetings about meetings.\n\nI pull out my chair at 8:47.\nThe cushion remembers yesterday's weight.\n\nThe vapor from my instant soup rises.\nLunch breaks measure out in steam.\n\nThe fire alarm tested itself again today.\nWe all stayed seated this time.\n\nSomeone left a prank voicemail on extension four.\nNobody laughs at anything anymore.",
+    "green_count": 2,
+    "yellow_count": 4
   }
 ]
