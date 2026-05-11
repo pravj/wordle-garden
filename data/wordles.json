@@ -6675,5 +6675,78 @@
     "poem": "The slate gets wiped clean every Monday morning.\nSame desk. Same coffee stain.\n\nEverything goes round in circles here.\nThe meetings about meetings about meetings.\n\nI pull out my chair at 8:47.\nThe cushion remembers yesterday's weight.\n\nThe vapor from my instant soup rises.\nLunch breaks measure out in steam.\n\nThe fire alarm tested itself again today.\nWe all stayed seated this time.\n\nSomeone left a prank voicemail on extension four.\nNobody laughs at anything anymore.",
     "green_count": 2,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-05-11",
+    "wordle_number": 1787,
+    "answer": "NEWLY",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "TRACE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "WEIRD",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "JEWEL",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "NEWER",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "NEWLY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Ring Still Fits",
+    "persona": "Newlywed",
+    "persona_plural": "Newlyweds",
+    "poem": "The house feels too big for two people.\nWe bought it anyway, like couples do.\n\nI trace the outline of your sleeping face.\nMorning light makes everything seem possible.\n\nYour laugh sounds weird when you're nervous.\nI'm learning the catalog of your sounds.\n\nThe jewel on my finger catches light.\nThree months and it still surprises me.\n\nEach day newer than the one before.\nWe're writing the rules as we go.\n\nThe newly painted walls hold our voices.\nWe're becoming something neither was alone.",
+    "green_count": 3,
+    "yellow_count": 3
   }
 ]
