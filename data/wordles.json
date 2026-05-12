@@ -6748,5 +6748,68 @@
     "poem": "The house feels too big for two people.\nWe bought it anyway, like couples do.\n\nI trace the outline of your sleeping face.\nMorning light makes everything seem possible.\n\nYour laugh sounds weird when you're nervous.\nI'm learning the catalog of your sounds.\n\nThe jewel on my finger catches light.\nThree months and it still surprises me.\n\nEach day newer than the one before.\nWe're writing the rules as we go.\n\nThe newly painted walls hold our voices.\nWe're becoming something neither was alone.",
     "green_count": 3,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-05-12",
+    "wordle_number": 1788,
+    "answer": "CLOCK",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "ROAST",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOVIE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "GLOAT",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CLOCK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Sunday Evening Inventory",
+    "persona": "Retiree",
+    "persona_plural": "Retirees",
+    "poem": "The house settles into its familiar creaks.\nAnother day accounted for.\n\nSunday roast cooling on the counter.\nSame recipe forty-three years running.\n\nThe movie credits roll past bedtime.\nThese stories all end the same way.\n\nNo need to gloat about small victories.\nTime teaches you that much.\n\nThe clock marks another hour survived.\nTomorrow will ask for the same accounting.",
+    "green_count": 2,
+    "yellow_count": 1
   }
 ]
