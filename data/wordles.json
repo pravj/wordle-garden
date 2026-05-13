@@ -6811,5 +6811,78 @@
     "poem": "The house settles into its familiar creaks.\nAnother day accounted for.\n\nSunday roast cooling on the counter.\nSame recipe forty-three years running.\n\nThe movie credits roll past bedtime.\nThese stories all end the same way.\n\nNo need to gloat about small victories.\nTime teaches you that much.\n\nThe clock marks another hour survived.\nTomorrow will ask for the same accounting.",
     "green_count": 2,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-05-13",
+    "wordle_number": 1789,
+    "answer": "DOWDY",
+    "guesses": [
+      {
+        "word": "ABOUT",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SLOPE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOUND",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "DOING",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "DODGE",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "DOWDY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Ground Beneath Everything",
+    "persona": "Surveyor",
+    "persona_plural": "Surveyors",
+    "poem": "The project is about elevation changes.\nWe measure what others walk over.\n\nEvery slope tells you where water goes.\nMost people never think to look.\n\nBehind the house a small mound rises.\nThe previous owner planted roses there.\n\nAll day doing the same calculations.\nThe land doesn't lie like people do.\n\nYou learn to dodge the obvious mistakes.\nTrust the instrument over your eyes.\n\nThe final report looks dowdy and plain.\nBut somewhere a foundation will hold.\n\nThe numbers add up to something solid.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
