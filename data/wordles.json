@@ -6884,5 +6884,78 @@
     "poem": "The project is about elevation changes.\nWe measure what others walk over.\n\nEvery slope tells you where water goes.\nMost people never think to look.\n\nBehind the house a small mound rises.\nThe previous owner planted roses there.\n\nAll day doing the same calculations.\nThe land doesn't lie like people do.\n\nYou learn to dodge the obvious mistakes.\nTrust the instrument over your eyes.\n\nThe final report looks dowdy and plain.\nBut somewhere a foundation will hold.\n\nThe numbers add up to something solid.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-14",
+    "wordle_number": 1790,
+    "answer": "WAVER",
+    "guesses": [
+      {
+        "word": "STONE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "CREAM",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "EARLY",
+        "result": [
+          "present",
+          "correct",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "EARED",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "RAVEN",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "HAVEN",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      }
+    ],
+    "title": "What Remains After Everything",
+    "persona": "Widower",
+    "persona_plural": "Widowers",
+    "poem": "The stone marker arrives next Tuesday.\nHer name spelled correctly this time.\n\nI still buy the heavy cream.\nOld habits die harder than people.\n\nThe early morning coffee tastes different.\nSilence has its own bitter flavor.\n\nDogs are long-eared and loyal still.\nMine waits by her empty chair.\n\nThe raven outside knows something changed.\nIt watches me through kitchen glass.\n\nThis house was supposed to be haven.\nNow it's just rooms I walk through.",
+    "green_count": 3,
+    "yellow_count": 3
   }
 ]
