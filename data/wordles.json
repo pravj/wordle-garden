@@ -6957,5 +6957,68 @@
     "poem": "The stone marker arrives next Tuesday.\nHer name spelled correctly this time.\n\nI still buy the heavy cream.\nOld habits die harder than people.\n\nThe early morning coffee tastes different.\nSilence has its own bitter flavor.\n\nDogs are long-eared and loyal still.\nMine waits by her empty chair.\n\nThe raven outside knows something changed.\nIt watches me through kitchen glass.\n\nThis house was supposed to be haven.\nNow it's just rooms I walk through.",
     "green_count": 3,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-05-15",
+    "wordle_number": 1791,
+    "answer": "CREED",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "ALERT",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "NERVE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "CREEP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "CREED",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Foundation Work",
+    "persona": "Homeowner",
+    "persona_plural": "Homeowners",
+    "poem": "The house settles at night making sounds.\nEvery beam and joint finds its place.\n\nThe smoke detector goes alert at three AM.\nBattery low warning in the dark hallway.\n\nA nerve in my back twitches near the foundation.\nThe basement holds what it always held.\n\nSomething makes the floorboards creep upstairs.\nWeight shifting where no weight should be.\n\nMy father's creed was fix what breaks.\nKeep the structure sound beneath your feet.\n\nThe work continues room by room.",
+    "green_count": 3,
+    "yellow_count": 2
   }
 ]
