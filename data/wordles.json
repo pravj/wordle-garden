@@ -7020,5 +7020,78 @@
     "poem": "The house settles at night making sounds.\nEvery beam and joint finds its place.\n\nThe smoke detector goes alert at three AM.\nBattery low warning in the dark hallway.\n\nA nerve in my back twitches near the foundation.\nThe basement holds what it always held.\n\nSomething makes the floorboards creep upstairs.\nWeight shifting where no weight should be.\n\nMy father's creed was fix what breaks.\nKeep the structure sound beneath your feet.\n\nThe work continues room by room.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-16",
+    "wordle_number": 1792,
+    "answer": "MOVER",
+    "guesses": [
+      {
+        "word": "STARE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "MOUND",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MODAL",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOTIF",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MORSE",
+        "result": [
+          "correct",
+          "correct",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "MOVER",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Pattern Underneath Everything",
+    "persona": "Therapist",
+    "persona_plural": "Therapists",
+    "poem": "They stare at you expecting answers.\nYou stare back knowing there are none.\n\nThe mound of tissues grows between sessions.\nEach one holds what words cannot.\n\nModal responses come from training manuals.\nReal healing happens in the silence.\n\nThe motif repeats in every story.\nDifferent faces, same broken hearts.\n\nMorse code tapping of rain outside.\nMessages you were never taught.\n\nThe mover arrives for your office furniture.\nPractice ends but the work continues.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
