@@ -7093,5 +7093,78 @@
     "poem": "They stare at you expecting answers.\nYou stare back knowing there are none.\n\nThe mound of tissues grows between sessions.\nEach one holds what words cannot.\n\nModal responses come from training manuals.\nReal healing happens in the silence.\n\nThe motif repeats in every story.\nDifferent faces, same broken hearts.\n\nMorse code tapping of rain outside.\nMessages you were never taught.\n\nThe mover arrives for your office furniture.\nPractice ends but the work continues.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-17",
+    "wordle_number": 1793,
+    "answer": "BYLAW",
+    "guesses": [
+      {
+        "word": "ABOUT",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BEACH",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BRAND",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BALMY",
+        "result": [
+          "correct",
+          "present",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "BLOWY",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "BYLAW",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Summer Planning Committee Meeting",
+    "persona": "Bureaucrat",
+    "persona_plural": "Bureaucrats",
+    "poem": "The proposal is about beach access again.\nAnother summer, another set of forms.\n\nThe beach committee meets every Tuesday.\nSand management requires proper documentation.\n\nBrand guidelines specify acceptable signage colors.\nMunicipal standards exist for good reason.\n\nThe weather turned balmy last Thursday.\nPermits still needed processing regardless.\n\nBlowy conditions delayed the contractor meeting.\nInstallation schedules remain weather dependent.\n\nThe bylaw amendment passed without discussion.\nSection twelve now covers seasonal operations.",
+    "green_count": 2,
+    "yellow_count": 5
   }
 ]
