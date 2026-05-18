@@ -7166,5 +7166,78 @@
     "poem": "The proposal is about beach access again.\nAnother summer, another set of forms.\n\nThe beach committee meets every Tuesday.\nSand management requires proper documentation.\n\nBrand guidelines specify acceptable signage colors.\nMunicipal standards exist for good reason.\n\nThe weather turned balmy last Thursday.\nPermits still needed processing regardless.\n\nBlowy conditions delayed the contractor meeting.\nInstallation schedules remain weather dependent.\n\nThe bylaw amendment passed without discussion.\nSection twelve now covers seasonal operations.",
     "green_count": 2,
     "yellow_count": 5
+  },
+  {
+    "date": "2026-05-18",
+    "wordle_number": 1794,
+    "answer": "LOATH",
+    "guesses": [
+      {
+        "word": "ALONE",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "OVALS",
+        "result": [
+          "present",
+          "absent",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "PLATE",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "QUALM",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "ALTAR",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "FLOAT",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "present"
+        ]
+      }
+    ],
+    "title": "The Shape of Things",
+    "persona": "Divorcee",
+    "persona_plural": "Divorcees",
+    "poem": "I eat alone again tonight.\nThe silence has its own weight.\n\nThe wedding ring left ovals on my finger.\nPale marks that refuse to fade.\n\nEvery plate feels too large now.\nThe table stretches like an accusation.\n\nA qualm rises when I see couples.\nTheir easy laughter cuts through me.\n\nThe altar where we promised everything.\nNow just furniture in someone else's story.\n\nI float through rooms that remember you.\nThe emptiness has learned my name.",
+    "green_count": 2,
+    "yellow_count": 4
   }
 ]
