@@ -7239,5 +7239,58 @@
     "poem": "I eat alone again tonight.\nThe silence has its own weight.\n\nThe wedding ring left ovals on my finger.\nPale marks that refuse to fade.\n\nEvery plate feels too large now.\nThe table stretches like an accusation.\n\nA qualm rises when I see couples.\nTheir easy laughter cuts through me.\n\nThe altar where we promised everything.\nNow just furniture in someone else's story.\n\nI float through rooms that remember you.\nThe emptiness has learned my name.",
     "green_count": 2,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-05-19",
+    "wordle_number": 1795,
+    "answer": "DUSTY",
+    "guesses": [
+      {
+        "word": "SLICE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STORM",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "TASTY",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "DUSTY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Kitchen After Midnight",
+    "persona": "Baker",
+    "persona_plural": "Bakers",
+    "poem": "The knife goes through bread at three AM.\nEach slice falls silent on the counter.\n\nOutside the storm rattles the windows hard.\nSleep will not come tonight either.\n\nThe sample batch turned out more than tasty.\nTomorrow's orders wait in neat rows.\n\nFlour settles dusty on everything here.\nThe work continues before dawn breaks.",
+    "green_count": 3,
+    "yellow_count": 2
   }
 ]
