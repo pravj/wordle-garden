@@ -7292,5 +7292,68 @@
     "poem": "The knife goes through bread at three AM.\nEach slice falls silent on the counter.\n\nOutside the storm rattles the windows hard.\nSleep will not come tonight either.\n\nThe sample batch turned out more than tasty.\nTomorrow's orders wait in neat rows.\n\nFlour settles dusty on everything here.\nThe work continues before dawn breaks.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-20",
+    "wordle_number": 1796,
+    "answer": "WRECK",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "TREES",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "GREED",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CREEP",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "WRECK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Industrial Survey",
+    "persona": "Engineer",
+    "persona_plural": "Engineers",
+    "poem": "The crane sits idle in morning fog.\nAnother project behind schedule already.\n\nTrees marked with orange paint await removal.\nThe permits came through yesterday.\n\nGreed drives every decision at the top.\nWe just follow the blueprints they approve.\n\nThe creep in foundation concrete shows stress.\nI file another report nobody reads.\n\nThe wreck of last year's bridge still haunts.\nBut this one might actually hold.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
