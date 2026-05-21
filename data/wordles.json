@@ -7355,5 +7355,58 @@
     "poem": "The crane sits idle in morning fog.\nAnother project behind schedule already.\n\nTrees marked with orange paint await removal.\nThe permits came through yesterday.\n\nGreed drives every decision at the top.\nWe just follow the blueprints they approve.\n\nThe creep in foundation concrete shows stress.\nI file another report nobody reads.\n\nThe wreck of last year's bridge still haunts.\nBut this one might actually hold.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-21",
+    "wordle_number": 1797,
+    "answer": "AGREE",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "AROSE",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "AURAE",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "AGREE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Way Words Work",
+    "persona": "Student",
+    "persona_plural": "Students",
+    "poem": "The crane outside the library window stands motionless.\nFinals week demands this kind of patience.\n\nShe arose at five again today.\nCoffee tastes like obligation now.\n\nThe aurae of other people's confidence fills the room.\nEveryone else seems to know something.\n\nWe agree on very little these days.\nBut the answer was always there.\n\nSome mornings the fog lifts by itself.",
+    "green_count": 3,
+    "yellow_count": 2
   }
 ]
