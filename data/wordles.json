@@ -7408,5 +7408,78 @@
     "poem": "The crane outside the library window stands motionless.\nFinals week demands this kind of patience.\n\nShe arose at five again today.\nCoffee tastes like obligation now.\n\nThe aurae of other people's confidence fills the room.\nEveryone else seems to know something.\n\nWe agree on very little these days.\nBut the answer was always there.\n\nSome mornings the fog lifts by itself.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-22",
+    "wordle_number": 1798,
+    "answer": "VOCAL",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "AUDIO",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "CLOTH",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CLOGS",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "LOGIC",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "COLZA",
+        "result": [
+          "present",
+          "correct",
+          "present",
+          "absent",
+          "present"
+        ]
+      }
+    ],
+    "title": "The Sound of Certainty",
+    "persona": "Surgeon",
+    "persona_plural": "Surgeons",
+    "poem": "The crane outside lifts steel beams.\nI count the hours until morning rounds.\n\nAudio recordings play in the background.\nMy hands remember what they know.\n\nCloth masks hang by the door.\nThe schedule never changes, only faces.\n\nClogs echo down empty hallways.\nNight shift nurses move like ghosts.\n\nLogic fails where bodies begin.\nCharts cannot explain everything that breaks.\n\nColza oil sits unused in the cupboard.\nSome things refuse to heal properly.",
+    "green_count": 1,
+    "yellow_count": 4
   }
 ]
