@@ -7481,5 +7481,78 @@
     "poem": "The crane outside lifts steel beams.\nI count the hours until morning rounds.\n\nAudio recordings play in the background.\nMy hands remember what they know.\n\nCloth masks hang by the door.\nThe schedule never changes, only faces.\n\nClogs echo down empty hallways.\nNight shift nurses move like ghosts.\n\nLogic fails where bodies begin.\nCharts cannot explain everything that breaks.\n\nColza oil sits unused in the cupboard.\nSome things refuse to heal properly.",
     "green_count": 1,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-05-23",
+    "wordle_number": 1799,
+    "answer": "CHUCK",
+    "guesses": [
+      {
+        "word": "ABOUT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SNOWY",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHUMP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHUNK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "CHURL",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHUCK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Winter Calling Names",
+    "persona": "Retiree",
+    "persona_plural": "Retirees",
+    "poem": "The conversation was about nothing again.\nSame faces, same complaints, same silence.\n\nThe morning came snowy and bitter.\nCoffee tastes like yesterday's disappointment.\n\nHe called me a chump behind my back.\nForty years of friendship apparently means nothing.\n\nThe days break into chunk after chunk.\nEach one smaller than the last.\n\nThat churl at the grocery store sneered.\nYoung people have no respect anymore.\n\nI wanted to chuck it all away.\nInstead I swept the front steps clean.",
+    "green_count": 4,
+    "yellow_count": 1
   }
 ]
