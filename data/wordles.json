@@ -7554,5 +7554,78 @@
     "poem": "The conversation was about nothing again.\nSame faces, same complaints, same silence.\n\nThe morning came snowy and bitter.\nCoffee tastes like yesterday's disappointment.\n\nHe called me a chump behind my back.\nForty years of friendship apparently means nothing.\n\nThe days break into chunk after chunk.\nEach one smaller than the last.\n\nThat churl at the grocery store sneered.\nYoung people have no respect anymore.\n\nI wanted to chuck it all away.\nInstead I swept the front steps clean.",
     "green_count": 4,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-05-24",
+    "wordle_number": 1800,
+    "answer": "NIECE",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "CRANE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "FENCE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "MENCE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "PENCE",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "correct",
+          "correct"
+        ]
+      },
+      {
+        "word": "WINCE",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Neighbor's Property Line",
+    "persona": "Homeowner",
+    "persona_plural": "Homeowners",
+    "poem": "The house next door sold last month.\nNew owners arrive with different ideas.\n\nThey install a crane in the driveway.\nConstruction starts at six thirty sharp.\n\nThe fence between us needs replacing now.\nProperty lines become suddenly important.\n\nI mence the conversation about boundaries carefully.\nSome words don't exist in polite discourse.\n\nNot even pence changes hands fairly anymore.\nEverything costs more than it should.\n\nI wince when the hammering starts again.\nTomorrow will sound exactly like today.",
+    "green_count": 3,
+    "yellow_count": 3
   }
 ]
