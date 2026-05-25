@@ -7627,5 +7627,78 @@
     "poem": "The house next door sold last month.\nNew owners arrive with different ideas.\n\nThey install a crane in the driveway.\nConstruction starts at six thirty sharp.\n\nThe fence between us needs replacing now.\nProperty lines become suddenly important.\n\nI mence the conversation about boundaries carefully.\nSome words don't exist in polite discourse.\n\nNot even pence changes hands fairly anymore.\nEverything costs more than it should.\n\nI wince when the hammering starts again.\nTomorrow will sound exactly like today.",
     "green_count": 3,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-05-25",
+    "wordle_number": 1801,
+    "answer": "VISIT",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "SAINT",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "MOIST",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "TWIST",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "CRISP",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "VISIT",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Everything In Its Place",
+    "persona": "Therapist",
+    "persona_plural": "Therapists",
+    "poem": "The house holds what we cannot say.\nFour walls witness everything, judge nothing.\n\nEvery saint was broken first.\nPerfect people make terrible company anyway.\n\nMoist eyes reveal more than words.\nTears carry what language abandons.\n\nLife takes another unexpected twist.\nWe bend or we break completely.\n\nMorning air feels crisp against skin.\nEven damaged things can breathe again.\n\nSomeone will visit when you're ready.\nHealing happens in its own time.",
+    "green_count": 1,
+    "yellow_count": 2
   }
 ]
