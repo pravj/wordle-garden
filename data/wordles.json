@@ -7700,5 +7700,58 @@
     "poem": "The house holds what we cannot say.\nFour walls witness everything, judge nothing.\n\nEvery saint was broken first.\nPerfect people make terrible company anyway.\n\nMoist eyes reveal more than words.\nTears carry what language abandons.\n\nLife takes another unexpected twist.\nWe bend or we break completely.\n\nMorning air feels crisp against skin.\nEven damaged things can breathe again.\n\nSomeone will visit when you're ready.\nHealing happens in its own time.",
     "green_count": 1,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-26",
+    "wordle_number": 1802,
+    "answer": "COUCH",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "present",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "BOUND",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "COUGH",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "COUCH",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Four Walls Same Air",
+    "persona": "Stay-at-home parent",
+    "persona_plural": "Stay-at-home parents",
+    "poem": "The house feels smaller every day now.\nChildren's voices echo through empty rooms.\n\nBound to routines that never quite work.\nSchool pickup happens whether ready or not.\n\nThe baby's cough kept everyone awake again.\nPediatrician says it will pass eventually.\n\nWe gather on the couch for dinner.\nThe television provides what conversation cannot.\n\nTomorrow the laundry will still be there.",
+    "green_count": 4,
+    "yellow_count": 1
   }
 ]
