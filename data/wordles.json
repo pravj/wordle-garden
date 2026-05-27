@@ -7753,5 +7753,68 @@
     "poem": "The house feels smaller every day now.\nChildren's voices echo through empty rooms.\n\nBound to routines that never quite work.\nSchool pickup happens whether ready or not.\n\nThe baby's cough kept everyone awake again.\nPediatrician says it will pass eventually.\n\nWe gather on the couch for dinner.\nThe television provides what conversation cannot.\n\nTomorrow the laundry will still be there.",
     "green_count": 4,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-05-27",
+    "wordle_number": 1803,
+    "answer": "STUFF",
+    "guesses": [
+      {
+        "word": "ABOUT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "STUDY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STUMP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STUCK",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "STUFF",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "What We Keep Learning",
+    "persona": "Teacher",
+    "persona_plural": "Teachers",
+    "poem": "The memo about new standards arrived today.\nAnother meeting where nothing gets decided.\n\nI study the faces in third period.\nHalf of them already given up.\n\nEvery lesson plan hits the same stump.\nBudget cuts mean fewer books again.\n\nThe system stays stuck in committee reviews.\nProgress reports due by Friday morning.\n\nWe sort through stuff that used to work.\nClassroom supplies bought with my own money.\n\nTomorrow I unlock the door anyway.",
+    "green_count": 3,
+    "yellow_count": 2
   }
 ]
