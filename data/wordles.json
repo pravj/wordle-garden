@@ -7816,5 +7816,78 @@
     "poem": "The memo about new standards arrived today.\nAnother meeting where nothing gets decided.\n\nI study the faces in third period.\nHalf of them already given up.\n\nEvery lesson plan hits the same stump.\nBudget cuts mean fewer books again.\n\nThe system stays stuck in committee reviews.\nProgress reports due by Friday morning.\n\nWe sort through stuff that used to work.\nClassroom supplies bought with my own money.\n\nTomorrow I unlock the door anyway.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-28",
+    "wordle_number": 1804,
+    "answer": "DIVOT",
+    "guesses": [
+      {
+        "word": "PLANT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "MOIST",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "ORBIT",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "CLOUT",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "FIGHT",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "WIGHT",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Things That Grow",
+    "persona": "Gardener",
+    "persona_plural": "Gardeners",
+    "poem": "The plant sits in its designated corner.\nWaiting for something that might not come.\n\nThe soil stays moist from yesterday's effort.\nAnother day of careful measurement.\n\nEvery orbit around the same small yard.\nThe same problems in different seasons.\n\nClout means nothing to dying tomatoes.\nThey judge by different standards.\n\nSome days require a fight with nature.\nMost days nature wins without trying.\n\nThe wight of old growth haunts new beds.\nNothing ever stays properly buried.",
+    "green_count": 2,
+    "yellow_count": 2
   }
 ]
