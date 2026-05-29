@@ -7889,5 +7889,78 @@
     "poem": "The plant sits in its designated corner.\nWaiting for something that might not come.\n\nThe soil stays moist from yesterday's effort.\nAnother day of careful measurement.\n\nEvery orbit around the same small yard.\nThe same problems in different seasons.\n\nClout means nothing to dying tomatoes.\nThey judge by different standards.\n\nSome days require a fight with nature.\nMost days nature wins without trying.\n\nThe wight of old growth haunts new beds.\nNothing ever stays properly buried.",
     "green_count": 2,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-29",
+    "wordle_number": 1805,
+    "answer": "CLANG",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "CANNY",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "CAIRN",
+        "result": [
+          "correct",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "CANON",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHANT",
+        "result": [
+          "correct",
+          "absent",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "CLANG",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Bell Tower at Dawn",
+    "persona": "Bell ringer",
+    "persona_plural": "Bell ringers",
+    "poem": "The crane lifts another beam into place.\nWe build what others will eventually tear down.\n\nBeing canny about overtime never quite pays enough.\nThe foreman knows which corners we cut.\n\nThey found a cairn behind the old foundation.\nSomeone marked this spot long before us.\n\nThe canon law says bells must ring daily.\nMy grandfather pulled these same ropes.\n\nMorning chant echoes off empty scaffolding.\nThe tower grows taller than the trees.\n\nMetal will clang against metal for centuries.\nSome sounds outlive the hands that make them.",
+    "green_count": 3,
+    "yellow_count": 2
   }
 ]
