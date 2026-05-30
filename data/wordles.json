@@ -7962,5 +7962,68 @@
     "poem": "The crane lifts another beam into place.\nWe build what others will eventually tear down.\n\nBeing canny about overtime never quite pays enough.\nThe foreman knows which corners we cut.\n\nThey found a cairn behind the old foundation.\nSomeone marked this spot long before us.\n\nThe canon law says bells must ring daily.\nMy grandfather pulled these same ropes.\n\nMorning chant echoes off empty scaffolding.\nThe tower grows taller than the trees.\n\nMetal will clang against metal for centuries.\nSome sounds outlive the hands that make them.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-30",
+    "wordle_number": 1806,
+    "answer": "SMILE",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "THOSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "SPUME",
+        "result": [
+          "correct",
+          "absent",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "SMITE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "SMILE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "After the Storm",
+    "persona": "Dock worker",
+    "persona_plural": "Dock workers",
+    "poem": "The crane sits idle in morning fog.\nHarbor sounds carry different now.\n\nThose ships that came before the hurricane.\nEmpty berths where cargo used to wait.\n\nSalt spume still clings to every surface.\nThe cleanup crews arrive at dawn.\n\nSomeone will smite the insurance adjusters today.\nManagement talks about rebuilding timelines.\n\nA smile breaks through on Jimmy's weathered face.\nThe first vessel clears the channel.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
