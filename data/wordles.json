@@ -8025,5 +8025,78 @@
     "poem": "The crane sits idle in morning fog.\nHarbor sounds carry different now.\n\nThose ships that came before the hurricane.\nEmpty berths where cargo used to wait.\n\nSalt spume still clings to every surface.\nThe cleanup crews arrive at dawn.\n\nSomeone will smite the insurance adjusters today.\nManagement talks about rebuilding timelines.\n\nA smile breaks through on Jimmy's weathered face.\nThe first vessel clears the channel.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-05-31",
+    "wordle_number": 1807,
+    "answer": "ETUDE",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MUTED",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "DUVET",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "TUNED",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "DEBUT",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "ETUDE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Practice Room at Dawn",
+    "persona": "Music student",
+    "persona_plural": "Music students",
+    "poem": "The audio equipment hums in empty hallways.\nPractice begins before the world wakes.\n\nAll conversations become muted here.\nOnly scales and arpeggios matter now.\n\nUnder the duvet last night, fingers moved.\nSilent piano keys across cotton sheets.\n\nThe old upright piano sits tuned badly.\nEvery note fights against its neighbor.\n\nThis is my debut recital tomorrow.\nYears of preparation narrow to minutes.\n\nThe etude repeats until muscle remembers.\nTomorrow the silence finally breaks.",
+    "green_count": 0,
+    "yellow_count": 4
   }
 ]
