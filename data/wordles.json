@@ -8098,5 +8098,78 @@
     "poem": "The audio equipment hums in empty hallways.\nPractice begins before the world wakes.\n\nAll conversations become muted here.\nOnly scales and arpeggios matter now.\n\nUnder the duvet last night, fingers moved.\nSilent piano keys across cotton sheets.\n\nThe old upright piano sits tuned badly.\nEvery note fights against its neighbor.\n\nThis is my debut recital tomorrow.\nYears of preparation narrow to minutes.\n\nThe etude repeats until muscle remembers.\nTomorrow the silence finally breaks.",
     "green_count": 0,
     "yellow_count": 4
+  },
+  {
+    "date": "2026-06-01",
+    "wordle_number": 1808,
+    "answer": "CHILI",
+    "guesses": [
+      {
+        "word": "ABOUT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SLICE",
+        "result": [
+          "absent",
+          "present",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "BRICK",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHINA",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHIRP",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHILD",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      }
+    ],
+    "title": "Things We Cannot Hold",
+    "persona": "Social worker",
+    "persona_plural": "Social workers",
+    "poem": "The conversation starts about nothing important.\nYou learn to listen for what isn't said.\n\nEvery case file gets another slice of truth.\nThe stories always have jagged edges.\n\nBehind every brick wall stands another family.\nThe system builds itself one denial at a time.\n\nThe foster home keeps the good china locked away.\nSome children never see their best plates.\n\nThe baby learns to chirp for attention early.\nCrying becomes a survival skill by eighteen months.\n\nToday another child goes back to the same house.\nThe paperwork says everything is fine now.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
