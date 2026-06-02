@@ -8171,5 +8171,78 @@
     "poem": "The conversation starts about nothing important.\nYou learn to listen for what isn't said.\n\nEvery case file gets another slice of truth.\nThe stories always have jagged edges.\n\nBehind every brick wall stands another family.\nThe system builds itself one denial at a time.\n\nThe foster home keeps the good china locked away.\nSome children never see their best plates.\n\nThe baby learns to chirp for attention early.\nCrying becomes a survival skill by eighteen months.\n\nToday another child goes back to the same house.\nThe paperwork says everything is fine now.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-06-02",
+    "wordle_number": 1809,
+    "answer": "BASIS",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "STARS",
+        "result": [
+          "present",
+          "absent",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "PLAYS",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "MATHS",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "correct"
+        ]
+      },
+      {
+        "word": "BASIC",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "BASIS",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Foundation Work",
+    "persona": "Tutor",
+    "persona_plural": "Tutors",
+    "poem": "The house sits quiet between sessions.\nEmpty chairs hold yesterday's frustration.\n\nShe draws stars on the whiteboard margin.\nGold stickers for tomorrow's math worksheets.\n\nThe child plays with pencil erasers instead.\nNumbers blur into shapes that make sense.\n\nMaths becomes a language she translates daily.\nEach problem a small bridge to cross.\n\nBasic facts scatter like puzzle pieces.\nSome children collect them faster than others.\n\nThe basis forms slowly in small minds.\nUnderstanding arrives when it arrives.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
