@@ -8244,5 +8244,78 @@
     "poem": "The house sits quiet between sessions.\nEmpty chairs hold yesterday's frustration.\n\nShe draws stars on the whiteboard margin.\nGold stickers for tomorrow's math worksheets.\n\nThe child plays with pencil erasers instead.\nNumbers blur into shapes that make sense.\n\nMaths becomes a language she translates daily.\nEach problem a small bridge to cross.\n\nBasic facts scatter like puzzle pieces.\nSome children collect them faster than others.\n\nThe basis forms slowly in small minds.\nUnderstanding arrives when it arrives.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-06-03",
+    "wordle_number": 1810,
+    "answer": "NOTCH",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CORAL",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHOPS",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOCHA",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "HOKEY",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "OZONE",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      }
+    ],
+    "title": "The Same Four Walls",
+    "persona": "Housewife",
+    "persona_plural": "Housewives",
+    "poem": "The house settles into afternoon quiet.\nSame rooms, same light through same windows.\n\nCoral lipstick sits unused on the dresser.\nThe mirror reflects what it always has.\n\nHe likes his pork chops well done.\nDinner will be ready at six thirty.\n\nThe mocha maker gurgles in empty kitchen.\nCoffee for one, again today.\n\nEverything feels hokey now, rehearsed and hollow.\nThe script never changes, only the props.\n\nThe ozone layer thins above suburban rooftops.\nSome things break too slowly to notice.",
+    "green_count": 1,
+    "yellow_count": 4
   }
 ]
