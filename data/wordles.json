@@ -8390,5 +8390,78 @@
     "poem": "The house holds what we cannot say.\nFour walls contain the necessary silence.\n\nEvery actor knows their deepest role.\nThe performance ends when doors close.\n\nSome adopt the language of healing.\nOthers remain strangers to themselves.\n\nWe walk along the edges carefully.\nDistance measures what words cannot.\n\nStaying aloof protects the wound.\nProfessional boundaries serve their purpose.\n\nSpeaking aloud changes nothing fundamental.\nThe work continues in quiet rooms.",
     "green_count": 3,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-06-05",
+    "wordle_number": 1812,
+    "answer": "NOBLY",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "HORSE",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "POUCH",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "KNOWN",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOONY",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "present",
+          "correct"
+        ]
+      },
+      {
+        "word": "BONEY",
+        "result": [
+          "present",
+          "correct",
+          "present",
+          "absent",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Sound of Nothing",
+    "persona": "Podcaster",
+    "persona_plural": "Podcasters",
+    "poem": "The audio levels are fine today.\nNobody is listening anyway.\n\nI tell the horse story again.\nSame cadence. Same empty studio.\n\nAnother energy drink from my pouch.\nThe download numbers don't lie.\n\nThe algorithm has known for months.\nI keep recording into silence.\n\nEven my voice sounds moony now.\nTalking to walls and advertisements.\n\nMy laugh track feels boney and thin.\nThe microphone judges every breath.",
+    "green_count": 2,
+    "yellow_count": 3
   }
 ]
