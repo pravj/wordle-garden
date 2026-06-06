@@ -8463,5 +8463,78 @@
     "poem": "The audio levels are fine today.\nNobody is listening anyway.\n\nI tell the horse story again.\nSame cadence. Same empty studio.\n\nAnother energy drink from my pouch.\nThe download numbers don't lie.\n\nThe algorithm has known for months.\nI keep recording into silence.\n\nEven my voice sounds moony now.\nTalking to walls and advertisements.\n\nMy laugh track feels boney and thin.\nThe microphone judges every breath.",
     "green_count": 2,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-06-06",
+    "wordle_number": 1813,
+    "answer": "MORPH",
+    "guesses": [
+      {
+        "word": "PLANT",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CROPS",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "WORDY",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "PROXY",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "PRONG",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOTOR",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "absent",
+          "present"
+        ]
+      }
+    ],
+    "title": "Growth Requires Optimal Conditions",
+    "persona": "Farmer",
+    "persona_plural": "Farmers",
+    "poem": "The plant goes in when soil temps hit fifty.\nWeather reports change nothing about waiting.\n\nCrops fail when the rains don't come on schedule.\nInsurance adjusters measure loss in percentages.\n\nWordy explanations from the extension office arrive too late.\nPamphlets pile up next to empty coffee cups.\n\nProxy buyers bid on land you've worked forty years.\nCorporate names replace family names on mailboxes.\n\nThe prong breaks off the cultivator mid-season.\nParts cost more than the whole machine used to.\n\nMotor oil leaks onto ground that remembers everything.\nSome failures compound until there's nothing left to tend.",
+    "green_count": 4,
+    "yellow_count": 3
   }
 ]
