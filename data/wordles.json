@@ -8536,5 +8536,58 @@
     "poem": "The plant goes in when soil temps hit fifty.\nWeather reports change nothing about waiting.\n\nCrops fail when the rains don't come on schedule.\nInsurance adjusters measure loss in percentages.\n\nWordy explanations from the extension office arrive too late.\nPamphlets pile up next to empty coffee cups.\n\nProxy buyers bid on land you've worked forty years.\nCorporate names replace family names on mailboxes.\n\nThe prong breaks off the cultivator mid-season.\nParts cost more than the whole machine used to.\n\nMotor oil leaks onto ground that remembers everything.\nSome failures compound until there's nothing left to tend.",
     "green_count": 4,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-06-07",
+    "wordle_number": 1814,
+    "answer": "THUMB",
+    "guesses": [
+      {
+        "word": "PLANT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "SHIRT",
+        "result": [
+          "absent",
+          "correct",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "MUTED",
+        "result": [
+          "present",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "THUMB",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Small Daily Victories",
+    "persona": "Gardener",
+    "persona_plural": "Gardeners",
+    "poem": "The plant sits in yesterday's water.\nNothing grows without attention.\n\nClean shirt means leaving the house today.\nThe mirror shows what others see.\n\nSound stays muted during morning coffee.\nSilence holds more than conversation.\n\nGreen thumb was never about talent.\nJust showing up when things need care.\n\nTomorrow the seedlings might surprise me.",
+    "green_count": 1,
+    "yellow_count": 3
   }
 ]
