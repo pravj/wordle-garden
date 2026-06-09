@@ -8662,5 +8662,58 @@
     "poem": "I stare at the sample again.\nThe results refuse to make sense.\n\nEverything seems plain and obvious until it isn't.\nThe control group behaves like the experimental.\n\nThe audio recordings from yesterday's session loop.\nBackground noise drowns out the important frequencies.\n\nMaize samples from plot seven show anomalies.\nGrowth patterns suggest variables I didn't account for.\n\nMalic acid concentrations vary by twelve percent.\nThe pH readings contradict three months of data.\n\nMagic was what my advisor called unexplained results.\nI call it another grant proposal rejected.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-06-09",
+    "wordle_number": 1816,
+    "answer": "WHARF",
+    "guesses": [
+      {
+        "word": "STONE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHAIR",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "RHYME",
+        "result": [
+          "present",
+          "correct",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "WHARF",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "Weight of Small Things",
+    "persona": "Poet",
+    "persona_plural": "Poets",
+    "poem": "The stone sits on my desk unchanging.\nWeight has its own quiet purpose.\n\nI bought this chair for writing.\nNow it holds yesterday's clothes.\n\nEvery rhyme sounds forced these days.\nThe meter breaks before the meaning comes.\n\nDown at the wharf the boats return.\nTheir holds full of what they sought.",
+    "green_count": 2,
+    "yellow_count": 1
   }
 ]
