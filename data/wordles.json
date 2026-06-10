@@ -8715,5 +8715,78 @@
     "poem": "The stone sits on my desk unchanging.\nWeight has its own quiet purpose.\n\nI bought this chair for writing.\nNow it holds yesterday's clothes.\n\nEvery rhyme sounds forced these days.\nThe meter breaks before the meaning comes.\n\nDown at the wharf the boats return.\nTheir holds full of what they sought.",
     "green_count": 2,
     "yellow_count": 1
+  },
+  {
+    "date": "2026-06-10",
+    "wordle_number": 1817,
+    "answer": "ALIGN",
+    "guesses": [
+      {
+        "word": "BREAD",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "MOUNT",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "CHINS",
+        "result": [
+          "absent",
+          "absent",
+          "correct",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "WINDY",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "NINJA",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "PIANO",
+        "result": [
+          "absent",
+          "present",
+          "present",
+          "present",
+          "absent"
+        ]
+      }
+    ],
+    "title": "The Daily Climb",
+    "persona": "Office worker",
+    "persona_plural": "Office workers",
+    "poem": "The bread goes stale by Thursday.\nNobody notices until Friday.\n\nI mount the stairs to the third floor.\nThe elevator has been broken since March.\n\nMy chins multiply in video calls.\nThe camera adds more than ten pounds.\n\nThe office feels windy near the windows.\nThe HVAC system makes no sense.\n\nA ninja could slip past security.\nNobody checks badges after lunch anyway.\n\nThe lobby piano sits unplayed since renovations.\nEven the music has given up.",
+    "green_count": 1,
+    "yellow_count": 3
   }
 ]
