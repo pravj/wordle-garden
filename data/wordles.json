@@ -8788,5 +8788,78 @@
     "poem": "The bread goes stale by Thursday.\nNobody notices until Friday.\n\nI mount the stairs to the third floor.\nThe elevator has been broken since March.\n\nMy chins multiply in video calls.\nThe camera adds more than ten pounds.\n\nThe office feels windy near the windows.\nThe HVAC system makes no sense.\n\nA ninja could slip past security.\nNobody checks badges after lunch anyway.\n\nThe lobby piano sits unplayed since renovations.\nEven the music has given up.",
     "green_count": 1,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-06-11",
+    "wordle_number": 1818,
+    "answer": "TESTY",
+    "guesses": [
+      {
+        "word": "CRANE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "STOLE",
+        "result": [
+          "present",
+          "present",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "TENSE",
+        "result": [
+          "correct",
+          "correct",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "TESTS",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "TESTE",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "TESTY",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "correct"
+        ]
+      }
+    ],
+    "title": "The Grading Never Stops",
+    "persona": "Professor",
+    "persona_plural": "Professors",
+    "poem": "The crane outside my office window.\nSame position every morning at eight.\n\nSomeone stole my red pen again.\nThe essays pile higher on my desk.\n\nOffice hours run tense and long.\nStudents want extra credit for existing.\n\nAnother batch of tests to grade.\nCoffee grows cold in my mug.\n\nI write teste in the margin.\nLatin feels appropriate for failing work.\n\nThe last paper makes me testy.\nTwenty years of this same cycle.",
+    "green_count": 3,
+    "yellow_count": 3
   }
 ]
