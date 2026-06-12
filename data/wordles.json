@@ -8861,5 +8861,78 @@
     "poem": "The crane outside my office window.\nSame position every morning at eight.\n\nSomeone stole my red pen again.\nThe essays pile higher on my desk.\n\nOffice hours run tense and long.\nStudents want extra credit for existing.\n\nAnother batch of tests to grade.\nCoffee grows cold in my mug.\n\nI write teste in the margin.\nLatin feels appropriate for failing work.\n\nThe last paper makes me testy.\nTwenty years of this same cycle.",
     "green_count": 3,
     "yellow_count": 3
+  },
+  {
+    "date": "2026-06-12",
+    "wordle_number": 1819,
+    "answer": "BREAK",
+    "guesses": [
+      {
+        "word": "AUDIO",
+        "result": [
+          "present",
+          "absent",
+          "absent",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "PLANT",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "CRAZE",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "FRAME",
+        "result": [
+          "absent",
+          "correct",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "GREAT",
+        "result": [
+          "absent",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      },
+      {
+        "word": "BREAD",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "correct",
+          "absent"
+        ]
+      }
+    ],
+    "title": "Morning Routine Holds",
+    "persona": "Homemaker",
+    "persona_plural": "Homemakers",
+    "poem": "The audio book plays while folding laundry.\nSame voice, same chapter, third time this week.\n\nEvery plant needs water but some are dying.\nThe schedule says Tuesday but Tuesday feels wrong.\n\nThe morning news mentions another craze sweeping social media.\nPeople find excitement in the strangest places.\n\nI straighten the wedding photo in its frame.\nWe looked so certain about everything then.\n\nGreat was the word we used for everything.\nNow great means the dishwasher didn't break.\n\nThe bread machine timer goes off at noon.\nAnother loaf no one will finish.",
+    "green_count": 4,
+    "yellow_count": 2
   }
 ]
