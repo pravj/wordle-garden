@@ -8934,5 +8934,78 @@
     "poem": "The audio book plays while folding laundry.\nSame voice, same chapter, third time this week.\n\nEvery plant needs water but some are dying.\nThe schedule says Tuesday but Tuesday feels wrong.\n\nThe morning news mentions another craze sweeping social media.\nPeople find excitement in the strangest places.\n\nI straighten the wedding photo in its frame.\nWe looked so certain about everything then.\n\nGreat was the word we used for everything.\nNow great means the dishwasher didn't break.\n\nThe bread machine timer goes off at noon.\nAnother loaf no one will finish.",
     "green_count": 4,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-06-13",
+    "wordle_number": 1820,
+    "answer": "QUELL",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "TRADE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "MAYBE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "KNIFE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "VENUE",
+        "result": [
+          "absent",
+          "present",
+          "absent",
+          "present",
+          "absent"
+        ]
+      },
+      {
+        "word": "QUEST",
+        "result": [
+          "correct",
+          "correct",
+          "correct",
+          "absent",
+          "absent"
+        ]
+      }
+    ],
+    "title": "What We Built Here",
+    "persona": "Contractor",
+    "persona_plural": "Contractors",
+    "poem": "The house sits half-finished on the corner lot.\nWe ran out of permits in October.\n\nEvery trade has its own way of walking away.\nThe electrician left his tools behind.\n\nMaybe the bank will understand about winter delays.\nMaybe they won't call tomorrow.\n\nI keep the knife sharp for cutting drywall.\nIt cuts through other things too.\n\nThe venue for the wedding got cancelled again.\nMy daughter asks if we're moving.\n\nThis quest for steady work never ends.\nThe toolbox gets lighter each month.",
+    "green_count": 3,
+    "yellow_count": 2
   }
 ]
