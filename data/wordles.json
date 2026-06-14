@@ -9007,5 +9007,78 @@
     "poem": "The house sits half-finished on the corner lot.\nWe ran out of permits in October.\n\nEvery trade has its own way of walking away.\nThe electrician left his tools behind.\n\nMaybe the bank will understand about winter delays.\nMaybe they won't call tomorrow.\n\nI keep the knife sharp for cutting drywall.\nIt cuts through other things too.\n\nThe venue for the wedding got cancelled again.\nMy daughter asks if we're moving.\n\nThis quest for steady work never ends.\nThe toolbox gets lighter each month.",
     "green_count": 3,
     "yellow_count": 2
+  },
+  {
+    "date": "2026-06-14",
+    "wordle_number": 1821,
+    "answer": "SEPIA",
+    "guesses": [
+      {
+        "word": "HOUSE",
+        "result": [
+          "absent",
+          "absent",
+          "absent",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "STERN",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SWEDE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "absent",
+          "absent"
+        ]
+      },
+      {
+        "word": "SPACE",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "absent",
+          "present"
+        ]
+      },
+      {
+        "word": "SHAPE",
+        "result": [
+          "correct",
+          "absent",
+          "present",
+          "present",
+          "present"
+        ]
+      },
+      {
+        "word": "SPADE",
+        "result": [
+          "correct",
+          "present",
+          "present",
+          "absent",
+          "present"
+        ]
+      }
+    ],
+    "title": "Foundation Work",
+    "persona": "Architect",
+    "persona_plural": "Architects",
+    "poem": "The house blueprints spread across the drafting table.\nFoundation measurements never quite align with dreams.\n\nThe client wants stern angles and rigid compliance.\nCode requirements strangle every creative impulse.\n\nThe Swede lumber costs doubled since last month.\nMaterial suppliers care nothing for project deadlines.\n\nThere is never enough space for what matters.\nRooms shrink when you calculate the actual square footage.\n\nEvery shape becomes a compromise with physics.\nLoad-bearing walls dictate where life can happen.\n\nThe spade breaks ground on another subdivision box.\nSomeone else will live inside your surrendered vision.",
+    "green_count": 1,
+    "yellow_count": 4
   }
 ]
